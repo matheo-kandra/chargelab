@@ -63,3 +63,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-19T16:02:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
 2026-09-19T16:07:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
 2026-09-19T16:12:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+2026-09-19T16:17:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
