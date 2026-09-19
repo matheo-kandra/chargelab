@@ -1,3 +1,4 @@
 capture_utc,resultat,octets,sha256,lignes_flux,pdc_distincts,doublons_resolus,etats_contradictoires,etat_reference,changements,entrees,sorties,photo_du_jour,duree_s,erreur
 2026-09-19T09:49:45+00:00,ok (photo de reference),8948214,5edda94d315c9fe02c1ccac0f84e7aa190e86b97102429e4aa387b7192b94487,121567,110759,10808,1610,aucune photo,0,110759,0,data/collecte/dynamique/instantanes/2026-09-19.csv.gz,5.7,
 2026-09-19T10:23:24+00:00,ok,8947531,08cad904b4601c52bd198ac90a7e5debe09e6bca32b716034b42e7f37da55897,121567,110759,10808,1604,photo 2026-09-19 + 0 fichiers de changements,9495,0,0,,4.2,
+2026-09-19T11:06:08+00:00,ok,local,8947080,ef3cc0b99e516099cb292307d01b3f3639002a89be931162bf8aca3886b62e8a,121567,110759,10808,1599,photo 2026-09-19 + 1 fichiers de changements,9797,0,0,,3.0,
