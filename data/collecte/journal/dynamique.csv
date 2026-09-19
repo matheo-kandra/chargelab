@@ -1,0 +1,2 @@
+capture_utc,resultat,octets,sha256,lignes_flux,pdc_distincts,doublons_resolus,etats_contradictoires,etat_reference,changements,entrees,sorties,photo_du_jour,duree_s,erreur
+2026-09-19T09:49:45+00:00,ok (photo de reference),8948214,5edda94d315c9fe02c1ccac0f84e7aa190e86b97102429e4aa387b7192b94487,121567,110759,10808,1610,aucune photo,0,110759,0,data/collecte/dynamique/instantanes/2026-09-19.csv.gz,5.7,
