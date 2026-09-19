@@ -71,7 +71,8 @@ def statique_deja_fait(jour) -> bool:
 def passage(publier: bool) -> None:
     t = maintenant()
     if publier:
-        executer(["git", "pull", "--rebase", "--quiet", "origin", "main"], "recalage")
+        executer(["git", "pull", "--rebase", "--autostash", "--quiet", "origin", "main"],
+                 "recalage")
     code = executer([str(PYTHON), "collect/collecte_dynamique.py"], "dynamique")
     chemins = ["data/collecte/dynamique", "data/collecte/journal"]
     if t.hour >= HEURE_STATIQUE and not statique_deja_fait(t.date()):

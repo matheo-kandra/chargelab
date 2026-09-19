@@ -9,3 +9,7 @@ __pycache__/
 data/raw/statique/*.csv
 data/raw/dynamique/
 data/raw/capture_dynamique.out
+
+# Sortie du superviseur local : change en permanence, ne doit pas etre suivie
+# sinon `git pull --rebase` echoue a chaque passage sur un arbre sale.
+data/collecte/boucle_locale.out
