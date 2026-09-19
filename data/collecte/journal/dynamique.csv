@@ -36,4 +36,9 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-19T13:42:01+00:00,ok,local,8947158,87b3086a298814cab74ac939f17f0c0fbac5b43ab79bd191afd98a70cddeb1ed,121572,110759,10813,1594,photo 2026-09-19 + 33 fichiers de changements,1803,0,0,,2.9,
 2026-09-19T13:47:01+00:00,ok,local,8947117,65e68b2b212da271b3cff174fbb84cd7f1eb352fc55fc0a0799632e5dae44a5f,121572,110759,10813,1592,photo 2026-09-19 + 34 fichiers de changements,1810,0,0,,2.9,
 2026-09-19T13:52:01+00:00,ok,local,8947027,a15fb9f9c63a73bfe96ab2697568206f171197389d2571b536700db2d516abbb,121572,110759,10813,1589,photo 2026-09-19 + 35 fichiers de changements,1917,0,0,,3.0,
+<<<<<<< HEAD
 2026-09-19T14:00:26+00:00,ok,github,8947125,15655c296c4df30075ecb58d89b464acb0ef6088888586f96d1de8155af97940,121572,110759,10813,1583,photo 2026-09-19 + 36 fichiers de changements,3306,0,0,,5.3,
+=======
+2026-09-19T13:57:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+>>>>>>> 30a92f9 (collecte locale 2026-09-19T13:57:40Z)
+2026-09-19T14:17:12+00:00,ok,local,8947149,bff30b79cc110c5fb297128e15173151fc9f7b1209602eff331fc4236cf560ad,121572,110759,10813,1590,photo 2026-09-19 + 37 fichiers de changements,5266,0,0,,21.3,
