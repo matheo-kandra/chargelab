@@ -6,7 +6,7 @@ name: Collecte statique
 # telecharge ; sinon il echoue.
 on:
   schedule:
-    - cron: '10 3 * * *'
+    - cron: '13 3 * * *'
   workflow_dispatch:
 
 concurrency:
