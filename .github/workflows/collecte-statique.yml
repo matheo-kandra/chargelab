@@ -44,4 +44,4 @@ jobs:
 
       - name: Publier l'archive
         if: always()
-        run: bash collect/publier.sh "collecte statique"
+        run: bash collect/publier.sh "collecte statique" data/collecte/statique data/collecte/journal

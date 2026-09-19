@@ -47,4 +47,4 @@ jobs:
         run: python collect/collecte_dynamique.py
 
       - name: Publier la capture
-        run: bash collect/publier.sh "collecte dynamique"
+        run: bash collect/publier.sh "collecte dynamique" data/collecte/dynamique data/collecte/journal
