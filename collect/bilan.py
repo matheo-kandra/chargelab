@@ -45,6 +45,9 @@ def main() -> int:
     print(f"Fenetre        : {debut:%Y-%m-%d %H:%M} -> {fin:%Y-%m-%d %H:%M} UTC ({duree:.1f} h)")
     print(f"Passages       : {len(d)} au total, {len(ok)} reussis, {len(echecs)} en echec "
           f"({100*len(echecs)/len(d):.1f} %)")
+    if "source" in d.columns:
+        parts = d["source"].value_counts()
+        print("Origine        : " + ", ".join(f"{k} {v}" for k, v in parts.items()))
 
     # creneaux attendus sur la fenetre, minute par minute
     n_attendus = 0
