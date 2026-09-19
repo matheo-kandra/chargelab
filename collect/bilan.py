@@ -49,17 +49,24 @@ def main() -> int:
         parts = d["source"].value_counts()
         print("Origine        : " + ", ".join(f"{k} {v}" for k, v in parts.items()))
 
-    # creneaux attendus sur la fenetre, minute par minute
-    n_attendus = 0
+    # Un passage est rattache au creneau prevu le plus proche, et on compte les
+    # creneaux COUVERTS, pas les passages : deux passages rapproches (un
+    # redemarrage, un declenchement manuel) ne doivent pas faire monter la
+    # couverture au-dessus de 100 %.
+    creneaux = []
     t = debut.to_pydatetime().replace(second=0, microsecond=0, tzinfo=timezone.utc)
     while t <= fin.to_pydatetime():
-        pas = attendu(t)
-        if t.minute % pas == 0:
-            n_attendus += 1
+        if t.minute % attendu(t) == 0:
+            creneaux.append(t)
         t += timedelta(minutes=1)
-    print(f"Creneaux prevus: {n_attendus} selon l'ADR 08 (5 min de 06h a 20h, 15 min sinon)")
-    print(f"Couverture     : {100*len(ok)/n_attendus:.1f} % des creneaux prevus"
-          if n_attendus else "Couverture     : fenetre trop courte pour etre evaluee")
+    couverts = set()
+    for h in ok["t"]:
+        if creneaux:
+            couverts.add(min(creneaux, key=lambda c: abs((c - h.to_pydatetime()).total_seconds())))
+    print(f"Creneaux prevus: {len(creneaux)} selon l'ADR 08 (5 min de 06h a 20h, 15 min sinon)")
+    print(f"Creneaux couverts : {len(couverts)}")
+    print(f"Couverture     : {100*len(couverts)/len(creneaux):.1f} % des creneaux prevus"
+          if creneaux else "Couverture     : fenetre trop courte pour etre evaluee")
 
     ecarts = ok["t"].diff().dt.total_seconds().dropna() / 60
     if len(ecarts):
