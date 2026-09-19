@@ -6,8 +6,12 @@
 # utilisent un sparse-checkout partiel, et un `git add` sur un chemin absent du
 # cone risquerait d'indexer la suppression des fichiers de l'autre collecteur.
 #
-# Le depot est ecrit par deux workflows : en cas de course, on rejoue le commit
-# sur la tete distante plutot que d'ecraser.
+# Le depot peut etre ecrit par plusieurs collecteurs. En cas de course, on
+# rejoue le commit sur la tete distante. Les journaux sont fusionnes en union
+# (voir .gitattributes) : deux lignes ajoutees au meme creneau sont conservees
+# toutes les deux. Avant tout commit, on refuse un fichier contenant des
+# marqueurs de conflit : un rebase avorte laisse un arbre sale, et sans ce
+# garde-fou le passage suivant committerait le fichier abime.
 set -uo pipefail
 message="${1:?message de commit attendu}"
 shift
@@ -19,15 +23,24 @@ fi
 
 git config user.name  "collecte-chargelab"
 git config user.email "collecte@users.noreply.github.com"
+git config merge.union.driver "git merge-file --union %A %O %B" 2>/dev/null || true
+
+marqueurs() {
+  grep -rlE '^(<<<<<<< |=======$|>>>>>>> )' -- "${chemins[@]}" 2>/dev/null
+}
+
+sales="$(marqueurs)"
+if [ -n "$sales" ]; then
+  echo "REFUS : marqueurs de conflit dans :" >&2
+  echo "$sales" >&2
+  exit 3
+fi
 
 git add -A -- "${chemins[@]}"
 if git diff --cached --quiet; then
   echo "rien a publier"
   exit 0
 fi
-
-echo "fichiers indexes :"
-git diff --cached --name-status
 
 horodatage="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 git commit -q -m "${message} ${horodatage}"
@@ -40,8 +53,16 @@ for essai in 1 2 3 4 5; do
   fi
   echo "conflit de publication, essai ${essai}"
   git fetch -q origin "${branche}" || true
-  if ! git rebase -q "origin/${branche}"; then
-    git rebase --abort || true
+  if git rebase -q "origin/${branche}"; then
+    sales="$(marqueurs)"
+    if [ -n "$sales" ]; then
+      echo "REFUS apres rebase : marqueurs de conflit dans $sales" >&2
+      git reset -q --hard "origin/${branche}"
+      exit 3
+    fi
+  else
+    git rebase --abort 2>/dev/null || git rebase --quit 2>/dev/null || true
+    git reset -q --hard HEAD
   fi
   sleep $((essai * 4))
 done

@@ -1,0 +1,5 @@
+# Les journaux de collecte sont strictement en ajout : quand deux collecteurs
+# ecrivent le meme creneau, la bonne resolution est de garder les deux lignes,
+# pas d'en choisir une. Sans cela un rebase laisse des marqueurs de conflit
+# dans le fichier, et le passage suivant les commit sans s'en apercevoir.
+data/collecte/journal/*.csv merge=union
