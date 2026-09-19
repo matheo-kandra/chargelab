@@ -49,3 +49,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-19T14:52:01+00:00,ok,local,8947397,e97d3affd9d7a93ca3d6d0caacb074e3f8a14e081b593762d433ff7321cad4ed,121574,110759,10815,1595,photo 2026-09-19 + 45 fichiers de changements,1933,0,0,,3.0,
 2026-09-19T14:57:01+00:00,ok,local,8947441,ecd7d42f5b50e1e02ac13fecdf80241eef32bb4c12b2c97d229d246da6c3af81,121574,110759,10815,1591,photo 2026-09-19 + 46 fichiers de changements,1746,0,0,,3.2,
 2026-09-19T15:02:02+00:00,ok,local,8947346,0ae6637568afdfbd3eaae5c2410b0da3e8fe8c5d0f390b028342f77e37ddfe1b,121574,110759,10815,1592,photo 2026-09-19 + 47 fichiers de changements,2322,0,0,,4.0,
+2026-09-19T15:07:00+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
