@@ -55,6 +55,7 @@ def main() -> int:
     jour = t0.date()
     ligne = {
         "collecte_utc": t0.isoformat(timespec="seconds"), "jour": str(jour),
+        "source": SOURCE,
         "resultat": "", "octets": "", "sha256_telechargement": "",
         "lignes": "", "pdc_distincts": "", "mode": "", "octets_archives": "",
         "entrees": "", "sorties": "", "contenu_modifie": "", "date_maj_seule": "",

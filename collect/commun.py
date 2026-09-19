@@ -13,6 +13,7 @@ import csv
 import gzip
 import hashlib
 import io
+import os
 import time
 import urllib.error
 import urllib.request
@@ -25,6 +26,11 @@ RACINE = Path(__file__).resolve().parent.parent
 COLLECTE = RACINE / "data" / "collecte"
 JOURNAUX = COLLECTE / "journal"
 AGENT = "chargelab/0.1 (collecte IRVE, contact via le depot)"
+
+# D'ou vient ce passage : "github" quand il tourne dans Actions, "local" quand
+# il tourne sur un poste. Le journal doit pouvoir distinguer les deux, sinon on
+# ne sait plus a quoi attribuer un trou de collecte.
+SOURCE = os.environ.get("CHARGELAB_SOURCE") or ("github" if os.environ.get("GITHUB_ACTIONS") else "local")
 
 
 def maintenant() -> datetime:

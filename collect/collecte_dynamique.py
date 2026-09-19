@@ -28,7 +28,7 @@ from datetime import date, datetime, timedelta
 
 import pandas as pd
 
-from commun import (COLLECTE, RACINE, df_vers_csv, ecrire_gz, journaliser,
+from commun import (SOURCE, COLLECTE, RACINE, df_vers_csv, ecrire_gz, journaliser,
                     lire_csv_gz, maintenant, resoudre_doublons_dynamique,
                     sha256, telecharger)
 
@@ -104,6 +104,7 @@ def main() -> int:
     t0 = maintenant()
     ligne = {
         "capture_utc": t0.isoformat(timespec="seconds"), "resultat": "",
+        "source": SOURCE,
         "octets": "", "sha256": "", "lignes_flux": "", "pdc_distincts": "",
         "doublons_resolus": "", "etats_contradictoires": "", "etat_reference": "",
         "changements": "", "entrees": "", "sorties": "", "photo_du_jour": "",
