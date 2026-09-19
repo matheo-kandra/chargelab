@@ -286,6 +286,30 @@ marqué manquant, jamais reconstruit.
 Méthode. Objectif : moins de 2 %. La collecte locale reste possible en secours,
 avec le même script et le même journal.
 
+**Coût, mesuré sur les premiers passages réels.** Un passage dure **35 secondes**
+de bout en bout (récupération du dépôt, installation, capture, publication).
+GitHub facture à la minute entamée, donc 1 minute par passage :
+
+| | minutes par mois |
+|---|---:|
+| 208 passages par jour | **6 240** |
+| quota gratuit d'un dépôt **privé** | 2 000 |
+| quota d'un dépôt **public** | illimité |
+
+Le dépôt `matheo-kandra/chargelab` est créé **privé**. Les 48 heures de preuve
+demandées par la spec coûtent environ **416 minutes**, ce qui tient largement
+dans le quota gratuit. Au-delà, le quota privé est épuisé en **9,6 jours**.
+Passer le dépôt en public rend la collecte gratuite et sans limite ; les données
+collectées sont sous Licence Ouverte Etalab, rien n'y est confidentiel. La
+décision appartient au propriétaire du dépôt et n'est pas prise ici.
+
+**Cadence réellement obtenue.** GitHub décale fréquemment les déclenchements
+planifiés. Indice relevé pendant le profilage : un dépôt tiers programmé toutes
+les 5 minutes n'obtenait en pratique que **144 passages par jour**, soit un pas
+effectif de 10 minutes. Le journal mesure le pas réel à chaque passage, et
+`collect/bilan.py` en fait la synthèse. La cadence annoncée dans la Méthode sera
+celle qui est mesurée, pas celle qui est programmée.
+
 ---
 
 ## ADR 10. Stockage et rétention
