@@ -1,2 +1,2 @@
-collecte_utc,jour,resultat,octets,sha256_telechargement,lignes,pdc_distincts,mode,octets_archives,entrees,sorties,contenu_modifie,date_maj_seule,verification,sha256_canonique,duree_s,erreur
-2026-09-19T09:50:42+00:00,2026-09-19,ok,120761275,8394580d774134cfb85b6884fcd37a513c27349fa6139540140ddf068f5e6d51,168674,168672,complet,6266713,,,,,ok,894f15380180847e920715f467aa6cce59127503f2eb9ad07475f5be0a36a2f1,21.2,
+collecte_utc,jour,source,resultat,octets,sha256_telechargement,lignes,pdc_distincts,mode,octets_archives,entrees,sorties,contenu_modifie,date_maj_seule,verification,sha256_canonique,duree_s,erreur
+2026-09-19T09:50:42+00:00,2026-09-19,github,ok,120761275,8394580d774134cfb85b6884fcd37a513c27349fa6139540140ddf068f5e6d51,168674,168672,complet,6266713,,,,,ok,894f15380180847e920715f467aa6cce59127503f2eb9ad07475f5be0a36a2f1,21.2,

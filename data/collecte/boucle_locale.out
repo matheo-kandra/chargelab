@@ -1,0 +1,12 @@
+superviseur local demarre le 2026-09-19 11:06:06 UTC, jusqu'au 2026-09-21 13:06 UTC
+cadence ADR 08 : minutes [2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57] de 06h a 20h UTC, minutes [7, 22, 37, 52] sinon
+  [dynamique] 2026-09-19T11:06:08+00:00 : 110759 PDC, 9797 changements, 10808 doublons resolus (1599 contradictoires), base sur photo 2026-09-19 + 1 fichiers de changements, 3.0 s
+  [publication] fichiers indexes :
+  [publication] A	data/collecte/dynamique/changements/2026/09/2026-09-19_110608.csv.gz
+  [publication] M	data/collecte/journal/dynamique.csv
+  [publication] publie (essai 1)
+  [dynamique] 2026-09-19T11:07:01+00:00 : 110759 PDC, 419 changements, 10808 doublons resolus (1597 contradictoires), base sur photo 2026-09-19 + 2 fichiers de changements, 2.9 s
+  [publication] fichiers indexes :
+  [publication] A	data/collecte/dynamique/changements/2026/09/2026-09-19_110701.csv.gz
+  [publication] M	data/collecte/journal/dynamique.csv
+  [publication] publie (essai 1)

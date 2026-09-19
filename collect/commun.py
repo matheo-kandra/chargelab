@@ -79,15 +79,44 @@ def df_vers_csv(df: pd.DataFrame) -> bytes:
 
 
 def journaliser(nom: str, ligne: dict) -> None:
-    """Ajoute une ligne au journal `nom`. L'en-tete est ecrit une seule fois."""
+    """Ajoute une ligne au journal `nom`.
+
+    Le jeu de colonnes peut changer d'une version a l'autre du collecteur, et le
+    passage du lundi ajoute les colonnes d'audit du dedoublonnage. On ne se
+    contente donc pas d'ecrire l'en-tete au premier passage : si les colonnes de
+    la ligne ne sont pas toutes dans l'en-tete existant, le fichier est reecrit
+    avec l'union des colonnes, les anciennes lignes gardant une valeur vide sur
+    les colonnes qu'elles n'avaient pas. Sans cela, une ligne decalee d'une
+    colonne passerait inapercue jusqu'au moment de la lecture.
+    """
     dest = JOURNAUX / f"{nom}.csv"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    existe = dest.exists()
-    with dest.open("a", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(ligne.keys()))
-        if not existe:
+    if not dest.exists():
+        with dest.open("w", newline="", encoding="utf-8") as fh:
+            w = csv.DictWriter(fh, fieldnames=list(ligne.keys()))
             w.writeheader()
-        w.writerow(ligne)
+            w.writerow(ligne)
+        return
+
+    with dest.open(newline="", encoding="utf-8") as fh:
+        lecteur = csv.DictReader(fh)
+        entete = list(lecteur.fieldnames or [])
+        anciennes = list(lecteur)
+
+    inconnues = [k for k in ligne if k not in entete]
+    if not inconnues:
+        with dest.open("a", newline="", encoding="utf-8") as fh:
+            csv.DictWriter(fh, fieldnames=entete).writerow(
+                {k: ligne.get(k, "") for k in entete})
+        return
+
+    entete = entete + inconnues
+    with dest.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=entete)
+        w.writeheader()
+        for a in anciennes:
+            w.writerow({k: a.get(k, "") or "" for k in entete})
+        w.writerow({k: ligne.get(k, "") for k in entete})
 
 
 def resoudre_doublons_dynamique(df: pd.DataFrame) -> tuple[pd.DataFrame, int, int]:
