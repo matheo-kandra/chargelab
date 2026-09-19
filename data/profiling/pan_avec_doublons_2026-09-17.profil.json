@@ -1,0 +1,3361 @@
+{
+ "fichier": "pan_avec_doublons_2026-09-17.csv",
+ "label": "PAN beta, statique non dedoublonne",
+ "octets": 289741892,
+ "lignes": 396878,
+ "colonnes": [
+  "nom_amenageur",
+  "siren_amenageur",
+  "contact_amenageur",
+  "nom_operateur",
+  "contact_operateur",
+  "telephone_operateur",
+  "nom_enseigne",
+  "id_station_itinerance",
+  "id_station_local",
+  "nom_station",
+  "implantation_station",
+  "adresse_station",
+  "code_insee_commune",
+  "coordonneesXY",
+  "nbre_pdc",
+  "id_pdc_itinerance",
+  "id_pdc_local",
+  "puissance_nominale",
+  "prise_type_ef",
+  "prise_type_2",
+  "prise_type_combo_ccs",
+  "prise_type_chademo",
+  "prise_type_autre",
+  "gratuit",
+  "paiement_acte",
+  "paiement_cb",
+  "paiement_autre",
+  "tarification",
+  "condition_acces",
+  "reservation",
+  "horaires",
+  "accessibilite_pmr",
+  "restriction_gabarit",
+  "station_deux_roues",
+  "raccordement",
+  "num_pdl",
+  "date_mise_en_service",
+  "observations",
+  "date_maj",
+  "cable_t2_attache",
+  "consolidated_longitude",
+  "consolidated_latitude",
+  "consolidated_is_lon_lat_correct",
+  "datagouv_dataset_id",
+  "datagouv_resource_id",
+  "dataset_title",
+  "datagouv_organization_or_owner",
+  "datagouv_last_modified",
+  "deduplication_status"
+ ],
+ "par_colonne": {
+  "nom_amenageur": {
+   "renseigne": 394777,
+   "vide": 2101,
+   "taux_remplissage": 0.994706,
+   "distinct": 4995,
+   "exemples": [
+    [
+     "ENGIE Mobilités Electriques",
+     47420
+    ],
+    [
+     "TotalEnergies Marketing France",
+     26168
+    ],
+    [
+     "Mobilize Power Solutions",
+     25301
+    ],
+    [
+     "STATIONS-E",
+     16546
+    ],
+    [
+     "SADE TELECOM",
+     15344
+    ],
+    [
+     "Engie Mobilités Electriques",
+     15260
+    ],
+    [
+     "Power Dot France",
+     14243
+    ],
+    [
+     "Allego",
+     8243
+    ],
+    [
+     "SOWATT SOLUTIONS",
+     7753
+    ],
+    [
+     "GROUPE INDIGO",
+     7649
+    ],
+    [
+     "DRIVECO",
+     7325
+    ],
+    [
+     "TotalEnergies Charging Services",
+     6151
+    ]
+   ]
+  },
+  "siren_amenageur": {
+   "renseigne": 319988,
+   "vide": 76890,
+   "taux_remplissage": 0.806263,
+   "distinct": 2983,
+   "exemples": [
+    [
+     "909073363",
+     66827
+    ],
+    [
+     "881248165",
+     23345
+    ],
+    [
+     "531680445",
+     16888
+    ],
+    [
+     "835124280",
+     16546
+    ],
+    [
+     "310505771",
+     15736
+    ],
+    [
+     "891118473",
+     14243
+    ],
+    [
+     "343262622",
+     10689
+    ],
+    [
+     "524335262",
+     9317
+    ],
+    [
+     "842718512",
+     8243
+    ],
+    [
+     "903356970",
+     8052
+    ],
+    [
+     "844192443",
+     6144
+    ],
+    [
+     "891624884",
+     5580
+    ]
+   ]
+  },
+  "contact_amenageur": {
+   "renseigne": 329743,
+   "vide": 67135,
+   "taux_remplissage": 0.830842,
+   "distinct": 1127,
+   "exemples": [
+    [
+     "cyrille.charton@engie.com",
+     53803
+    ],
+    [
+     "supervision-ev.france@totalenergies.com",
+     33897
+    ],
+    [
+     "operations@mobilize-ps.fr",
+     24501
+    ],
+    [
+     "contact@stations-e.com",
+     16546
+    ],
+    [
+     "dpo@ensio.eu",
+     15118
+    ],
+    [
+     "hello@powerdot.fr",
+     14243
+    ],
+    [
+     "contact@lidl.fr",
+     10621
+    ],
+    [
+     "etienne.odin@engie.com",
+     8877
+    ],
+    [
+     "contact@sowattsolutions.com",
+     7536
+    ],
+    [
+     "support@driveco.com",
+     7325
+    ],
+    [
+     "fabien.lepeytre@allego.eu",
+     6945
+    ],
+    [
+     "charging-france@tesla.com",
+     4805
+    ]
+   ]
+  },
+  "nom_operateur": {
+   "renseigne": 396022,
+   "vide": 856,
+   "taux_remplissage": 0.997843,
+   "distinct": 460,
+   "exemples": [
+    [
+     "Greenflux",
+     62680
+    ],
+    [
+     "TotalEnergies Charging Services",
+     29641
+    ],
+    [
+     "Mobilize Power Solutions",
+     25330
+    ],
+    [
+     "IZIVIA",
+     17702
+    ],
+    [
+     "STATIONS-E",
+     16546
+    ],
+    [
+     "UBITRICITY GMBH",
+     15344
+    ],
+    [
+     "Power Dot France",
+     14243
+    ],
+    [
+     "Bouygues Energies & Services",
+     14240
+    ],
+    [
+     "TotalEnergies Marketing France",
+     11464
+    ],
+    [
+     "Freshmile | FR*FR1",
+     9438
+    ],
+    [
+     "Allego",
+     9273
+    ],
+    [
+     "ALDI SARL",
+     7904
+    ]
+   ]
+  },
+  "contact_operateur": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 438,
+   "exemples": [
+    [
+     "support@greenflux.com",
+     62680
+    ],
+    [
+     "supervision-ev.france@totalenergies.com",
+     40971
+    ],
+    [
+     "support@mobilize-ps.fr",
+     25330
+    ],
+    [
+     "sav@izivia.com",
+     20585
+    ],
+    [
+     "support@stations-e.com",
+     16546
+    ],
+    [
+     "contact@ubitricity.com",
+     15349
+    ],
+    [
+     "roaming@freshmile.com",
+     15061
+    ],
+    [
+     "hello@powerdot.fr",
+     14243
+    ],
+    [
+     "support@alizecharge.fr",
+     14240
+    ],
+    [
+     "charlene.murat@aldi.fr",
+     9202
+    ],
+    [
+     "support.emobility.fr@group-indigo.com",
+     7649
+    ],
+    [
+     "contact@sowattsolutions.com",
+     7536
+    ]
+   ]
+  },
+  "telephone_operateur": {
+   "renseigne": 312743,
+   "vide": 84135,
+   "taux_remplissage": 0.788008,
+   "distinct": 778,
+   "exemples": [
+    [
+     "+31 615 11 3734",
+     47420
+    ],
+    [
+     "01 85 16 94 02",
+     22638
+    ],
+    [
+     "0805035100",
+     15448
+    ],
+    [
+     "+31 615 11 3734  ",
+     15260
+    ],
+    [
+     "+33765560808",
+     15040
+    ],
+    [
+     "+33(0)972668001",
+     11695
+    ],
+    [
+     "0970252400",
+     11562
+    ],
+    [
+     "tel:+33-1-76-31-06-84",
+     7607
+    ],
+    [
+     "04 79 68 52 99",
+     7112
+    ],
+    [
+     "01 40 70 06 17",
+     6857
+    ],
+    [
+     "0176310684",
+     6636
+    ],
+    [
+     "09 74 34 03 40",
+     5743
+    ]
+   ]
+  },
+  "nom_enseigne": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 7290,
+   "exemples": [
+    [
+     "ENGIE Vianeo",
+     66827
+    ],
+    [
+     "Stations-e",
+     16546
+    ],
+    [
+     "Ubitricity France Network",
+     15349
+    ],
+    [
+     "Freshmile France",
+     15035
+    ],
+    [
+     "Belib'",
+     14690
+    ],
+    [
+     "Power Dot France",
+     14243
+    ],
+    [
+     "TotalEnergies Charge Rapide",
+     12302
+    ],
+    [
+     "ALDI",
+     9202
+    ],
+    [
+     "Réseau de recharge du groupe Indigo",
+     7649
+    ],
+    [
+     "SOWATT SOLUTIONS",
+     7225
+    ],
+    [
+     "ALLEGO",
+     6704
+    ],
+    [
+     "QOVOLTIS",
+     5743
+    ]
+   ]
+  },
+  "id_station_itinerance": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 56885,
+   "exemples": [
+    [
+     "Non concerné",
+     2092
+    ],
+    [
+     "FRSAEPMAD",
+     2020
+    ],
+    [
+     "FRSAEPSA",
+     1400
+    ],
+    [
+     "FRVIAP123001",
+     1058
+    ],
+    [
+     "FRSAEPPDA",
+     964
+    ],
+    [
+     "FRVIAP103115",
+     930
+    ],
+    [
+     "FRVIAP201230",
+     886
+    ],
+    [
+     "FRVIAP123015",
+     832
+    ],
+    [
+     "FRVIAP100011",
+     784
+    ],
+    [
+     "FRVIAP123016",
+     650
+    ],
+    [
+     "FRVIAP201220",
+     650
+    ],
+    [
+     "FRVIAP123460",
+     630
+    ]
+   ]
+  },
+  "id_station_local": {
+   "renseigne": 254327,
+   "vide": 142551,
+   "taux_remplissage": 0.640819,
+   "distinct": 54156,
+   "exemples": [
+    [
+     "FRSAEPMAD",
+     2020
+    ],
+    [
+     "FRSAEPSA",
+     1400
+    ],
+    [
+     "FRSAEPPDA",
+     964
+    ],
+    [
+     "FR*TCB*PMETGAM",
+     612
+    ],
+    [
+     "Non renseigné",
+     589
+    ],
+    [
+     "FR*TCB*PMETAME",
+     541
+    ],
+    [
+     "8b1ea200-f635-49b0-82a4-92491cfe7387",
+     514
+    ],
+    [
+     "FR*TCB*PMETAMP",
+     480
+    ],
+    [
+     "1421614",
+     446
+    ],
+    [
+     "cca99371-351e-4b16-9577-53d7daa04e32",
+     350
+    ],
+    [
+     "86ebf245-b272-41d3-84ce-7023b00ed7d6",
+     316
+    ],
+    [
+     "293a4ce2-6bba-4d60-a573-06f499cdb35b",
+     314
+    ]
+   ]
+  },
+  "nom_station": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 48111,
+   "exemples": [
+    [
+     "SAEMES | Parking Madeleine-Tronchet",
+     2020
+    ],
+    [
+     "Deffeuille Lons le Saunier",
+     1496
+    ],
+    [
+     "SAEMES | Parking Saint-Augustin",
+     1400
+    ],
+    [
+     "CENTER PARCS LAC D'AILETTE",
+     1012
+    ],
+    [
+     "SAEMES | Parking Porte d'Auteuil",
+     964
+    ],
+    [
+     "ENGIE Vianeo - A1 Coeur des Hauts-de-France Ouest",
+     960
+    ],
+    [
+     "CENTER PARCS LES HAUTS DE BRUYERES  - Parking Guest",
+     936
+    ],
+    [
+     "MC CORMICK Avignon",
+     864
+    ],
+    [
+     "Deffeuille lons",
+     855
+    ],
+    [
+     "Edenauto Langon",
+     840
+    ],
+    [
+     "Site_082",
+     752
+    ],
+    [
+     "CENTER PARCS LES BOIS-FRANCS - Parking principal",
+     730
+    ]
+   ]
+  },
+  "implantation_station": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 5,
+   "valeurs": [
+    [
+     "Parking privé à usage public",
+     137707
+    ],
+    [
+     "Voirie",
+     101046
+    ],
+    [
+     "Parking public",
+     82382
+    ],
+    [
+     "Station dédiée à la recharge rapide",
+     63719
+    ],
+    [
+     "Parking privé réservé à la clientèle",
+     12024
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "adresse_station": {
+   "renseigne": 396874,
+   "vide": 4,
+   "taux_remplissage": 0.99999,
+   "distinct": 49992,
+   "exemples": [
+    [
+     "21 place de la Madeleine, 75008 Paris",
+     2020
+    ],
+    [
+     "235 Rue des Frères Lumière, 39000 Lons-le-Saunier",
+     1496
+    ],
+    [
+     "18 Rue de Laborde 75008 Paris",
+     1400
+    ],
+    [
+     "4 Rue Louis Blériot, 63000 Clermont-Ferrand",
+     1178
+    ],
+    [
+     "1-3 avenue du Général Sarral 75016 Paris",
+     964
+    ],
+    [
+     "Aire de Coeur des Hauts-de-France Ouest - A1 - 80200 ASSEVILLERS",
+     918
+    ],
+    [
+     "Rue Marcel demonque, 84000 AVIGNON",
+     864
+    ],
+    [
+     "75 Av. des États-Unis, 31200 Toulouse",
+     837
+    ],
+    [
+     "2 Rue Philippe Lebon (Place des Expositions)",
+     752
+    ],
+    [
+     "Parking Guest - 41600 Chaumont-sur-Tharonne",
+     728
+    ],
+    [
+     "Parking principal - 27130 Verneuil-sur-Avre",
+     650
+    ],
+    [
+     "21 Av. de l'Automobile, 24750 Trélissac",
+     610
+    ]
+   ]
+  },
+  "code_insee_commune": {
+   "renseigne": 337725,
+   "vide": 59153,
+   "taux_remplissage": 0.850954,
+   "distinct": 10599,
+   "exemples": [
+    [
+     "76600",
+     6303
+    ],
+    [
+     "75108",
+     4610
+    ],
+    [
+     "75116",
+     2776
+    ],
+    [
+     "39000",
+     2355
+    ],
+    [
+     "06088",
+     2254
+    ],
+    [
+     "76700",
+     1936
+    ],
+    [
+     "76351",
+     1828
+    ],
+    [
+     "57790",
+     1700
+    ],
+    [
+     "75117",
+     1647
+    ],
+    [
+     "75115",
+     1622
+    ],
+    [
+     "63113",
+     1572
+    ],
+    [
+     "67000",
+     1339
+    ]
+   ]
+  },
+  "coordonneesXY": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 42586,
+   "exemples": [
+    [
+     "[2.32420, 48.87113]",
+     2121
+    ],
+    [
+     "[5.57170, 46.68189]",
+     1496
+    ],
+    [
+     "[2.32007, 48.87579]",
+     1450
+    ],
+    [
+     "[2.25616, 48.84726]",
+     1205
+    ],
+    [
+     "[3.68590, 49.46422]",
+     1012
+    ],
+    [
+     "[1.93855, 47.61957]",
+     936
+    ],
+    [
+     "[4.88556, 43.91201]",
+     864
+    ],
+    [
+     "[5.57174, 46.68179]",
+     855
+    ],
+    [
+     "[-0.15230, 44.56150]",
+     840
+    ],
+    [
+     "[1.42932, 43.63946]",
+     837
+    ],
+    [
+     "[3.10197, 45.75450]",
+     836
+    ],
+    [
+     "[0.17237, 49.49946]",
+     784
+    ]
+   ]
+  },
+  "nbre_pdc": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 117,
+   "exemples": [
+    [
+     "1",
+     124316
+    ],
+    [
+     "2",
+     79161
+    ],
+    [
+     "4",
+     29777
+    ],
+    [
+     "6",
+     26663
+    ],
+    [
+     "3",
+     22252
+    ],
+    [
+     "8",
+     16273
+    ],
+    [
+     "5",
+     15241
+    ],
+    [
+     "7",
+     8562
+    ],
+    [
+     "10",
+     7546
+    ],
+    [
+     "12",
+     5946
+    ],
+    [
+     "16",
+     5326
+    ],
+    [
+     "9",
+     4866
+    ]
+   ]
+  },
+  "id_pdc_itinerance": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 168948,
+   "exemples": [
+    [
+     "Non concerné",
+     1019
+    ],
+    [
+     "FRMBZELYSAY1",
+     257
+    ],
+    [
+     "FRMBZELYSAY2",
+     257
+    ],
+    [
+     "FRMBZEXPDPX1",
+     180
+    ],
+    [
+     "FRMBZEWUQAH1",
+     175
+    ],
+    [
+     "FRMBZEWUQAH2",
+     175
+    ],
+    [
+     "FRMBZEKSTKP1",
+     171
+    ],
+    [
+     "FRMBZEIYEUK1",
+     157
+    ],
+    [
+     "FRMBZEIYEUK2",
+     157
+    ],
+    [
+     "FRMBZEEVHJW1",
+     155
+    ],
+    [
+     "FRUBIE10094215",
+     143
+    ],
+    [
+     "FRMBZEAPWQI1",
+     137
+    ]
+   ]
+  },
+  "id_pdc_local": {
+   "renseigne": 228113,
+   "vide": 168765,
+   "taux_remplissage": 0.574769,
+   "distinct": 135355,
+   "exemples": [
+    [
+     "N/A",
+     15040
+    ],
+    [
+     "8b1ea200-f635-49b0-82a4-92491cfe7387",
+     514
+    ],
+    [
+     "cca99371-351e-4b16-9577-53d7daa04e32",
+     350
+    ],
+    [
+     "1B",
+     339
+    ],
+    [
+     "1A",
+     336
+    ],
+    [
+     "2B",
+     329
+    ],
+    [
+     "2A",
+     328
+    ],
+    [
+     "86ebf245-b272-41d3-84ce-7023b00ed7d6",
+     316
+    ],
+    [
+     "293a4ce2-6bba-4d60-a573-06f499cdb35b",
+     314
+    ],
+    [
+     "eae4e07f-c084-4050-8bae-7b4cd17e212e",
+     274
+    ],
+    [
+     "d65d3090-6756-4b98-8b3d-0dc0a9d77808",
+     274
+    ],
+    [
+     "dc77279b-b0fb-41f2-b5b9-3729dee5e3d2",
+     274
+    ]
+   ]
+  },
+  "puissance_nominale": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 287,
+   "exemples": [
+    [
+     "22.0",
+     172378
+    ],
+    [
+     "300.0",
+     34949
+    ],
+    [
+     "7.4",
+     24383
+    ],
+    [
+     "7.0",
+     23525
+    ],
+    [
+     "22.08",
+     15780
+    ],
+    [
+     "150.0",
+     15723
+    ],
+    [
+     "50.0",
+     14697
+    ],
+    [
+     "24.0",
+     9690
+    ],
+    [
+     "250.0",
+     8436
+    ],
+    [
+     "120.0",
+     6043
+    ],
+    [
+     "100.0",
+     5284
+    ],
+    [
+     "25.0",
+     5176
+    ]
+   ]
+  },
+  "prise_type_ef": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     276889
+    ],
+    [
+     "true",
+     119989
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "prise_type_2": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "true",
+     272640
+    ],
+    [
+     "false",
+     124238
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "prise_type_combo_ccs": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     276319
+    ],
+    [
+     "true",
+     120559
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "prise_type_chademo": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     376921
+    ],
+    [
+     "true",
+     19957
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "prise_type_autre": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     391999
+    ],
+    [
+     "true",
+     4879
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "gratuit": {
+   "renseigne": 357121,
+   "vide": 39757,
+   "taux_remplissage": 0.899826,
+   "distinct": 3,
+   "valeurs": [
+    [
+     "false",
+     352508
+    ],
+    [
+     "true",
+     4613
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "paiement_acte": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "true",
+     334357
+    ],
+    [
+     "false",
+     62521
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "paiement_cb": {
+   "renseigne": 378356,
+   "vide": 18522,
+   "taux_remplissage": 0.953331,
+   "distinct": 3,
+   "valeurs": [
+    [
+     "false",
+     229563
+    ],
+    [
+     "true",
+     148793
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "paiement_autre": {
+   "renseigne": 338305,
+   "vide": 58573,
+   "taux_remplissage": 0.852416,
+   "distinct": 3,
+   "valeurs": [
+    [
+     "true",
+     246619
+    ],
+    [
+     "false",
+     91686
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "tarification": {
+   "renseigne": 122707,
+   "vide": 274171,
+   "taux_remplissage": 0.309181,
+   "distinct": 625,
+   "exemples": [
+    [
+     "Les tarifs de recharge peuvent varier en fonction de plusieurs facteurs, y compris le fournisseur de services, l'emplacement de la borne, la puissance de charge, et les éventuelles promotions en cours. Il est recommandé de consulter directement les informations tarifaires auprès du gestionnaire de la borne ou via l'application mobile associée pour obtenir les détails les plus récents et précis.",
+     14452
+    ],
+    [
+     "https://belib.paris",
+     12466
+    ],
+    [
+     "https://apps.total-ev-charge.com/charge-points",
+     11713
+    ],
+    [
+     "0,54 € TTC / kWh",
+     5370
+    ],
+    [
+     "Coût de l’énergie : 0.32€ / KWH Coût de la durée lorsque le véhicule est en charge : 0.1€ / Minute Coût de la durée lorsque le véhicule est chargé : 0.1€ / Minute",
+     4675
+    ],
+    [
+     "Tarification au kWh plus frais de connexion éventuelles en fonction de l abonnement détenu",
+     4524
+    ],
+    [
+     "59 cts/kWh",
+     3879
+    ],
+    [
+     "0,29€ / kWh",
+     3569
+    ],
+    [
+     "entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.30916667€ par kwh de charge, par défaut : 0.30916667€ par kwh de charge",
+     2984
+    ],
+    [
+     "0,40€ / kwh pour les non abonnés.",
+     2852
+    ],
+    [
+     "lorsque la voitutre est branché:\n0.32€/Kwh + 0.1€ /min\n\nlorsque la voiture est chargée mais toujours branché: \n0.1€/min",
+     2418
+    ],
+    [
+     "49 cts/kWh",
+     2122
+    ]
+   ]
+  },
+  "condition_acces": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "Accès libre",
+     357945
+    ],
+    [
+     "Accès réservé",
+     38933
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "reservation": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     366028
+    ],
+    [
+     "true",
+     30850
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "horaires": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 1476,
+   "valeurs": [
+    [
+     "24/7",
+     351752
+    ],
+    [
+     "Mo-Su 00:00-23:57",
+     14240
+    ],
+    [
+     "Mo-Fr 07:30-12:00,Mo-Fr 14:00-19:00",
+     7663
+    ],
+    [
+     " 24/7",
+     4523
+    ],
+    [
+     "Mo-Fr 10:00-17:00",
+     1087
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-18:00",
+     1073
+    ],
+    [
+     "Mo-Su 00:00-00:00",
+     805
+    ],
+    [
+     "Mo-Fr 09:00-19:00",
+     763
+    ],
+    [
+     "Mo-Su 00:00-24:00",
+     690
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-18:00,Th 08:00-18:00",
+     672
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-19:00,Sa 09:00-12:00,Sa 14:00-18:00",
+     606
+    ],
+    [
+     "Su,Th,Sa,Tu,Fr,We,Mo  08:00-18:00",
+     446
+    ],
+    [
+     "Mo-Th 7:30-12:00,Mo-Th 13:15-18:00,Fr 7:30-12:00,Fr13:15-17:00",
+     400
+    ],
+    [
+     "Mo-Fr 07:30-12:00,Mo-Fr 13:30-17:30",
+     384
+    ],
+    [
+     "Mo 08:00-12:00, Mo 14:00-19:00, Tu 08:00-12:00, Tu 14:00-19:00, We 08:00-12:00, We 14:00-19:00, Th 08:00-12:00, Th 14:00-19:00, Fr 08:00-12:00, Fr 14:00-19:00, Sa 09:00-12:00, Sa 14:00-18:00",
+     306
+    ],
+    [
+     "Mo 06:00-18:00,Tu 06:00-18:00,We 06:00-18:00,Th 06:00-18:00,Fr 06:00-18:00",
+     215
+    ],
+    [
+     "Mo-Su 06:00-01:00",
+     194
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-18:30",
+     192
+    ],
+    [
+     "Mo 00:00-23:59, Tu 00:00-23:59, We 00:00-23:59, Th 00:00-23:59, Fr 00:00-23:59",
+     158
+    ],
+    [
+     "Mo 00:00-24:00,Tu 00:00-24:00,We 00:00-24:00,Th 00:00-24:00,Fr 00:00-24:00,Sa 00:00-24:00,Su 00:00-24:00",
+     152
+    ],
+    [
+     "Mo-Th 08:00-22:00",
+     128
+    ],
+    [
+     "Mo-Fr 10:00-19:00,Sa 10:00-18:00",
+     120
+    ],
+    [
+     "Mo 00:00-23:59, Tu 00:00-23:59, We 00:00-23:59, Th 00:00-23:59, Fr 00:00-23:59, Sa 00:00-23:59, Su 00:00-23:59",
+     118
+    ],
+    [
+     "Mo-Fr 12:00-14:00",
+     111
+    ],
+    [
+     "Mo-Fr 09:30-18:00",
+     109
+    ],
+    [
+     "Mo 08:00-19:00, Tu 08:00-19:00, We 08:00-19:00, Th 08:00-19:00, Fr 08:00-19:00, Sa 09:00-18:00",
+     103
+    ],
+    [
+     "Mo-Fr 08:00-18:00",
+     102
+    ],
+    [
+     "Mo-Su 08:00-20:00",
+     97
+    ],
+    [
+     "Mo-Fr 09:00-12:00,Mo-Fr 13:45-18:00",
+     97
+    ],
+    [
+     "Mo-Fr 07:00-17:30",
+     96
+    ],
+    [
+     "Mo-Sa 07:30-19:30",
+     96
+    ],
+    [
+     "Mo-Fr 09:00-12:00;13:45-18:00",
+     95
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-18:00,Th 10:00-12:00,Th14:00-18:00",
+     93
+    ],
+    [
+     "Mo-Fr 08:00-12:15,Mo-Fr 13:30-19:00,Sa 08:00-12:30,Sa 13:30-17:00",
+     85
+    ],
+    [
+     "Mo 08:00-12:00, Mo 14:00-19:00, Tu 08:00-12:00, Tu 14:00-19:00, We 08:00-12:00, We 14:00-19:00, Th 08:00-12:00, Th 14:00-19:00, Fr 08:00-12:00, Fr 14:00-19:00, Sa 08:00-12:00, Sa 14:00-19:00",
+     82
+    ],
+    [
+     "Mo-TH 8:00-12:00,Mo-TH 14:00-19:00,Fr 9:00-12:00,Fr14:00-18:00,Sa 09:00-12:00,Sa14:00-17:00",
+     75
+    ],
+    [
+     "Mo 08:30-12:00, Mo 14:00-19:00, Tu 08:30-12:00, Tu 14:00-19:00, We 08:30-12:00, We 14:00-19:00, Th 08:30-12:00, Th 14:00-19:00, Fr 08:30-12:00, Fr 14:00-19:00, Sa 09:00-12:00, Sa 14:00-18:00",
+     73
+    ],
+    [
+     "Mo-Sa 8:00-18:00",
+     72
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-19:00,Sa 08:00-12:00,Sa 14:00-18:00",
+     70
+    ],
+    [
+     "Mo 09:00-12:00, Mo 14:00-19:00, Tu 09:00-12:00, Tu 14:00-19:00, We 09:00-12:00, We 14:00-19:00, Th 09:00-12:00, Th 14:00-19:00, Fr 09:00-12:00, Fr 14:00-19:00, Sa 09:00-12:00, Sa 14:00-18:00",
+     68
+    ],
+    [
+     "Mo-Fr 08:30-12:00,Mo-Fr 14:00-19:00,Sa 09:00-12:00,Sa 14:00-18:00",
+     67
+    ],
+    [
+     "Mo-Fr 08:00-19:00",
+     63
+    ],
+    [
+     "MO-FR 08:00-18:00",
+     61
+    ],
+    [
+     "Mo-Fr 08:30-12:00,Mo-Fr 13:30-19:00,Sa 09:00-12:00,Sa 14:00-19:00",
+     60
+    ],
+    [
+     "Mo-Sa 08:00-18:00",
+     60
+    ],
+    [
+     "Mo 06:30-00:30,Tu 06:30-00:30,We 06:30-00:30,Th 06:30-00:30,Fr 06:30-00:30,Sa 06:30-00:30,Su 08:00-22:00",
+     60
+    ],
+    [
+     "Mo 06:00-18:30, Tu 06:00-18:30, We 06:00-18:30, Th 06:00-18:30, Fr 06:00-18:30",
+     56
+    ],
+    [
+     "Mo 09:30-12:00,Mo 14:00-18:30,Tu 09:30-12:00,Tu 14:00-18:30,We 09:30-12:00,We 14:00-18:30,Th 09:30-12:00,Th 14:00-18:30,Fr 09:30-12:00,Fr 14:00-18:30,Sa 09:30-12:00,Sa 14:00-18:30",
+     55
+    ],
+    [
+     "Mo-Fr 09:00-12:00,Mo-Fr 14:00-19:00,Sa 09:00-12:00,Sa 14:00-18:00",
+     54
+    ],
+    [
+     "Mo-Fr 07:00-19:00",
+     52
+    ],
+    [
+     "Lun-Ven : 08:00-18:00",
+     52
+    ],
+    [
+     "Mo-Fr 06:00-19:00",
+     52
+    ],
+    [
+     "Sa,Tu,We,Mo,Fr,Th,Su  08:00-18:00",
+     50
+    ],
+    [
+     "Ma-Di 00:00-23:59; Lu 00:00-23:59",
+     50
+    ],
+    [
+     "Mo-Fr 24/24,Sa-Su 08:00-21:00",
+     48
+    ],
+    [
+     "Mo-Fr 07:45-12:15,Mo-Fr 13:30-17:30",
+     48
+    ],
+    [
+     "Mo-Sa 08:30-20:00,Su 08:30-12:15",
+     48
+    ],
+    [
+     "Mo 05:30-20:30, Tu 05:30-20:30, We 05:30-20:30, Th 05:30-20:30, Fr 05:30-20:30, Sa 05:30-20:30, Su 05:30-20:30",
+     44
+    ],
+    [
+     "Mo-Fr 08:00-12:00,Mo-Fr 14:00-18:00,Sa 09:00-12:00,Sa 14:00-18:00",
+     44
+    ],
+    [
+     "Ma 08:30-20:00; Lu 08:30-12:15; Me-Di 08:30-20:00",
+     43
+    ]
+   ],
+   "valeurs_tronquees": true
+  },
+  "accessibilite_pmr": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 4,
+   "valeurs": [
+    [
+     "Accessibilité inconnue",
+     219551
+    ],
+    [
+     "Accessible mais non réservé PMR",
+     131682
+    ],
+    [
+     "Non accessible",
+     39418
+    ],
+    [
+     "Réservé PMR",
+     6227
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "restriction_gabarit": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 258,
+   "valeurs": [
+    [
+     "Inconnue",
+     62323
+    ],
+    [
+     "Restriction de gabarit non précisée",
+     37977
+    ],
+    [
+     "Aucune Restriction",
+     34829
+    ],
+    [
+     "inconnu",
+     26938
+    ],
+    [
+     "Pas de restriction",
+     20336
+    ],
+    [
+     "aucune restriction",
+     17167
+    ],
+    [
+     "Aucune",
+     15893
+    ],
+    [
+     "Inconnu",
+     15605
+    ],
+    [
+     "Pas de restriciton",
+     15268
+    ],
+    [
+     "Aucune restriction connue",
+     14663
+    ],
+    [
+     "xx",
+     14040
+    ],
+    [
+     "Aucune restriction",
+     13985
+    ],
+    [
+     "Non",
+     13981
+    ],
+    [
+     "NA",
+     11778
+    ],
+    [
+     "FALSE",
+     9252
+    ],
+    [
+     "aucune restriction connue",
+     7967
+    ],
+    [
+     "Non renseigné",
+     5819
+    ],
+    [
+     "Hauteur maximale si barrière : 2,3m",
+     5562
+    ],
+    [
+     "Hauteur maximale 1.90m",
+     5077
+    ],
+    [
+     "false",
+     4979
+    ],
+    [
+     "restriction gabarit inconnue",
+     4514
+    ],
+    [
+     "Que du poids léger",
+     4125
+    ],
+    [
+     "inconnue",
+     3341
+    ],
+    [
+     "False",
+     3048
+    ],
+    [
+     "99999",
+     2227
+    ],
+    [
+     "Restrictions gabarit inconnues",
+     2052
+    ],
+    [
+     "Hauteur maximale 1,9m",
+     2022
+    ],
+    [
+     "15m²",
+     1909
+    ],
+    [
+     "Non spécifié",
+     1883
+    ],
+    [
+     "Place VL",
+     1624
+    ],
+    [
+     "no restriction",
+     1574
+    ],
+    [
+     "Hauteur maximale 1,90m",
+     1400
+    ],
+    [
+     "aucune",
+     1323
+    ],
+    [
+     "non",
+     1143
+    ],
+    [
+     "Hauteur maximale 1,85m",
+     964
+    ],
+    [
+     "3m",
+     922
+    ],
+    [
+     "Hauteur maximale 1.8m",
+     736
+    ],
+    [
+     "Hauteur maximale 3m",
+     654
+    ],
+    [
+     "non précisé",
+     617
+    ],
+    [
+     "VL et VUL",
+     572
+    ],
+    [
+     "Hauteur maximale 2m",
+     533
+    ],
+    [
+     "Restriction de gabarit inconnue",
+     528
+    ],
+    [
+     "Hauteur maximale 1.85m",
+     475
+    ],
+    [
+     "Hauteur maximum 2m",
+     441
+    ],
+    [
+     "Hauteur maximale 1.80m",
+     429
+    ],
+    [
+     "Hauteur maximale 2.00m",
+     297
+    ],
+    [
+     "non renseigné",
+     272
+    ],
+    [
+     "non concerné",
+     263
+    ],
+    [
+     "Non concerné",
+     173
+    ],
+    [
+     "Hauteur maximale 2.80m",
+     172
+    ],
+    [
+     "acune",
+     164
+    ],
+    [
+     "1.9",
+     162
+    ],
+    [
+     "0",
+     151
+    ],
+    [
+     "2m",
+     146
+    ],
+    [
+     "Hauteur maximale 2.30m",
+     138
+    ],
+    [
+     "Hauteur maximale 2m10",
+     132
+    ],
+    [
+     "Hauteur max 1,9m",
+     124
+    ],
+    [
+     "Hauteur maximale 2.10m",
+     100
+    ],
+    [
+     "2.05",
+     96
+    ],
+    [
+     "pas de restriction",
+     87
+    ]
+   ],
+   "valeurs_tronquees": true
+  },
+  "station_deux_roues": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "false",
+     390005
+    ],
+    [
+     "true",
+     6873
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "raccordement": {
+   "renseigne": 309031,
+   "vide": 87847,
+   "taux_remplissage": 0.778655,
+   "distinct": 3,
+   "valeurs": [
+    [
+     "Direct",
+     229478
+    ],
+    [
+     "Indirect",
+     79553
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "num_pdl": {
+   "renseigne": 205852,
+   "vide": 191026,
+   "taux_remplissage": 0.518678,
+   "distinct": 18774,
+   "exemples": [
+    [
+     "N/A",
+     13119
+    ],
+    [
+     "Inconnu",
+     8290
+    ],
+    [
+     "00000000000000",
+     4429
+    ],
+    [
+     "0",
+     3317
+    ],
+    [
+     "NA",
+     1894
+    ],
+    [
+     "inconnu",
+     1087
+    ],
+    [
+     ".04213604177480",
+     855
+    ],
+    [
+     "5.01E+13",
+     842
+    ],
+    [
+     "50095449893096",
+     768
+    ],
+    [
+     "5.00E+13",
+     681
+    ],
+    [
+     "50014410944076",
+     672
+    ],
+    [
+     "50052034553074",
+     429
+    ]
+   ]
+  },
+  "date_mise_en_service": {
+   "renseigne": 294380,
+   "vide": 102498,
+   "taux_remplissage": 0.741739,
+   "distinct": 2642,
+   "exemples": [
+    [
+     "2025-01-01",
+     3192
+    ],
+    [
+     "2024-06-28",
+     2814
+    ],
+    [
+     "2024-12-20",
+     2686
+    ],
+    [
+     "2024-06-24",
+     2247
+    ],
+    [
+     "2022-03-25",
+     2033
+    ],
+    [
+     "2024-05-02",
+     1969
+    ],
+    [
+     "2024-06-04",
+     1698
+    ],
+    [
+     "2023-09-11",
+     1597
+    ],
+    [
+     "2024-04-15",
+     1514
+    ],
+    [
+     "2024-06-26",
+     1504
+    ],
+    [
+     "2021-03-15",
+     1462
+    ],
+    [
+     "2022-09-23",
+     1440
+    ]
+   ]
+  },
+  "observations": {
+   "renseigne": 91853,
+   "vide": 305025,
+   "taux_remplissage": 0.231439,
+   "distinct": 228,
+   "exemples": [
+    [
+     "Conditions accès aux bornes dépendantes des accords et formules de votre EMSP",
+     20585
+    ],
+    [
+     "Paiement par carte d'abonnement opÃ¯Â¿Â½rateur de service de mobilitÃ¯Â¿Â½ Ã¯Â¿Â½lectrique",
+     15040
+    ],
+    [
+     "Paiement autre - badge RFID Belib ou autre, application Belib, QRCode sur chaque PDC, site internet Belib|Plus d'information - https://belib.paris.fr",
+     12466
+    ],
+    [
+     "Paiement via app Lidl Plus",
+     5562
+    ],
+    [
+     "Telecharger l'application DRIVECO, votre copilote en electrique, sur www.driveco.com",
+     5442
+    ],
+    [
+     "Station dédiée à la recharge rapide",
+     4514
+    ],
+    [
+     "NA",
+     3373
+    ],
+    [
+     "None",
+     3086
+    ],
+    [
+     "Télécharger l'application ELECTRA pour réserver et payer sur go-electra.com",
+     2497
+    ],
+    [
+     "Télécharger l'application Qwello pour réserver et payer directement la recharge",
+     2250
+    ],
+    [
+     "NULL",
+     2076
+    ],
+    [
+     "Aucun",
+     2055
+    ]
+   ]
+  },
+  "date_maj": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 1394,
+   "exemples": [
+    [
+     "2026-09-16",
+     23123
+    ],
+    [
+     "2026-09-15",
+     15953
+    ],
+    [
+     "2025-07-11",
+     15161
+    ],
+    [
+     "2026-09-12",
+     12645
+    ],
+    [
+     "2023-07-06",
+     12421
+    ],
+    [
+     "2025-11-04",
+     9210
+    ],
+    [
+     "2026-03-20",
+     8573
+    ],
+    [
+     "2025-09-30",
+     8529
+    ],
+    [
+     "2024-04-03",
+     7976
+    ],
+    [
+     "2025-08-28",
+     7879
+    ],
+    [
+     "2026-09-17",
+     7492
+    ],
+    [
+     "2025-09-14",
+     6638
+    ]
+   ]
+  },
+  "cable_t2_attache": {
+   "renseigne": 0,
+   "vide": 396878,
+   "taux_remplissage": 0.0,
+   "distinct": 1,
+   "valeurs": [],
+   "valeurs_tronquees": false
+  },
+  "consolidated_longitude": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 40981,
+   "exemples": [
+    [
+     "2.32420",
+     2170
+    ],
+    [
+     "5.57170",
+     1496
+    ],
+    [
+     "2.32007",
+     1453
+    ],
+    [
+     "2.25616",
+     1205
+    ],
+    [
+     "3.68590",
+     1012
+    ],
+    [
+     "1.93855",
+     936
+    ],
+    [
+     "4.88556",
+     864
+    ],
+    [
+     "5.57174",
+     855
+    ],
+    [
+     "-0.15230",
+     840
+    ],
+    [
+     "1.42932",
+     837
+    ],
+    [
+     "3.10197",
+     836
+    ],
+    [
+     "0.17237",
+     784
+    ]
+   ]
+  },
+  "consolidated_latitude": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 40466,
+   "exemples": [
+    [
+     "48.87113",
+     2121
+    ],
+    [
+     "46.68189",
+     1502
+    ],
+    [
+     "48.87579",
+     1455
+    ],
+    [
+     "48.84726",
+     1211
+    ],
+    [
+     "49.46422",
+     1012
+    ],
+    [
+     "47.61957",
+     936
+    ],
+    [
+     "43.91201",
+     864
+    ],
+    [
+     "46.68179",
+     855
+    ],
+    [
+     "44.56150",
+     840
+    ],
+    [
+     "43.63946",
+     837
+    ],
+    [
+     "45.75450",
+     836
+    ],
+    [
+     "49.49946",
+     784
+    ]
+   ]
+  },
+  "consolidated_is_lon_lat_correct": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 2,
+   "valeurs": [
+    [
+     "true",
+     279778
+    ],
+    [
+     "false",
+     117100
+    ]
+   ],
+   "valeurs_tronquees": false
+  },
+  "datagouv_dataset_id": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 949,
+   "exemples": [
+    [
+     "6818bce2d9af175f6e01a1b2",
+     78236
+    ],
+    [
+     "67811c8dabda90c93829e80f",
+     51386
+    ],
+    [
+     "63dccb1307e9b2f213a5130c",
+     34834
+    ],
+    [
+     "614d936841a4ffe70f20286e",
+     33152
+    ],
+    [
+     "6580349e3a7c9c194d2ac080",
+     24934
+    ],
+    [
+     "612dee492751be6123cfb85f",
+     15448
+    ],
+    [
+     "6270e4b514f8d6a639a4cacb",
+     15349
+    ],
+    [
+     "64c28634468d0d94dd98405e",
+     11562
+    ],
+    [
+     "6a8f12aab36f75e00a8ab556",
+     9190
+    ],
+    [
+     "689c957abf34e799e1bf365a",
+     7649
+    ],
+    [
+     "661e3f4f8ee5dff6c8286fd2",
+     7225
+    ],
+    [
+     "609bfea3a8b57517a6b73f39",
+     6636
+    ]
+   ]
+  },
+  "datagouv_resource_id": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 1508,
+   "exemples": [
+    [
+     "8bb0a6e2-1016-42ba-aaee-f72f55c82e9f",
+     78236
+    ],
+    [
+     "61387a4e-22f7-4662-b241-d5cac4dd91fd",
+     34834
+    ],
+    [
+     "5f29737c-5393-46f9-8140-2509992adc7a",
+     11562
+    ],
+    [
+     "d445f73a-797f-46ea-98cc-2927ec7a018d",
+     7649
+    ],
+    [
+     "1bf98bac-94a9-4909-8726-47a203038a40",
+     6636
+    ],
+    [
+     "49491859-24d9-4d43-9057-db1bc42d484d",
+     5562
+    ],
+    [
+     "775dd5a9-c0e4-4bb7-8995-f4b5a4148836",
+     5442
+    ],
+    [
+     "9a53f96f-9bb7-4d94-9687-4c8525dea018",
+     4514
+    ],
+    [
+     "20e9f13e-a3d4-470a-a356-5714b91cddce",
+     4454
+    ],
+    [
+     "ac32a7a4-8a1f-473d-b607-803270cf67c8",
+     4375
+    ],
+    [
+     "df320cfa-6fca-4489-a652-328945897f21",
+     4332
+    ],
+    [
+     "1aa596e4-5947-41d5-89e8-8c7fb1fac364",
+     4330
+    ]
+   ]
+  },
+  "dataset_title": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 732,
+   "exemples": [
+    [
+     "Infrastructures de recharge pour véhicules électriques - Données ouvertes",
+     78236
+    ],
+    [
+     "IRVE_Statique_ENGIE_Vianeo_all_janvier2025.csv",
+     51386
+    ],
+    [
+     "Fichier IRVE Gireve",
+     34834
+    ],
+    [
+     "Bornes de recharge pour véhicules électriques",
+     33158
+    ],
+    [
+     "IRVE statique (organisation Mobilize Power Solutions)",
+     24934
+    ],
+    [
+     "STATIONS-E BORNES CHARGE IRVE",
+     15448
+    ],
+    [
+     "Référencement bornes ubitricity",
+     15349
+    ],
+    [
+     "Bornes de recharge pour véhicules électriques - Alizé et ses réseaux partenaires",
+     11562
+    ],
+    [
+     "IRVE statique (ALDI)",
+     9190
+    ],
+    [
+     "Indigo-Open-Data-IRVE",
+     7649
+    ],
+    [
+     "Bornes de recharge pour véhicules électriques SOWATT (IRVE) - 20240416",
+     7225
+    ],
+    [
+     "Bornes de recharge pour VE du réseau Power Dot France",
+     6636
+    ]
+   ]
+  },
+  "datagouv_organization_or_owner": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 276,
+   "exemples": [
+    [
+     "QualiCharge",
+     78236
+    ],
+    [
+     "Engie Mobilités Electriques",
+     62680
+    ],
+    [
+     "GIREVE",
+     34834
+    ],
+    [
+     "TotalEnergies Marketing France",
+     33218
+    ],
+    [
+     "Mobilize Power Solutions",
+     25355
+    ],
+    [
+     "IZIVIA",
+     16149
+    ],
+    [
+     "STATIONS-E",
+     15448
+    ],
+    [
+     "ubitricity",
+     15349
+    ],
+    [
+     "Alizé",
+     11562
+    ],
+    [
+     "ALDI",
+     9202
+    ],
+    [
+     "Indigo Group",
+     7649
+    ],
+    [
+     "SOWATT SOLUTIONS",
+     7225
+    ]
+   ]
+  },
+  "datagouv_last_modified": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 1045,
+   "exemples": [
+    [
+     "2026-09-17T03:12:08.000000+0000",
+     78236
+    ],
+    [
+     "2026-08-15T03:01:19.000000+0000",
+     34834
+    ],
+    [
+     "2026-09-13T22:04:27.000000+0000",
+     11562
+    ],
+    [
+     "2026-09-15T12:00:28.000000+0000",
+     7649
+    ],
+    [
+     "2025-09-14T14:56:57.000000+0000",
+     6636
+    ],
+    [
+     "2025-12-17T09:36:45.000000+0000",
+     5562
+    ],
+    [
+     "2026-07-21T08:03:43.000000+0000",
+     5442
+    ],
+    [
+     "2026-03-20T11:39:29.000000+0000",
+     4514
+    ],
+    [
+     "2025-09-30T08:35:00.000000+0000",
+     4454
+    ],
+    [
+     "2026-04-08T11:43:38.000000+0000",
+     4375
+    ],
+    [
+     "2025-05-05T13:44:55.000000+0000",
+     4332
+    ],
+    [
+     "2025-04-17T13:45:29.000000+0000",
+     4330
+    ]
+   ]
+  },
+  "deduplication_status": {
+   "renseigne": 396878,
+   "vide": 0,
+   "taux_remplissage": 1.0,
+   "distinct": 11,
+   "valeurs": [
+    [
+     "removed_because_not_in_prioritary_dataset",
+     176623
+    ],
+    [
+     "unique",
+     105719
+    ],
+    [
+     "kept_because_in_prioritary_dataset",
+     52397
+    ],
+    [
+     "removed_because_resource_not_more_recent",
+     34574
+    ],
+    [
+     "removed_because_date_maj_not_more_recent",
+     15154
+    ],
+    [
+     "kept_because_date_maj_more_recent",
+     6505
+    ],
+    [
+     "kept_because_resource_more_recent",
+     3878
+    ],
+    [
+     "removed_because_non_concerne",
+     1019
+    ],
+    [
+     "removed_because_no_rule_applies",
+     773
+    ],
+    [
+     "removed_because_exact_duplicate_in_same_file",
+     133
+    ],
+    [
+     "kept_because_exact_duplicate_in_same_file",
+     103
+    ]
+   ],
+   "valeurs_tronquees": false
+  }
+ },
+ "identifiants": {
+  "pdc_vide": 0,
+  "pdc_non_concerne": 1019,
+  "pdc_conforme_schema": 395859,
+  "pdc_conforme_emi3_FR": 393263,
+  "pdc_distinct": 168948,
+  "pdc_doublons_lignes": 226912,
+  "station_vide": 0,
+  "station_distinct": 56885,
+  "prefixes_pays_top": [
+   [
+    "FR",
+    395423
+   ],
+   [
+    "No",
+    1019
+   ],
+   [
+    "ES",
+    327
+   ],
+   [
+    "BE",
+    40
+   ],
+   [
+    "DK",
+    36
+   ],
+   [
+    "IT",
+    11
+   ],
+   [
+    "NL",
+    9
+   ],
+   [
+    "AT",
+    9
+   ],
+   [
+    "RE",
+    3
+   ],
+   [
+    "CH",
+    1
+   ]
+  ],
+  "longueurs_top": [
+   [
+    17,
+    102978
+   ],
+   [
+    12,
+    66682
+   ],
+   [
+    15,
+    52528
+   ],
+   [
+    14,
+    43225
+   ],
+   [
+    13,
+    39130
+   ],
+   [
+    16,
+    28798
+   ],
+   [
+    11,
+    26285
+   ],
+   [
+    21,
+    9321
+   ],
+   [
+    10,
+    8901
+   ],
+   [
+    18,
+    6512
+   ],
+   [
+    20,
+    3453
+   ],
+   [
+    22,
+    2651
+   ],
+   [
+    19,
+    2099
+   ],
+   [
+    26,
+    774
+   ],
+   [
+    25,
+    699
+   ]
+  ]
+ },
+ "puissance_nominale": {
+  "non_numerique": 0,
+  "min": 0.0,
+  "max": 160000.0,
+  "quantiles": {
+   "0.01": 3.0,
+   "0.1": 7.4,
+   "0.25": 22.0,
+   "0.5": 22.0,
+   "0.75": 54.0,
+   "0.9": 300.0,
+   "0.99": 360.0
+  },
+  "egal_0": 2773,
+  "inf_1": 2775,
+  "sup_400": 868,
+  "valeurs_frequentes": [
+   [
+    22.0,
+    172378
+   ],
+   [
+    300.0,
+    34949
+   ],
+   [
+    7.4,
+    24383
+   ],
+   [
+    7.0,
+    23525
+   ],
+   [
+    22.08,
+    15780
+   ],
+   [
+    150.0,
+    15723
+   ],
+   [
+    50.0,
+    14697
+   ],
+   [
+    24.0,
+    9690
+   ],
+   [
+    250.0,
+    8436
+   ],
+   [
+    120.0,
+    6043
+   ],
+   [
+    100.0,
+    5284
+   ],
+   [
+    25.0,
+    5176
+   ],
+   [
+    200.0,
+    5170
+   ],
+   [
+    11.0,
+    5089
+   ],
+   [
+    7.36,
+    5081
+   ],
+   [
+    18.0,
+    3914
+   ],
+   [
+    180.0,
+    3661
+   ],
+   [
+    60.0,
+    2868
+   ],
+   [
+    400.0,
+    2834
+   ],
+   [
+    3.7,
+    2792
+   ],
+   [
+    0.0,
+    2773
+   ],
+   [
+    175.0,
+    2267
+   ],
+   [
+    3.0,
+    1503
+   ],
+   [
+    360.0,
+    1483
+   ],
+   [
+    54.0,
+    1408
+   ],
+   [
+    160.0,
+    1334
+   ],
+   [
+    350.0,
+    1312
+   ],
+   [
+    43.0,
+    1200
+   ],
+   [
+    62.5,
+    1113
+   ],
+   [
+    11.04,
+    978
+   ]
+  ]
+ },
+ "geo": {
+  "lonlat_manquant": 0,
+  "hors_bbox_france_large": 241,
+  "lon_min": -149.90537,
+  "lon_max": 166.462,
+  "lat_min": -61.77904,
+  "lat_max": 61.52035
+ },
+ "insee": {
+  "vide": 59153,
+  "conforme": 337725,
+  "non_conforme_non_vide": 0,
+  "exemples_non_conformes": [],
+  "departements_distinct": 102,
+  "departements": [
+   [
+    "00",
+    24
+   ],
+   [
+    "01",
+    3020
+   ],
+   [
+    "02",
+    3336
+   ],
+   [
+    "03",
+    2128
+   ],
+   [
+    "04",
+    1277
+   ],
+   [
+    "05",
+    937
+   ],
+   [
+    "06",
+    5441
+   ],
+   [
+    "07",
+    1056
+   ],
+   [
+    "08",
+    643
+   ],
+   [
+    "09",
+    241
+   ],
+   [
+    "10",
+    1223
+   ],
+   [
+    "11",
+    1315
+   ],
+   [
+    "12",
+    738
+   ],
+   [
+    "13",
+    12532
+   ],
+   [
+    "14",
+    5125
+   ],
+   [
+    "15",
+    357
+   ],
+   [
+    "16",
+    1726
+   ],
+   [
+    "17",
+    1690
+   ],
+   [
+    "18",
+    1586
+   ],
+   [
+    "19",
+    1752
+   ],
+   [
+    "21",
+    4277
+   ],
+   [
+    "22",
+    2275
+   ],
+   [
+    "23",
+    422
+   ],
+   [
+    "24",
+    2156
+   ],
+   [
+    "25",
+    1862
+   ],
+   [
+    "26",
+    4255
+   ],
+   [
+    "27",
+    3370
+   ],
+   [
+    "28",
+    2125
+   ],
+   [
+    "29",
+    2686
+   ],
+   [
+    "2A",
+    325
+   ],
+   [
+    "2B",
+    223
+   ],
+   [
+    "30",
+    2095
+   ],
+   [
+    "31",
+    8322
+   ],
+   [
+    "32",
+    359
+   ],
+   [
+    "33",
+    12520
+   ],
+   [
+    "34",
+    3933
+   ],
+   [
+    "35",
+    4652
+   ],
+   [
+    "36",
+    1490
+   ],
+   [
+    "37",
+    2079
+   ],
+   [
+    "38",
+    5377
+   ],
+   [
+    "39",
+    3178
+   ],
+   [
+    "40",
+    2441
+   ],
+   [
+    "41",
+    2327
+   ],
+   [
+    "42",
+    2656
+   ],
+   [
+    "43",
+    679
+   ],
+   [
+    "44",
+    6811
+   ],
+   [
+    "45",
+    2534
+   ],
+   [
+    "46",
+    184
+   ],
+   [
+    "47",
+    2724
+   ],
+   [
+    "48",
+    381
+   ],
+   [
+    "49",
+    3049
+   ],
+   [
+    "50",
+    3055
+   ],
+   [
+    "51",
+    2522
+   ],
+   [
+    "52",
+    2401
+   ],
+   [
+    "53",
+    879
+   ],
+   [
+    "54",
+    2786
+   ],
+   [
+    "55",
+    568
+   ],
+   [
+    "56",
+    2248
+   ],
+   [
+    "57",
+    6336
+   ],
+   [
+    "58",
+    698
+   ],
+   [
+    "59",
+    11527
+   ],
+   [
+    "60",
+    4248
+   ],
+   [
+    "61",
+    715
+   ],
+   [
+    "62",
+    7315
+   ],
+   [
+    "63",
+    4844
+   ],
+   [
+    "64",
+    3461
+   ],
+   [
+    "65",
+    1891
+   ],
+   [
+    "66",
+    1491
+   ],
+   [
+    "67",
+    6992
+   ],
+   [
+    "68",
+    2808
+   ],
+   [
+    "69",
+    7581
+   ],
+   [
+    "70",
+    513
+   ],
+   [
+    "71",
+    3378
+   ],
+   [
+    "72",
+    2034
+   ],
+   [
+    "73",
+    4357
+   ],
+   [
+    "74",
+    5850
+   ],
+   [
+    "75",
+    22331
+   ],
+   [
+    "76",
+    19791
+   ],
+   [
+    "77",
+    11037
+   ],
+   [
+    "78",
+    4977
+   ],
+   [
+    "79",
+    2277
+   ],
+   [
+    "80",
+    2775
+   ],
+   [
+    "81",
+    2015
+   ],
+   [
+    "82",
+    1164
+   ],
+   [
+    "83",
+    4086
+   ],
+   [
+    "84",
+    3161
+   ],
+   [
+    "85",
+    2113
+   ],
+   [
+    "86",
+    4296
+   ],
+   [
+    "87",
+    1918
+   ],
+   [
+    "88",
+    3206
+   ],
+   [
+    "89",
+    2637
+   ],
+   [
+    "90",
+    612
+   ],
+   [
+    "91",
+    5871
+   ],
+   [
+    "92",
+    3867
+   ],
+   [
+    "93",
+    3109
+   ],
+   [
+    "94",
+    3685
+   ],
+   [
+    "95",
+    3821
+   ],
+   [
+    "971",
+    340
+   ],
+   [
+    "972",
+    33
+   ],
+   [
+    "973",
+    8
+   ],
+   [
+    "974",
+    2
+   ],
+   [
+    "99",
+    181
+   ]
+  ]
+ },
+ "date_maj": {
+  "vide": 0,
+  "non_parsable": 0,
+  "exemples_non_parsables": [],
+  "min": "2012-09-10 00:00:00+00:00",
+  "max": "2026-12-30 00:00:00+00:00",
+  "futur": 60,
+  "par_annee": [
+   [
+    2012,
+    2
+   ],
+   [
+    2017,
+    365
+   ],
+   [
+    2018,
+    28
+   ],
+   [
+    2019,
+    26
+   ],
+   [
+    2020,
+    180
+   ],
+   [
+    2021,
+    2109
+   ],
+   [
+    2022,
+    6767
+   ],
+   [
+    2023,
+    24687
+   ],
+   [
+    2024,
+    46459
+   ],
+   [
+    2025,
+    151873
+   ],
+   [
+    2026,
+    164382
+   ]
+  ]
+ },
+ "date_mise_en_service": {
+  "vide": 102498,
+  "non_parsable": 0,
+  "exemples_non_parsables": [],
+  "min": "1900-01-01 00:00:00+00:00",
+  "max": "2028-08-27 00:00:00+00:00",
+  "futur": 5,
+  "par_annee": [
+   [
+    1900,
+    28
+   ],
+   [
+    1947,
+    28
+   ],
+   [
+    2002,
+    1
+   ],
+   [
+    2010,
+    4
+   ],
+   [
+    2012,
+    8
+   ],
+   [
+    2013,
+    6
+   ],
+   [
+    2014,
+    332
+   ],
+   [
+    2015,
+    272
+   ],
+   [
+    2016,
+    976
+   ],
+   [
+    2017,
+    2136
+   ],
+   [
+    2018,
+    763
+   ],
+   [
+    2019,
+    2039
+   ],
+   [
+    2020,
+    2445
+   ],
+   [
+    2021,
+    27097
+   ],
+   [
+    2022,
+    35317
+   ],
+   [
+    2023,
+    71694
+   ],
+   [
+    2024,
+    96996
+   ],
+   [
+    2025,
+    41395
+   ],
+   [
+    2026,
+    12842
+   ],
+   [
+    2028,
+    1
+   ]
+  ]
+ },
+ "tarification": {
+  "vide": 274171,
+  "renseigne": 122707,
+  "distinct": 624
+ }
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Fichiers bruts de l'etape 1 : 1 Go, conserves hors depot.
+# Leur taille et leur empreinte SHA-256 sont dans data/raw/MANIFESTE.csv,
+# leurs URL sources dans docs/data-profile.md section 2.
+data/raw/statique/*.csv
+data/raw/dynamique/
+data/raw/capture_dynamique.out

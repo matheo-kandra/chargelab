@@ -1,0 +1,50 @@
+name: Collecte dynamique
+
+# Cadence adaptative, justifiee par la mesure (docs/decisions.md, ADR 08) :
+# la part du parc qui change d'etat passe de 0,21 % par creneau de 5 minutes a
+# 02h UTC a 1,89 % a 10h UTC, soit un rapport de 1 a 9.
+#   5 minutes de 06:00 a 20:00 UTC  (168 passages)
+#  15 minutes de 20:00 a 06:00 UTC  ( 40 passages)
+# GitHub decale frequemment les declenchements planifies : la cadence reellement
+# obtenue est mesuree dans data/collecte/journal/dynamique.csv, pas supposee.
+on:
+  schedule:
+    - cron: '*/5 6-19 * * *'
+    - cron: '*/15 20-23,0-5 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collecter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Recuperer le depot (sans l'archive statique)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            collect
+            data/collecte/journal
+            data/collecte/dynamique
+          sparse-checkout-cone-mode: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: collect/requirements.txt
+
+      - run: pip install -r collect/requirements.txt
+
+      - name: Capturer le flux
+        run: python collect/collecte_dynamique.py
+
+      - name: Publier la capture
+        run: bash collect/publier.sh "collecte dynamique"

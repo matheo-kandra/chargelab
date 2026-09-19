@@ -1,0 +1,28 @@
+[
+ {
+  "fichier": "pan_dedoublonne_2026-09-17.csv",
+  "schema": "schema-irve-statique v2.3.0",
+  "lignes": 168602,
+  "lignes_avec_au_moins_une_violation": 0,
+  "part_lignes_ko": 0.0,
+  "violations_par_motif": {}
+ },
+ {
+  "fichier": "pan_avec_doublons_2026-09-17.csv",
+  "schema": "schema-irve-statique v2.3.0",
+  "lignes": 396878,
+  "lignes_avec_au_moins_une_violation": 4,
+  "part_lignes_ko": 0.001,
+  "violations_par_motif": {
+   "adresse_station: requis mais vide": 4
+  }
+ },
+ {
+  "fichier": "202312.csv.gz",
+  "schema": "schema-irve-dynamique v2.3.0",
+  "lignes": 121513,
+  "lignes_avec_au_moins_une_violation": 0,
+  "part_lignes_ko": 0.0,
+  "violations_par_motif": {}
+ }
+]

@@ -1,0 +1,12 @@
+famille,nb_pdc,part_parc_pct,part_renseigne_pct,nb_valeurs_distinctes,exemples
+VIDE,132406,78.532,,0,
+RENVOI_TEXTE,14134,8.383,39.049,4,"Les tarifs de recharge peuvent varier en fonction de plusieurs facteurs, y compr || Tarification au kWh plus frais de connexion éventuelles en fonction de l abonnem || Tarification au kWh plus frais de connexion éventuelles en fonction de l'abonnem || Tarification au kWh plus frais de connexion éventuelles en fonction de l'abonnem"
+EXPORT_STRUCTURE,9381,5.564,25.917,128,"entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupati || entre 07:00 et 22:00 : 0.3333€ par kwh de charge, entre 07:00 et 22:00 : 5.0€ pa || par défaut : 0.4667€ par kwh de charge, par défaut : 0.4667€ par kwh de charge,  || par défaut : 6.0€ par heure d'occupation hors charge, 0.42€ par kwh de charge"
+PRIX_KWH_LIBRE,5068,3.006,14.002,220,"AC 36cts/KWh || 0,29€ / kWh || HPC 49cts/Kwh  || 59 cts/kWh"
+NON_INFO_MOT_CLE,4231,2.509,11.689,17,Inconnu || - || Grille tarifaire en ligne || Payant
+RENVOI_URL,2748,1.63,7.592,10,https://www.metropolis-recharge.fr/ || https://www.ouestcharge-paysdelaloire-moncompte.fr/fr/tarifs || https://www.e-vadea.fr/fr/tarifs || https://www.oscea64.fr/fr/tarifs
+NOMBRE_NU_SANS_UNITE,490,0.291,1.354,36,"0.4583 || 0,22 || 0.4917 || 0.39"
+PRIX_TEMPS_SEUL,71,0.042,0.196,8,"Charge normale : 0,025€ / min || 0.0417 € à la minute || 0,06/mn + 0,06/mn après recharge  || 0.05AC/MIN"
+GRATUIT,42,0.025,0.116,2,"gratuit || La recharge est gratuite pour les Admin CQFD, CQFD véhicules, Véhicules EKLEO"
+JSON_OPERATEUR,18,0.011,0.05,6,"{""fixedPrice"":0,""energyPrice"":0.39,""minimumBilling"":0,""matrix"":[],""matrixOSF"":[{ || {""fixedPrice"":0,""energyPrice"":0.51,""minimumBilling"":0,""matrix"":[],""matrixOSF"":[{ || {""fixedPrice"":0,""energyPrice"":0.55,""minimumBilling"":0,""matrix"":[],""matrixOSF"":[{ || {""fixedPrice"":0,""energyPrice"":0.54,""minimumBilling"":0,""matrix"":[],""matrixOSF"":[{"
+AUTRE_NON_CLASSE,13,0.008,0.036,7,"2,09 â‚¬HT/h || 0.50? 2.5 CONNECTION || 10 € tarif de départ. Des frais supplémentaires peuvent s'appliquer  || 2,09 €HT/h"
