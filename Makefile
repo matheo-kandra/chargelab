@@ -2,11 +2,12 @@
 PYTHON ?= .venv/bin/python
 DATE ?= $(shell date -u +%Y-%m-%d)
 
-.PHONY: aide collect edition test bilan propre
+.PHONY: aide collect edition page test bilan propre
 
 aide:
 	@echo "make collect              une capture dynamique et le statique du jour"
 	@echo "make edition DATE=...     reconstruit l'edition d'un jour depuis l'archive"
+	@echo "make page DATE=...        regenere site/index.html depuis l'edition"
 	@echo "make test                 toutes les suites, couverture comprise"
 	@echo "make bilan                couverture reelle de la collecte"
 
@@ -20,6 +21,9 @@ collect:
 # etre la meme d'une execution a l'autre.
 edition:
 	$(PYTHON) build/edition.py --date $(DATE)
+
+page:
+	$(PYTHON) build/page.py --date $(DATE)
 
 test:
 	bash tests/lancer.sh
