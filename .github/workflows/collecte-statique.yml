@@ -39,6 +39,9 @@ jobs:
 
       - run: pip install -r collect/requirements.txt
 
+      - name: Verifier la sante des collecteurs
+        run: python collect/verifier.py
+
       - name: Telecharger, archiver, verifier la reconstruction
         run: python collect/collecte_statique.py
 

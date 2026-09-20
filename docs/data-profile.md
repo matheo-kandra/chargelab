@@ -79,7 +79,32 @@ Le schéma dynamique impose `id_pdc_itinerance` au motif `^[A-Z]{2}[A-Z0-9]{4,33
 `{libre, occupe, reserve, inconnu}`, `horodatage` en datetime. Les quatre champs
 `etat_prise_type_*` sont facultatifs.
 
-### 2.3 Fichier historique data.gouv (schéma v2)
+### 2.3 Le fichier statique n'est pas rafraîchi tous les jours
+
+Observation faite pendant la collecte, à consigner ici parce qu'elle change ce
+qu'on peut dire d'une « édition quotidienne ».
+
+| téléchargement | octets | SHA-256 du téléchargement |
+|---|---:|---|
+| 2026-09-19 09:50 UTC | 120 761 275 | `8394580d...5e6d51` |
+| 2026-09-20 20:02 UTC | 120 761 275 | `8394580d...5e6d51` |
+
+**Le fichier servi est identique octet pour octet à 34 heures d'intervalle.**
+Entre le 17/09 et le 19/09 il avait en revanche bougé, avec 87 942 PDC dont
+`date_maj` changeait et 612 dont un champ de contenu changeait.
+
+La consolidation statique n'a donc pas de cadence garantie. Conséquences :
+
+- le schéma d'archivage compact (ADR 10) encaisse le cas sans rien inventer :
+  la journée du 20/09 pèse **490 octets** (diff vide, journal `date_maj` vide,
+  aucune entrée, aucune sortie) ;
+- une édition quotidienne doit pouvoir dire « le parc n'a pas bougé depuis la
+  veille parce que la source n'a pas été republiée », ce qui n'est pas la même
+  chose que « le parc n'a pas bougé » ;
+- le SHA-256 du téléchargement est journalisé à chaque passage, c'est lui qui
+  permet de distinguer les deux cas.
+
+### 2.4 Fichier historique data.gouv (schéma v2)
 
 `https://www.data.gouv.fr/fr/datasets/r/2729b192-40ab-4454-904d-735084dca3a3`
 répond 200, 157 436 717 octets, 52 colonnes, **222 936 lignes**.

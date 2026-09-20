@@ -21,7 +21,7 @@ from datetime import date
 import pandas as pd
 
 from archive_statique import archiver, verifier
-from commun import journaliser, maintenant, sha256, telecharger
+from commun import SOURCE, journaliser, maintenant, sha256, telecharger
 
 URL_DEDUP = "https://transport.data.gouv.fr/resources/84013/download"
 URL_BRUT = "https://transport.data.gouv.fr/resources/84011/download"

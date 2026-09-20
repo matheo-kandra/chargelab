@@ -91,6 +91,10 @@ def main() -> int:
                     help="collecter sans pousser sur le depot")
     args = ap.parse_args()
 
+    if executer([str(PYTHON), "collect/verifier.py"], "verification") != 0:
+        print("superviseur non demarre : la verification de sante a echoue", flush=True)
+        return 1
+
     debut = maintenant()
     fin = debut + timedelta(hours=args.heures)
     print(f"superviseur local demarre le {debut:%Y-%m-%d %H:%M:%S} UTC, "
