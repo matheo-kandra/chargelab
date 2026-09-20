@@ -303,12 +303,40 @@ Passer le dépôt en public rend la collecte gratuite et sans limite ; les donn�
 collectées sont sous Licence Ouverte Etalab, rien n'y est confidentiel. La
 décision appartient au propriétaire du dépôt et n'est pas prise ici.
 
-**Cadence réellement obtenue.** GitHub décale fréquemment les déclenchements
-planifiés. Indice relevé pendant le profilage : un dépôt tiers programmé toutes
-les 5 minutes n'obtenait en pratique que **144 passages par jour**, soit un pas
-effectif de 10 minutes. Le journal mesure le pas réel à chaque passage, et
-`collect/bilan.py` en fait la synthèse. La cadence annoncée dans la Méthode sera
-celle qui est mesurée, pas celle qui est programmée.
+**Cadence réellement obtenue, mesurée.** Le cron `*/5` a été essayé, puis
+décalé hors des minutes rondes, et mesuré :
+
+| | |
+|---|---:|
+| passages planifiés attendus entre 09:49 et 14:20 UTC le 19/09 | environ 50 |
+| passages planifiés réellement déclenchés | **1** |
+
+Un seul déclenchement, à 14:00:10, après quatre heures de silence complet.
+Workflows actifs, Actions activé, `main` par défaut, dépôt non forké, droits
+d'écriture confirmés par trois passages manuels réussis : rien ne bloquait de
+notre côté. GitHub abandonne les passages planifiés en période de charge, et
+les fréquences courtes sont les premières sacrifiées.
+
+**Décision revue le 20/09 : le planificateur ne déclenche plus chaque passage.**
+Il déclenche **une fois par heure** une boucle qui tient elle-même la cadence de
+l'ADR 08 jusqu'au créneau horaire suivant (`collect/boucle_locale.py --jusqu-a`).
+Un déclenchement horaire retardé de vingt minutes coûte vingt minutes de
+collecte, pas la journée entière. Le même script sert en local et dans Actions.
+
+Ce choix consomme environ **1 400 minutes par jour** au lieu de 208, ce qui est
+sans objet depuis que le dépôt est **public** : les minutes y sont illimitées.
+Le tableau de coût ci-dessus reste valable pour un dépôt privé, où cette
+solution serait inapplicable.
+
+**Deuxième mesure, côté collecte locale.** Le poste de travail a échoué deux
+fois en deux jours : 27 passages perdus sur coupure DNS le 19/09, puis un arrêt
+complet de **17,6 heures** dans la nuit du 19 au 20 parce que la machine s'est
+endormie puis a redémarré. `caffeinate -i` n'empêche ni la fermeture du capot ni
+l'extinction. La collecte locale reste un secours, pas une source principale.
+
+Le journal mesure le pas réel à chaque passage et `collect/bilan.py` en fait la
+synthèse. La cadence annoncée dans la Méthode sera celle qui est mesurée, pas
+celle qui est programmée.
 
 ---
 

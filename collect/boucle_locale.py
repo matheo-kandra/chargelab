@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Superviseur de collecte locale, en secours du planificateur GitHub.
+"""Boucle de collecte a cadence garantie.
 
-Le planificateur de GitHub n'a declenche aucun passage en 76 minutes alors que
-douze etaient attendus (docs/decisions.md, ADR 09). Ce superviseur assure la
-collecte depuis un poste, a la cadence de l'ADR 08, en attendant que le cron
-reprenne. Les deux sources peuvent tourner en parallele : chaque passage est
-etiquete `local` ou `github` dans le journal, et la publication se rejoue sur la
-tete distante en cas de course.
+Le planificateur de GitHub s'est revele inutilisable pour une cadence de cinq
+minutes : un seul declenchement obtenu en quatre heures la ou cinquante etaient
+attendus. Cette boucle resout le probleme en inversant la logique : GitHub ne
+declenche plus chaque passage, il declenche une fois par heure une boucle qui
+tient elle-meme la cadence jusqu'au creneau horaire suivant (--jusqu-a). Un
+declenchement horaire retarde de vingt minutes coute vingt minutes de collecte,
+pas la journee entiere.
+
+Le meme script sert en local (--heures) et dans GitHub Actions (--jusqu-a).
+Chaque passage est etiquete `local` ou `github` dans le journal, et la
+publication se rejoue sur la tete distante en cas de course.
 
 Ce qu'il fait a chaque creneau :
   1. recale le depot sur la tete distante,
@@ -87,6 +92,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--heures", type=float, default=50.0,
                     help="duree totale de supervision, en heures")
+    ap.add_argument("--jusqu-a", dest="jusqu_a", default=None,
+                    help="instant d'arret en ISO 8601 UTC, prioritaire sur --heures. "
+                         "Utilise par GitHub Actions : chaque passage horaire collecte "
+                         "jusqu'au creneau suivant, ce qui rend la cadence independante "
+                         "du planificateur.")
     ap.add_argument("--sans-publication", action="store_true",
                     help="collecter sans pousser sur le depot")
     args = ap.parse_args()
@@ -96,7 +106,15 @@ def main() -> int:
         return 1
 
     debut = maintenant()
-    fin = debut + timedelta(hours=args.heures)
+    if args.jusqu_a:
+        fin = datetime.fromisoformat(args.jusqu_a)
+        if fin.tzinfo is None:
+            fin = fin.replace(tzinfo=timezone.utc)
+    else:
+        fin = debut + timedelta(hours=args.heures)
+    if fin <= debut:
+        print("instant d'arret deja passe, rien a faire", flush=True)
+        return 0
     print(f"superviseur local demarre le {debut:%Y-%m-%d %H:%M:%S} UTC, "
           f"jusqu'au {fin:%Y-%m-%d %H:%M} UTC", flush=True)
     print(f"cadence ADR 08 : minutes {MINUTES_JOUR} de 06h a 20h UTC, "
