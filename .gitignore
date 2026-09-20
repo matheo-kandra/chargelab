@@ -13,3 +13,11 @@ data/raw/capture_dynamique.out
 # Sortie du superviseur local : change en permanence, ne doit pas etre suivie
 # sinon `git pull --rebase` echoue a chaque passage sur un arbre sale.
 data/collecte/*.out
+
+# Les editions sont reconstructibles a l'identique depuis data/collecte, ce que
+# l'empreinte inscrite dans edition.json permet de verifier. Le tableau par
+# point de charge pese 2 Mo par jour, soit 730 Mo par an : il se regenere avec
+# `make edition DATE=...` et son empreinte est consignee dans MANIFESTE.csv.
+# Les matrices, elles, restent suivies : ce sont elles qui portent les chiffres
+# publies.
+data/editions/*/pdc.csv.gz

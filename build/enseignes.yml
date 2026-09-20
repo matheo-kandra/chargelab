@@ -1,0 +1,15 @@
+# Regroupements de prefixes eMI3 en reseaux, decides a la main (ADR 07).
+#
+# Le nom affiche d'un prefixe est par defaut le libelle `nom_operateur`
+# majoritaire de ce prefixe, qui couvre 94,37 % de ses points de charge. Ce
+# fichier ne sert qu'aux cas ou un meme reseau porte plusieurs prefixes, ou
+# quand le libelle majoritaire est manifestement un nom de site.
+#
+# Chaque entree doit pouvoir etre justifiee par les donnees. Tant que la
+# verification n'a pas ete faite prefixe par prefixe, ce fichier reste vide :
+# un regroupement invente serait pire qu'une absence de regroupement, parce
+# qu'il gonflerait artificiellement un reseau dans la section « Les enseignes ».
+#
+# Format :
+#   Nom du reseau:
+#     - FRXXX, FRYYY

@@ -1,0 +1,70 @@
+{
+ "date": "2026-09-19",
+ "generated_at": "2026-09-20T21:25:34+00:00",
+ "sources": {
+  "statique": "consolidation PAN beta, ressource 84013, archive locale",
+  "dynamique": "consolidation PAN beta, ressource 84098, captures archivees",
+  "contours": "france-geojson, derive d'Admin Express IGN, Licence ouverte",
+  "licence": "Licence Ouverte / Etalab v2.0"
+ },
+ "parametres": {
+  "seuil_fraicheur_heures": 24,
+  "seuil_dominance": 0.5,
+  "seuil_effectif": 30,
+  "bornes_prix_kwh": [
+   0.05,
+   1.5
+  ],
+  "report_derniere_valeur_jours": 10,
+  "classes_puissance": [
+   "AC <= 7 kW",
+   "AC 7 a 22,9 kW",
+   "AC > 22,9 kW",
+   "DC < 50 kW",
+   "DC 50 a 150 kW",
+   "DC >= 150 kW",
+   "non classable"
+  ],
+  "taux_tva_conversion_ht": 0.2
+ },
+ "counts": {
+  "lignes_statique": 168674,
+  "pdc_distincts": 168672,
+  "departement_par_coordonnees": 168296,
+  "departement_non_rattache": 378,
+  "non_rattache_dans_boite_metropole": 195,
+  "non_rattache_hors_france": 183,
+  "departement_desaccord_insee": 2041,
+  "prefixes_distincts": 281,
+  "libelles_enseigne_distincts": 6289,
+  "codes_prix": {
+   "VIDE": 132450,
+   "KWH": 8725,
+   "INCONNU": 563,
+   "MIXTE": 5675,
+   "RENVOI": 21139,
+   "SESSION": 1,
+   "GRATUIT": 34,
+   "MIN": 87
+  },
+  "pdc_avec_prix": 14434,
+  "prix_ht_convertis": 143,
+  "creneaux_captures": 98,
+  "etats_du_jour": {
+   "muet": 55453,
+   "absent du flux": 66732,
+   "en_service": 45265,
+   "hors_service": 946,
+   "inconnu": 278
+  },
+  "pdc_avec_etat_frais": 46489,
+  "taux_hors_service_sur_frais": 0.020349,
+  "M_parc_lignes": 681,
+  "M_etat_lignes": 101,
+  "departements_sous_seuil_etat": 6,
+  "M_prix_cases": 120,
+  "M_prix_cases_publiables": 33,
+  "M_reseaux_lignes": 173
+ },
+ "empreinte_donnees": "ea52621440cee58ef09414c3fcb6e70da7a85d691b41e100de6398564eba1c59"
+}

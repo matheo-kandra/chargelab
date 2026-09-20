@@ -10,6 +10,10 @@ echo "=== parsing de tarification ==="
 "$PY" tests/test_tarification.py || code=1
 
 echo
+echo "=== referentiels du build ==="
+"$PY" tests/test_referentiels.py || code=1
+
+echo
 echo "=== fonctions de calcul ==="
 "$PY" -m coverage run --source=build.statistiques tests/test_statistiques.py || code=1
 "$PY" -m coverage report -m --fail-under=100 || { echo "couverture insuffisante" >&2; code=1; }

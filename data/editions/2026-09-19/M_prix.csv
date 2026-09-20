@@ -1,0 +1,121 @@
+classe,reseau,n,p10,p25,p50,p75,p90
+"AC 7 a 22,9 kW",AUTORECHARGE SAS,7,,,,,
+"AC 7 a 22,9 kW",Acelec Charge,18,,,,,
+"AC 7 a 22,9 kW",Allego,864,0.36,0.36,0.36,0.36,0.49
+"AC 7 a 22,9 kW",Borneco | FR*BHM,3,,,,,
+"AC 7 a 22,9 kW",Bouygues Energies & Services,176,0.59,0.59,0.59,0.59,0.59
+"AC 7 a 22,9 kW",CAR2PLUG,22,,,,,
+"AC 7 a 22,9 kW",CHARGEPOLY,1,,,,,
+"AC 7 a 22,9 kW",Citeos Mobilité Electrique Paris - Cogelum IDF,2736,0.3333,0.3333,0.3333,0.33334,0.45833
+"AC 7 a 22,9 kW",DEJA BLUE FRANCE,52,0.45,0.45,0.45,0.45,0.45
+"AC 7 a 22,9 kW",DRIVECO,6,,,,,
+"AC 7 a 22,9 kW",E.Leclerc | FR*LE2,3,,,,,
+"AC 7 a 22,9 kW",EASYCHARGE,3481,0.30916667,0.30916667,0.30916667,0.30916667,0.42
+"AC 7 a 22,9 kW",ELECTROMAPS,4,,,,,
+"AC 7 a 22,9 kW",EV MAP SAS,13,,,,,
+"AC 7 a 22,9 kW",EZDRIVE,1,,,,,
+"AC 7 a 22,9 kW",Eiffage Energie Systèmes | FR*WGO,61,0.25,0.25,0.25,0.25,0.25
+"AC 7 a 22,9 kW",Electromaps,1,,,,,
+"AC 7 a 22,9 kW",FRCTS,10,,,,,
+"AC 7 a 22,9 kW",FRS91,343,0.39,0.39,0.39,0.39,0.39
+"AC 7 a 22,9 kW",Greenspot,22,,,,,
+"AC 7 a 22,9 kW",INOUID,2,,,,,
+"AC 7 a 22,9 kW",Jerecharge.com,26,,,,,
+"AC 7 a 22,9 kW",LANGON DISTRIBUTION,39,0.0,0.0,0.0,0.0,0.35
+"AC 7 a 22,9 kW",LODMI,1,,,,,
+"AC 7 a 22,9 kW",Lidl France,547,0.29,0.29,0.29,0.29,0.29
+"AC 7 a 22,9 kW",Mobilize Power Solutions,430,0.32,0.32,0.32,0.4,0.5
+"AC 7 a 22,9 kW",Paragon Mobility,2,,,,,
+"AC 7 a 22,9 kW",Petite Borne,3,,,,,
+"AC 7 a 22,9 kW",QoWatt,58,0.39,0.39,0.39,0.39,0.39
+"AC 7 a 22,9 kW",R3,5,,,,,
+"AC 7 a 22,9 kW",Raw Charging,24,,,,,
+"AC 7 a 22,9 kW",SOLVEO ENERGIES,21,,,,,
+"AC 7 a 22,9 kW",SOREGIES MOBILITES,126,0.35,0.42,0.522,0.64,0.66
+"AC 7 a 22,9 kW",See You Sun,4,,,,,
+"AC 7 a 22,9 kW",Sowatt Solutions,26,,,,,
+"AC 7 a 22,9 kW",Syndicat Départemental d'Énergie De la Haute-Garonne (SDEHG) | FR*S31,6,,,,,
+"AC 7 a 22,9 kW",TotalEnergies Marketing France,30,0.25,0.25,0.25,0.3,0.3
+"AC 7 a 22,9 kW",YES55,1,,,,,
+"AC 7 a 22,9 kW",Z-E-N,15,,,,,
+"AC 7 a 22,9 kW",ZEBORNE,15,,,,,
+"AC 7 a 22,9 kW",ZEborne,1,,,,,
+"AC 7 a 22,9 kW",total énergie,1,,,,,
+AC <= 7 kW,EASYCHARGE,25,,,,,
+AC <= 7 kW,EZDRIVE,2,,,,,
+AC <= 7 kW,Eiffage Energie Systèmes | FR*WGO,1,,,,,
+AC <= 7 kW,Greenspot,14,,,,,
+AC <= 7 kW,LODMI,1,,,,,
+AC <= 7 kW,Petite Borne,1,,,,,
+AC <= 7 kW,QoWatt,3,,,,,
+AC <= 7 kW,R3,2,,,,,
+AC <= 7 kW,SOREGIES MOBILITES,24,,,,,
+AC <= 7 kW,TotalEnergies Marketing France,10,,,,,
+"AC > 22,9 kW",Allego,61,0.49,0.49,0.49,0.49,0.49
+"AC > 22,9 kW",Bouygues Energies & Services,10,,,,,
+"AC > 22,9 kW",Citeos Mobilité Electrique Paris - Cogelum IDF,231,0.3333,0.3333,0.3333,0.3333,0.41667
+"AC > 22,9 kW",EASYCHARGE,102,0.42,0.42,0.42,0.42,0.42
+"AC > 22,9 kW",EV MAP SAS,13,,,,,
+"AC > 22,9 kW",Greenspot,1,,,,,
+"AC > 22,9 kW",Mobilize Power Solutions,8,,,,,
+"AC > 22,9 kW",QoWatt,9,,,,,
+"AC > 22,9 kW",Z-E-N,1,,,,,
+DC 50 a 150 kW,Allego,186,0.49,0.49,0.59,0.59,0.59
+DC 50 a 150 kW,Bouygues Energies & Services,11,,,,,
+DC 50 a 150 kW,CAR2PLUG,2,,,,,
+DC 50 a 150 kW,CHARGEPOLY,4,,,,,
+DC 50 a 150 kW,Citeos Mobilité Electrique Paris - Cogelum IDF,268,0.333,0.41667,0.4583,0.4583,0.5
+DC 50 a 150 kW,DEJA BLUE FRANCE,40,0.45,0.45,0.45,0.45,0.45
+DC 50 a 150 kW,DRIVECO,6,,,,,
+DC 50 a 150 kW,EASYCHARGE,1121,0.42,0.42,0.4667,0.4667,0.4667
+DC 50 a 150 kW,EV MAP SAS,16,,,,,
+DC 50 a 150 kW,Eiffage Energie Systèmes | FR*WGO,2,,,,,
+DC 50 a 150 kW,Freshmile | FR*FR1,1,,,,,
+DC 50 a 150 kW,Greenspot,8,,,,,
+DC 50 a 150 kW,Jerecharge.com,2,,,,,
+DC 50 a 150 kW,Leclerc Millau,1,,,,,
+DC 50 a 150 kW,Lidl France,170,0.39,0.39,0.39,0.39,0.39
+DC 50 a 150 kW,MODULO,1,,,,,
+DC 50 a 150 kW,Paragon Mobility,2,,,,,
+DC 50 a 150 kW,QoWatt,3,,,,,
+DC 50 a 150 kW,SOLVEO ENERGIES,4,,,,,
+DC 50 a 150 kW,SOREGIES MOBILITES,17,,,,,
+DC 50 a 150 kW,Sowatt Solutions,2,,,,,
+DC 50 a 150 kW,Z-E-N,6,,,,,
+DC 50 a 150 kW,Zephyre SAS,2,,,,,
+DC < 50 kW,Citeos Mobilité Electrique Paris - Cogelum IDF,457,0.4167,0.4167,0.4167,0.4167,0.4167
+DC < 50 kW,EASYCHARGE,442,0.30916667,0.30916667,0.30916667,0.30916667,0.30916667
+DC < 50 kW,EV MAP SAS,6,,,,,
+DC < 50 kW,FRESHMILE,1,,,,,
+DC < 50 kW,FRS91,2,,,,,
+DC < 50 kW,Greenspot,9,,,,,
+DC < 50 kW,Lidl France,8,,,,,
+DC < 50 kW,SOREGIES MOBILITES,55,0.42,0.5,0.504,1.2,1.5
+DC < 50 kW,Sowatt Solutions,2,,,,,
+DC < 50 kW,ZEborne,1,,,,,
+DC < 50 kW,Zephyre SAS,190,0.35,0.35,0.35,0.35,0.35
+DC >= 150 kW,Allego,1047,0.49,0.49,0.59,0.59,0.59
+DC >= 150 kW,Bouygues Energies & Services,3,,,,,
+DC >= 150 kW,CAR2PLUG,2,,,,,
+DC >= 150 kW,Citeos Mobilité Electrique Paris - Cogelum IDF,44,0.43333,0.5,0.5,0.5,0.5667
+DC >= 150 kW,DRIVECO,6,,,,,
+DC >= 150 kW,EASYCHARGE,105,0.43333334,0.4667,0.49167,0.49167,0.49167
+DC >= 150 kW,ENERJUMP,8,,,,,
+DC >= 150 kW,EV MAP SAS,2,,,,,
+DC >= 150 kW,Eiffage Energie Systèmes | FR*WGO,4,,,,,
+DC >= 150 kW,Greenspot,3,,,,,
+DC >= 150 kW,IONITY,120,0.69,0.69,0.69,0.69,0.69
+DC >= 150 kW,Jerecharge.com,2,,,,,
+DC >= 150 kW,Lidl France,14,,,,,
+DC >= 150 kW,Milence,23,,,,,
+DC >= 150 kW,QoWatt,15,,,,,
+DC >= 150 kW,R3,30,0.55,0.55,0.55,0.55,0.55
+DC >= 150 kW,Raw Charging,2,,,,,
+DC >= 150 kW,SOLVEO ENERGIES,6,,,,,
+DC >= 150 kW,SOREGIES MOBILITES,2,,,,,
+DC >= 150 kW,Sowatt Solutions,5,,,,,
+DC >= 150 kW,Z-E-N,39,0.66,0.66,0.66,0.66,0.728000000000001
+DC >= 150 kW,ZETRA Distribution SAS,4,,,,,
+DC >= 150 kW,sas e-motum,110,0.55,0.55,0.55,0.75,0.75
+non classable,Allego,59,0.49,0.49,0.49,0.49,0.49
+non classable,SOREGIES MOBILITES,5,,,,,
