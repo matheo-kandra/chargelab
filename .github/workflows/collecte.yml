@@ -7,11 +7,18 @@ name: Collecte
 # abandonne les passages planifies en periode de charge, et les frequences
 # courtes sont les premieres sacrifiees.
 #
-# On declenche donc une fois par heure une boucle qui tient elle-meme la cadence
-# de l'ADR 08 jusqu'au creneau horaire suivant : 5 minutes de 06:00 a 20:00 UTC,
-# 15 minutes sinon. Un declenchement horaire retarde de vingt minutes coute
-# vingt minutes de collecte, pas la journee. Le depot etant public, les minutes
-# de calcul sont illimitees.
+# On declenche donc une boucle qui tient elle-meme la cadence de l'ADR 08 :
+# 5 minutes de 06:00 a 20:00 UTC, 15 minutes sinon.
+#
+# Le cron horaire a ete essaye et a rate son premier rendez-vous (21:04 le
+# 20/09). La boucle ne s'arrete donc plus au creneau horaire suivant mais a la
+# prochaine borne de six heures, 00:04, 06:04, 12:04 ou 18:04 UTC, soit la
+# duree maximale d'un job. Le cron reste horaire : il offre six occasions de
+# demarrer la boucle pour chaque fenetre de six heures, et il suffit qu'une
+# seule aboutisse. Le groupe de concurrence empeche deux boucles de tourner
+# ensemble ; une boucle qui demarre apres la borne se termine aussitot.
+#
+# Le depot etant public, les minutes de calcul sont illimitees.
 #
 # La collecte statique quotidienne est faite par la meme boucle, au premier
 # passage suivant 03:00 UTC.
@@ -30,7 +37,7 @@ permissions:
 jobs:
   collecter:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
         with:
@@ -47,12 +54,18 @@ jobs:
       - name: Verifier la sante des collecteurs
         run: python collect/verifier.py
 
-      - name: Collecter jusqu'au creneau horaire suivant
+      - name: Collecter jusqu'a la prochaine borne de six heures
         run: |
           fin=$(python -c "
           from datetime import datetime, timedelta, timezone
-          t = datetime.now(timezone.utc).replace(minute=4, second=0, microsecond=0) + timedelta(hours=1)
-          print(t.isoformat())
+          maintenant = datetime.now(timezone.utc)
+          for h in (0, 6, 12, 18):
+              borne = maintenant.replace(hour=h, minute=4, second=0, microsecond=0)
+              if borne > maintenant:
+                  break
+          else:
+              borne = (maintenant + timedelta(days=1)).replace(hour=0, minute=4, second=0, microsecond=0)
+          print(borne.isoformat())
           ")
           echo "collecte jusqu'a ${fin}"
           python collect/boucle_locale.py --jusqu-a "${fin}"
