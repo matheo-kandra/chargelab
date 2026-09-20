@@ -1,0 +1,28 @@
+Parc analyse : 168674 lignes, 439 valeurs distinctes de tarification
+
+code            PDC   % parc
+VIDE         132450   78.52%
+RENVOI        21139   12.53%
+KWH            8725    5.17%
+MIXTE          5675    3.36%
+INCONNU         563    0.33%
+MIN              87    0.05%
+GRATUIT          34    0.02%
+SESSION           1    0.00%
+
+PDC porteurs d'un prix a l'energie : 14434 (8.56 % du parc)
+dont prix HT convertis en TTC : 143
+dont tarifs AC et DC distingues : 2
+
+Effectifs porteurs d'un prix, par classe de puissance (ADR 06) :
+                 parc  porteurs  couverture_%  seuil_30_atteint
+classe                                                         
+AC 7 a 22,9 kW  99232      9207          9.28              True
+DC >= 150 kW    29010      1596          5.50              True
+DC 50 a 150 kW  14458      1875         12.97              True
+AC <= 7 kW      11034        83          0.75              True
+non classable    5814        64          1.10              True
+DC < 50 kW       5723      1173         20.50              True
+AC > 22,9 kW     3403       436         12.81              True
+
+Aucune mediane n'est calculee ici : ce fichier ne montre que ce que le parseur sait lire.

@@ -76,7 +76,8 @@ CAS = {
     68: (K, 0.2667, None, None, None, 6.0, False, ""),
     69: (K, 0.3917, None, None, None, 7.5, False, ""),
     83: (K, 0.42, None, None, None, 6.6667, False, ""),
-    87: (K, 0.30916667, None, None, None, 3.75, False, "deux grilles concatenees, le « par defaut » kWh est unique"),
+    87: (K, 0.30916667, None, None, None, 2.5, False,
+         "deux grilles concatenees ; le tarif d'occupation retenu est le premier de la chaine"),
     89: (K, 0.30916667, None, None, None, 3.75, False, "deux grilles concatenees, le « par defaut » kWh est unique"),
     92: (K, 0.333, None, None, None, None, False, ""),
     93: (K, 0.5, None, None, None, 10.0, False, ""),
@@ -84,7 +85,9 @@ CAS = {
     118: (K, 0.5416667, None, None, None, 6.0, False, ""),
     119: (K, 0.325, None, None, None, None, False, ""),
     130: (K, 0.1667, None, None, None, None, False, ""),
-    134: (K, 0.3333, None, None, None, 6.0, False, "deux grilles concatenees, le dernier « par defaut » kWh fait foi"),
+    134: (X, 0.3333, None, 3.0, None, 6.0, False,
+          "deux grilles concatenees, le dernier « par defaut » kWh fait foi ; "
+          "la seconde grille porte un tarif horaire de charge"),
 
     # --- export structure, prix au kWh plus temps de charge --------------
     5:  (X, 0.3333, None, 5.0, None, 5.0, False, ""),
@@ -144,8 +147,8 @@ CAS = {
     97: (K, 0.38, None, None, None, None, False, ""),
     100: (K, 0.64, None, None, None, None, False, ""),
     104: (K, 0.25, None, None, None, None, False, ""),
-    125: (K, 0.29, None, None, None, 2.4, False,
-          "le tarif a la minute ne court qu'apres la recharge, c'est une occupation"),
+    125: (K, 0.29, None, None, None, None, False,
+          "le tarif a la minute ne court qu'en dehors des sessions de recharge, il est ignore"),
     127: (K, 0.42, None, None, None, None, False, "TTC explicite"),
     128: (K, 0.36, None, None, None, None, False, ""),
     129: (K, 0.39, None, None, None, None, False, ""),
@@ -237,6 +240,8 @@ CAS.update({
     173: (K, 0.54, None, None, None, None, False, "TTC explicite"),
     174: (K, 0.59, None, None, None, None, False, ""),
     179: (K, 0.375, None, None, None, None, False, ""),
+    281: (X, 0.375, None, 25.0, None, 25.0, False,
+          "le tarif horaire precede le prix au kWh dans la chaine"),
     185: (K, 0.79, None, None, None, None, False, ""),
     186: (K, 0.20, None, None, None, None, False, "mention AC sans tarif DC en face"),
     187: (K, 0.80, None, None, None, None, False, ""),
@@ -437,6 +442,12 @@ CAS.update({
 # Tarifs differencies AC et DC dans la meme chaine (ADR 17 : on garde la
 # structure, le rattachement se fait plus tard selon la classe du PDC).
 # Valeur : (prix_kwh_ac, prix_kwh_dc), None quand la valeur est hors bornes.
+CAS.update({
+    193: (K, 0.39, None, None, None, None, False, "blob JSON d'operateur, champ energyPrice"),
+    194: (K, 0.51, None, None, None, None, False, "blob JSON d'operateur, champ energyPrice"),
+    195: (K, 0.55, None, None, None, None, False, "blob JSON d'operateur, champ energyPrice"),
+})
+
 CAS_AC_DC = {
     351: (1.0, None),   # « AC 1€/kWh - DC 5€/kWh » : 5 hors bornes, ecarte et compte
     403: (0.30, 0.50),  # « 0.30€/kwh ... pour point 22AC - 0.50€/kwh ... 50DC »
