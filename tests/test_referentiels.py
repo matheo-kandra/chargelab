@@ -136,6 +136,57 @@ def tester_reseau(m) -> None:
     b = m.noms_par_prefixe(["FRXXX", "FRXXX"], ["Alpha", "Beta"])
     verifier("egalite tranchee de facon deterministe", a == b, f"{a} contre {b}")
 
+    # le marqueur d'itinerance suffixe au nom d'operateur est une annotation
+    # technique, pas une partie du nom
+    for entree, attendu in [("Freshmile | FR*FR1", "Freshmile"),
+                            ("E.Leclerc | FR*LE2", "E.Leclerc"),
+                            ("WAAT SAS | FR*WA2", "WAAT SAS"),
+                            ("Road | FR*EFL", "Road"),
+                            ("Izivia", "Izivia")]:
+        obtenu = m.noms_par_prefixe(["FRZZZ"], [entree]).get("FRZZZ")
+        verifier(f"marqueur retire de {entree!r}", obtenu == attendu,
+                 f"attendu {attendu!r}, obtenu {obtenu!r}")
+
+
+def tester_enseignes_yml(m) -> None:
+    """Le fichier de noms doit etre lisible, non contradictoire et justifie."""
+    table = m._fusions()
+    verifier("enseignes.yml n'est pas vide", len(table) > 0,
+             "la verification prefixe par prefixe doit s'y retrouver")
+
+    texte = m.FUSIONS.read_text(encoding="utf-8")
+    lignes = [l for l in texte.splitlines()
+              if l.strip().startswith("-") and not l.strip().startswith("- #")]
+    sans_justification = [l.strip() for l in lignes if "#" not in l]
+    verifier("chaque ligne de prefixes porte sa justification",
+             not sans_justification,
+             f"lignes sans commentaire : {sans_justification[:3]}")
+
+    verifier("aucun prefixe nomme deux fois",
+             len(table) == len({p for p in table}),
+             "un prefixe ne peut appartenir qu'a un reseau")
+
+    for prefixe in table:
+        verifier(f"prefixe {prefixe} bien forme",
+                 m.prefixe_emi3(prefixe + "E1") == prefixe,
+                 f"{prefixe} n'est pas un prefixe eMI3 valide")
+
+    # quelques decisions structurantes, qui ne doivent pas se perdre
+    for prefixe, attendu in [("FRQPK", "QPARK"), ("FRH01", "Pass pass électrique"),
+                             ("FRV75", "Belib'"), ("FREBN", "eborn"),
+                             ("FRHPC", "TotalEnergies"), ("FRTCB", "TotalEnergies")]:
+        verifier(f"{prefixe} nomme {attendu}", table.get(prefixe) == attendu,
+                 f"obtenu {table.get(prefixe)!r}")
+
+    # Belib' est exploite par TotalEnergies mais reste un reseau distinct
+    verifier("un reseau tiers n'est pas absorbe par son exploitant",
+             table.get("FRV75") != table.get("FRHPC"))
+
+    # une surcharge prime sur le libelle majoritaire
+    noms = m.noms_par_prefixe(["FRQPK", "FRQPK"], ["IZIVIA", "IZIVIA"])
+    verifier("la surcharge prime sur l'operateur majoritaire",
+             noms.get("FRQPK") == "QPARK", f"obtenu {noms.get('FRQPK')!r}")
+
 
 def main() -> int:
     try:
@@ -146,6 +197,7 @@ def main() -> int:
     tester_territoire(m)
     tester_courant_et_classe(m)
     tester_reseau(m)
+    tester_enseignes_yml(m)
     if echecs:
         print(f"ECHEC : {len(echecs)} verification(s)", file=sys.stderr)
         for e in echecs:

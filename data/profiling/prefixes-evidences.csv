@@ -1,0 +1,282 @@
+prefixe,pdc,operateur,part_op,n_op,amenageur,siren,n_siren,enseigne_top
+FRFR1,9459,Freshmile | FR*FR1,0.993,5,Ardenne Métropole global,440194538,15,Freshmile France
+FRPD1,7662,Power Dot France,1.0,1,Power Dot France,891118473,1,Power Dot France
+FRPKG,7649,GROUPE INDIGO,1.0,1,GROUPE INDIGO,,0,Réseau de recharge du groupe Indigo
+FRLDL,5866,Lidl France,0.874,2,Lidl France,343262622,1,Lidl France
+FRTSL,4937,Tesla,0.974,2,Tesla,524335262,1,Tesla
+FROTH,4466,Izivia,0.642,2,EDF-EV100,572183994,7,EDF-EV100
+FRVIA,4219,ENGIE Vianeo,0.983,2,ENGIE Vianeo,909073363,1,ENGIE Vianeo
+FREBN,3788,EASYCHARGE,0.964,2,SPBR1,882332562,1,eborn
+FRALL,3515,Allego,0.901,2,Allego,842718512,2,Carrefour Energies
+FRLE2,3371,E.Leclerc | FR*LE2,0.987,4,"E.Leclerc, Barjouville",810800268,2,Freshmile France
+FRELC,3100,Electra,0.996,2,Electra,891624884,1,Electra A7 - Aire Latitude 45 (direction Lyon)
+FRALN,3068,ALDI SARL,0.986,9,ALDI MARCHE BOIS-GRENIER SARL,403093644,16,ALDI
+FRETI,2910,E-Totem,0.877,2,E-TOTEM INFRADIV,953900123,15,E-Totem tiers investissement FR*ETI
+FRSSD,2824,DRIVECO Partner Network,1.0,1,DRIVECO,,0,DRIVECO
+FRMBI,2535,Citeos Mobilité Electrique Paris - Cogelum IDF,1.0,1,200__TE47,254701824,1,CPO CITEOS Mobive
+FRIZF,2482,IZIVIA,1.0,1,IZIVIA FAST,951478437,1,IZIVIA FAST
+FRQOV,2409,QOVOLTIS,1.0,1,Qovoltis,853420032,5,QOVOLTIS
+FRHPC,2268,TotalEnergies Marketing France,0.966,2,TotalEnergies Marketing France,531680445,3,TotalEnergies Charge Rapide
+FRV75,2224,TotalEnergies Marketing France,1.0,1,TotalEnergies Marketing France,531680445,1,Belib'
+FRSAE,2063,TotalEnergies Marketing France,0.558,2,SAEMES,317032993,2,SAEMES
+FRBMP,2055,Bump,1.0,1,Bump,897849923,1,Bump
+FRQPK,1934,IZIVIA,1.0,1,QPARK,,0,QPARK
+FR55C,1921,ELECTRIC 55 CHARGING,1.0,1,ELECTRIC 55 CHARGING,832489801,1,ELECTRIC 55 CHARGING
+FRDRV,1909,DRIVECO,0.995,2,DRIVECO,818943938,1,DRIVECO - Horizon Provence - Monteux
+FRIOY,1850,Ionity,1.0,1,Ionity,838436145,1,IONITY GmbH IONITY Rousset
+FRH01,1802,Bouygues Energies & Services,1.0,1,Syndicat d'Energie de l'Oise - SE60,,0,Pass pass électrique
+FREVC,1788,Allego,1.0,1,EV Cars,895163608,1,Allego - Thiais Belle Epine
+FRWA2,1759,WAAT SAS | FR*WA2,0.703,2,ICADE SA,582074944,27,WAAT Tertiaire
+FRTCB,1632,TotalEnergies Charging Services,0.717,3,TotalEnergies Charging Services,844192443,80,TotalEnergies - Metpark
+FREVZ,1621,EVzen,0.931,2,SMEG DEVELOPPEMENT,940861826,1,EVzen
+FRHXW,1581,TotalEnergies Charging Services,0.936,2,Hewawatt 1.1,949369623,2,TotalEnergies Charging Services
+FRATL,1550,Atlante France,1.0,1,Atlante,911482628,1,Atlante - A89 - Aire de service du Chavanon (accessible dans les 2 sens)
+FRECH,1510,EASYCHARGE,0.997,2,Easy Charge Services,901772400,1,Easy Charge Services
+FRS14,1403,Load Stations,0.806,2,Syndicat Départemental d'Energies du Calvados (SDEC ENERGIE),200045938,1,SDEC ENERGIE
+FREFL,1375,Road | FR*EFL,1.0,1,Road,,0,Road
+FRBE3,1360,Bouygues Energies & Services,1.0,1,Communauté urbaine Grand Paris Seine & Oise,981104912,1,Alizé Liberté 2
+FRRVE,1341,REVEO SYADEN | FR*RVE,1.0,1,SYADEN11,,0,Révéo 2025
+FRSIG,1269,IZIVIA,1.0,1,SIGEIF,200050433,1,SIGEIF
+FRSIP,1214,Bouygues Energies & Services,1.0,1,La borne bleue,257500041,1,La borne bleue
+FRSE1,1160,STATIONS-E,1.0,1,STATIONS-E,835124280,1,Stations-e
+FRCG0,1137,ChargePoint Austria GmbH | FR*CG0,0.9,3,RAIDEN SAS (ChargeGuru),432568780,32,ChargeGuru
+FRLMS,1128,SOREGIES MOBILITES,0.701,24,SOREGIES,450889225,83,SOREGIES MOBILITES
+FRP01,1100,Bouygues Energies & Services,1.0,1,EFFIA STATIONNEMENT,435272596,1,EFFIA France
+FRMGP,1095,SPIE CityNetworks,0.995,2,Métropolis,885354860,1,Métropolis
+FRS81,1081,BOUYGUES ENERGIES SERVICES,0.615,2,Syndicat Départemental d'Energie du Tarn,258100072,1,Le Plein Tarnais
+FRY55,1079,YES55 | FR*Y55,1.0,1,MISSING,,0,FR*Y55
+FRSRG,1078,Soregies,0.776,4,Soregies,450889225,1,Soregies
+FRQVI,981,QOVOLTIS,1.0,1,Qovoltis INFRA,883799462,1,QOVOLTIS
+FRGSP,947,Greenspot,0.684,5,Greenspot,820879021,18,Greenspot Entreprise
+FRITP,944,Interparking France,1.0,1,Interparking France,491925749,1,Interparking Parking Gare Saint Jean Armagnac
+FRIKA,915,IZIVIA,1.0,1,IKEA,,0,IKEA
+FRVIR,915,Virta,1.0,1,Virta,,0,Shopping Promenade Arles Montmajour
+FRZWO,880,Ze-Watt,1.0,1,,,0,Réseau de recharge Ze-Watt
+FRSWS,874,Sowatt Solutions,0.96,2,SOWATT SOLUTIONS,903356970,4,Sowatt Solutions
+FRROS,871,RossiniEnergy,1.0,1,RossiniEnergy,839265873,53,RossiniEnergy
+FRM06,870,IZIVIA,1.0,1,NICE RP,200030195,1,NICE RP
+FRBFC,823,Citeos Mobilité Electrique Paris - Cogelum IDF,1.0,1,371__SDEY,200047181,1,CPO CITEOS Region-Bfc
+FRS44,815,Bouygues Energies & Services,0.501,2,Territoire d'Energie Loire Atlantique,840290183,1,Ouest Charge
+FRENT,800,Enerstock | FR*ENT,1.0,1,Leclerc Saint Paul les Dax,,0,Enerstock
+FRR3M,793,R3,1.0,1,R3 SPV COM,949415814,5,R3 SPV COM
+FRWIZ,793,Evzen,1.0,1,WiiiZ CACPL - Bornes publiques,240600585,1,Evzen
+FRGLY,790,IZIVIA,1.0,1,Grand Lyon,419070180,2,Grand Lyon
+FRS49,730,Bouygues Energies & Services,0.833,2,Syndicat Int d'Energies du Maine et Loire (FR*S49),254901309,1,Ouest Charge
+FRA79,714,SEOLIS,1.0,1,SEOLIS,492041066,1,Seolis
+FRBPE,668,bp Pulse,0.753,2,bp Pulse,542034327,1,bp Pulse
+FRS77,664,Bouygues Energies & Services,1.0,1,Ecocharge77,200041309,1,Ecocharge77
+FRMEL,662,TotalEnergies Charging Services,1.0,1,TotalEnergies Charging Services,844192443,1,Iléwat
+FRY03,662,Bouygues Energies & Services,1.0,1,SEY78,257825646,1,Seymaborne
+FRS56,658,Morbihan énergies | FR*S56,0.913,2,Morbihan énergies Normale Proximité,255601106,1,Freshmile France
+FRIEN,645,NW IECharge,1.0,1,NW IECharge,898270251,1,Vezin-le-Coquet
+FRUSC,637,Yusco | FR*USC,1.0,1,Yusco,,0,Yusco
+FRPLN,622,Plenitude On The Road,1.0,1,Plenitude On The Road,912432002,1,Aire de Haut Forez Sud
+FRDRE,620,DREAM ENERGY,1.0,1,DREAM ENERGY,980819866,2,DREAM ENERGY
+FRADP,604,Bouygues Energies & Services,1.0,1,ADP Public,,0,ADP Groupe
+FRS50,589,e-charge50,0.742,2,SDEM50,255002883,5,e-charge50
+FRQWC,560,Qwello GmbH | FR*QWC,1.0,1,Qwello GmbH,,0,Qwello France SAS
+FRE04,557,IZIVIA,1.0,1,IZIVIA EXPRESS,880175666,2,Izivia Express
+FRS29,522,Bouygues Energies & Services,1.0,1,SYNDICAT DEPARTEMENTAL D ENERGIE DU FINISTERE,,0,Ouest Charge
+FRFAS,505,Fastned France,1.0,1,Fastned France,853300010,1,Fastned Aire de Saulce
+FRS10,497,Syndicat Départemental Énergie Aube (SDEA) | FR*S10,1.0,1,SDEA (Syndicat départemental d'énergie de l'Aube) Public,,0,Freshmile France
+FRM13,488,EVzen (SMEG Développement),1.0,1,Aix-Marseille Provence Métropole,200054807,1,larecharge
+FRS22,478,Bouygues Energies & Services,1.0,1,SYNDICAT DEPARTEMENTAL D'ENERGIE DES COTES D'ARMOR,,0,Ouest Charge
+FRS37,473,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - BEAUMONT EN VERON - Rue Paul Langevin
+FREVA,471,SPIE CityNetworks,1.0,1,CityFMET,917546251,1,e-Vadea
+FR0NX,460,NEXTENEO,1.0,1,,,0,Serre chevalier
+FRS80,444,Fédération Départementale d'Énergie de la Somme (FDE80) | FR*S80,1.0,1,TE80 DRCP accéléré,,0,Freshmile France
+FRS35,444,Bouygues Energies & Services,0.928,2,SYNDICAT DEPARTEMENTAL D'ENERGIE 35,200050425,2,Ouest Charge
+FRMFC,442,Plug Inn fast charge,1.0,1,Plug Inn fast charge,983504002,1,Plug Inn fast charge
+FRMBZ,442,Mobilize Power Solutions,1.0,1,Mobilize Power Solutions,881248165,16,DEFFEUILLE LONS LE SAUNIER
+FRZEE,432,ZEENCO e-mobility,1.0,1,ZEENCO e-mobility,852425289,1,Howdens
+FRS30,418,Bouygues Energies & Services,1.0,1,reGARD,931833271,1,reGARD
+FRIIM,415,IZIVIA,1.0,1,IZIVIA Impact,934595463,1,IZIVIA Impact
+FRUBI,406,Ubitricity,0.966,2,Ubitricity,310505771,1,Ubitricity 2 Rue Philippe Lebon (Place des Expositions)
+FRS69,404,QOVOLTIS,1.0,1,SYDER,200089720,1,QOVOLTIS
+FRS34,394,Bouygues Energies & Services,1.0,1,Syndicat Mixte Hérault Énergies,,0,Reveo
+FRWGO,394,Eiffage Energie Systèmes | FR*WGO,0.764,2,WEGO (EES AFC),342793098,1,WEGO (EES AFC)
+FRAIR,389,DRIVECO Partner Network,1.0,1,DRIVECO,,0,DRIVECO
+FRC01,384,Bouygues Energies & Services,1.0,1,Métropole Rouen Normandie,,0,Métropole Rouen Normandie
+FRZP1,369,Zephyre SAS,0.534,2,Zephyre,480470152,85,Zephyre
+FRSGA,347,SGA Industries,1.0,1,OGER,539672808,64,Réseau de recharge OGER
+FRS91,345,,0.0,0,2_AM0001_SMOYS,,0,CPO CITEOS SMOYS
+FRS12,333,Bouygues Energies & Services,1.0,1,Syndicat Interco d Énergies du Départ de l Aveyron,,0,Reveo
+ESZUN,320,Zunder | ES*ZUN,1.0,1,Zunder,,0,Zunder
+FRG10,319,e-totem,1.0,1,LPA,,0,LPA Béraudier P1
+FRIGF,312,IZIVIA,1.0,1,GRAND FRAIS,940215577,1,GRAND FRAIS
+FRIPK,309,TotalEnergies Marketing France,0.718,2,INTERPARKING France,692051113,4,INTERPARKING
+FRE11,298,DRIVECO Partner Network,1.0,1,DRIVECO,,0,DRIVECO
+FRDLM,294,Delmonicos,1.0,1,Delmonicos,900138355,3,Delmonicos
+FRS63,291,SPIE CityNetworks,1.0,1,TERRITOIRE D'ENERGIE DU PUY-DE-DOME (TE 63),256300146,1,CHARGEZY - TE63
+FRZUN,272,Zunder,1.0,1,Zunder,918951849,2,Zunder
+FRESE,270,E-Totem,1.0,1,SEMOB,848778429,1,Réseau de charge Saint-Etienne Métropole
+FRTLS,270,Bouygues Energies & Services,1.0,1,TOULIBEO,900952565,1,TOULIBEO
+FROZE,269,OZECAR,1.0,1,Europcar Figari,,0,OZECAR
+FRSHE,265,Shell Recharge,1.0,1,Shell Recharge,780130175,1,Shell- France Aire de Sommesous HW
+FRS27,265,SIEGE 27,1.0,1,SIEGE 27,252701974,1,SIEGE27
+FRSEV,252,SEVDEC,1.0,1,SEVDEC MOBILITY,903935427,21,Réseau de recharge SEVDEC
+FRS84,248,Citeos Mobilité Electrique Paris - Cogelum IDF,1.0,1,3_AM0002_Vauclus'elec,200035913,1,CPO CITEOS Vaucluse
+FRS95,246,Bouygues Energies & Services,1.0,1,Volti,259502458,1,Volti
+FRLUM,242,ChargeFacile | FR*LUM,0.798,2,LUMI'IN,807940069,1,Charge Facile
+FRPY2,237,Picoty | FR*PY2,1.0,1,PICOTY AUTOROUTES,,0,AVIA VOLT - PICOTY
+FRM38,236,Bouygues Energies & Services,1.0,1,Grenoble-Alpes Métropole,,0,Grenoble-Alpes Métropole
+FRLIB,235,Eoliberty,0.991,1,Eoliberty,918444860,1,ITM Nanteuil le Haudoin-Circontrol -C4
+FRS41,234,Modulo,1.0,1,Modulo Energies,841376734,1,Modulo Energies MODULO - BLOIS - Rue de la Vallée Maillard
+FRGYM,233,GEEVE,1.0,1,GREENYELLOW EMOBILITY,835370842,1,GEEVE
+FROSC,225,SPIE CityNetworks,1.0,1,CityFMET64,992163725,1,Oscéa 64
+FRS31,222,Syndicat Départemental d'Énergie De la Haute-Garonne (SDEHG) | FR*S31,0.973,2,SDEHG,200075240,1,Freshmile France
+FRSEO,218,Séolis,1.0,1,SIEDS,200091049,2,AlterBase
+FRS82,216,Syndicat Départemental d'Énergie de Tarn-et-Garonne (SDE82) | FR*S82,1.0,1,SDE82 Public,,0,Freshmile France
+FRS85,200,Bouygues Energies & Services,1.0,1,SYDEV (FR*S85),200042489,1,SYDEV (FR*S85)
+FRIXL,199,IZIVIA,1.0,1,LIMOGES Métropole,419070180,2,LIMOGES Métropole
+FRWII,199,W:I (Comelec) | FR*WII,1.0,1,W:I,,0,FR*WII
+FRCPI,193,Raw Charging,0.839,5,Raw Charging,200096824,7,RAW MCG PARISGIVERNY 66
+FRMW1,192,PARERA MOBILITE | FR*MW1,1.0,1,TRESSOL CHABRIER,,0,PARERA MOBILITE CPO
+FRURW,191,IZIVIA,1.0,1,UNIBAIL,682024096,1,UNIBAIL
+FRERA,182,Eranovum e-Mobility France SAS,0.505,2,Eranovum e-Mobility France SAS,909764680,1,Eranovum e-Mobility France SAS
+FRIZM,180,IZIVIA,1.0,1,MAMP,912043676,1,MAMP
+FRS18,179,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - BOURGES - Cujas
+FRAUT,177,Evota Netherlands B.V. | FR*AUT,1.0,1,MISSING,,0,Evota
+FRGFX,172,C4Energies,0.971,3,Cocoon Padel Club,449623909,44,Super U
+FRBHM,171,Borneco | FR*BHM,0.982,2,Borneco,818984221,3,BornEco
+FRGOB,164,G-MOB,1.0,1,SYNDICAT MIXTE D'ELECTRICITE DE LA GUADELOUPE (SY.MEG),200010759,3,gmob
+FRS51,158,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - GIFFAUMONT CHAMPAUBERT- rue de la Cachotte
+FRS28,148,Modulo,0.946,3,Modulo Energies,841376734,2,FR*S28
+FR911,143,Porsche Sales & Marketplace,1.0,1,Porsche Sales & Marketplace,,0,Porsche Destination Charging Les Sources de Cheverny
+FR0CU,135,Charge Unix | FR*0CU,1.0,1,CREDIT AGRICOLE CENTRE FRANCE,,0,Charge Unix
+FRM31,133,Bouygues Energies & Services,1.0,1,Toulouse Métropole,,0,Reveo
+FRS55,128,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - COMMERCY - Piscine
+FRS53,126,Bouygues Energies & Services,1.0,1,Territoire de Energie TE53,,0,Territoire de Energie TE53
+FRZPE,126,ZEborne,0.468,3,OFFICE PUBLIC DE L'HABITAT DE LA SOMME,315667410,34,E-MB 73
+FRS88,126,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - EPINAL - Tribunal
+FRFZD,123,Fuzed | FR*FZD,1.0,1,Fuzed,,0,FR*FZD
+FRTDA,123,EASYCHARGE,1.0,1,TDEC services,982824872,1,AVIA VOLT by EASYCHARGE
+FRION,120,IONITY,1.0,1,IONITY,838436145,1,IONITY GMBH
+FRQWT,115,QoWatt,1.0,1,QoWatt,904074713,1,QoWatt
+FRS32,111,Syndicat Départemental d'Énergies du Gers (SDEG) | FR*S32,1.0,1,Gers,,0,Freshmile France
+FRORV,110,OBORNES,0.927,2,O'TERRE,935285478,1,OREVE
+FRAQI,108,Bouygues Energies & Services,1.0,1,AQUI,943458265,1,AQUI
+FRS48,108,Bouygues Energies & Services,1.0,1,Syndicat Départ d'Élec et d'Équip de la Lozère,,0,Reveo
+FRACA,107,Aéroports de la Côte d'Azur | FR*ACA,1.0,1,Aéroports de la Côte d'Azur,,0,Aéroports de la Côte d'Azur
+FRMIL,105,Milence,1.0,1,Milence,949382311,23,Milence
+FRZTL,103,ZEBORNE,0.67,2,TOYOTA LEXUS ERAGNY,302695325,16,GCA ERAGNY
+FRIMX,99,IZIVIA,1.0,1,IZIVIA MAX,940198799,1,IZIVIA MAX
+FRDJB,92,DEJA BLUE FRANCE,1.0,1,BAYERN LPB by autosphere,572721025,7,DejaBlue
+FRSOR,91,Sorel energies,1.0,1,Sorel energies,908460975,1,Rue Ren‚àö¬© Dhal 31
+FREMO,91,sas e-motum,0.604,2,sas  e-motum,752982645,1,e-motum
+FRS52,90,Syndicat d'Energie et des Déchets de la Marne (SDED52) | FR*S52,1.0,1,SDED 52,,0,Freshmile France
+FRS08,88,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO- GIVET - Pl. Jacques Sourdille
+FRN54,87,Modulo,1.0,1,Modulo Energies,841376734,1,MODULO - NANCY - Pkg. Thiers Taxi et public
+FRS23,86,MOBIVE_CITEOS,1.0,1,SDEC23,252309646,1,Réseau MOBIVE
+FREVE,84,FAROAD,0.833,2,TEV,895295525,1,TEV
+FRMAU,78,Properphi,1.0,1,SCI MAUFFREY IMMOBILIER,334836608,1,PROPERPHI
+FRS13,75,EVzen,0.933,2,Territoire d'Énergie Bouches-du-Rhône (TE13),251301545,1,EVzen
+FRILF,74,IZIVIA,1.0,1,IZIVIA Impact,934595463,1,LFREM
+FRPVD,73,Z-E-N,0.726,2,Z-E-N,907502652,1,Z-E-N
+FRS54,70,Citeos Mobilité Electrique Paris - Cogelum IDF,0.943,2,5_AM0004_SDE54,255403495,2,CPO CITEOS SDE54
+FRPL1,68,DRIVECO Partner Network,1.0,1,DRIVECO,,0,DRIVECO
+FRPRP,66,Citeos Mobilité Electrique Paris - Cogelum IDF,1.0,1,189__Perpignan,216601369,1,CPO CITEOS Perpignan
+FRAU1,66,AUTORECHARGE SAS,0.879,2,MALHERBE ENERGIES,908511710,14,Transport Malherbe Moissy-Cramayel
+FRM45,66,Orléans Métropole | FR*M45,1.0,1,Orléans Métropole,,0,Freshmile France
+FRALS,65,Altensys | FR*ALS,1.0,1,ALTENSYS,,0,ALTENSYS
+FRBEZ,64,SPIE CityNetworks,0.906,2,R-Mob,981104912,1,BEZIERS
+FRMAP,63,ELECTROMAPS,0.206,12,ECOPARK 5,909891012,24,ECOPARK 5
+FRYAW,61,Yaway,1.0,1,Yaway,942258534,1,Kallista-Yaway
+FREVB,60,LANGON DISTRIBUTION,0.367,6,LANGON DISTRIBUTION,390923175,12,BBJ Mazères
+FRZMA,60,ZEBORNE,1.0,1,LITTORAL VENDEE AUTOMOBILES - MAZDA LA ROCHE SUR YON,432152593,38,LITTORAL VENDEE AUTOMOBILES - MAZDA LA ROCHE SUR YON
+FRJBA,55,sas e-motum,1.0,1,sas  e-motum,752982645,1,e-motum
+FRCN1,55,Freshmile | FR*CN1,1.0,1,CNR - Move in Pure,,0,Freshmile France
+FRZIM,54,ZEBORNE,0.815,2,Intermarché - Saint-Paul les Dax,324104935,24,Intermarché - Saint-Paul les Dax
+FREVM,51,EV MAP SAS,0.863,3,Société Vauclusienne de distribution automobile,388424012,29,Chopard Peugeot Carpentras
+FRSEA,50,LOAD STATIONS | FR*SEA,1.0,1,Undefined,,0,SIEA
+FRMOT,46,Mobilize Power Solutions,0.848,4,Mobilize Power Solutions,881248165,3,EDENAUTO - Renault Langon Phase 3
+FRLST,44,Load Stations,0.909,2,Load Stations,920266608,2,Load Stations
+FRIDX,43,Idex,1.0,1,Idex,921041711,1,Looping
+FRSMI,41,WattzHub | FR*SMI,1.0,1,WATTZHUB,,0,wattzhub cpo
+BEDRV,40,DRIVECO,1.0,1,DRIVECO,,0,DRIVECO
+FRRSE,38,SPIE CITYNETWORKS,1.0,1,RSE01,438872871,1,RSE01
+FRELY,37,Bouygues Energies & Services,1.0,1,Bornes SIE-ELY,,0,Bornes SIE-ELY
+FRAGX,36,SPIE CITYNETWORKS,1.0,1,Pays de Gex Agglo,240100750,1,Pays de GEX
+DKMON,36,SOLVEO ENERGIES,0.972,1,SOLVEO ENERGIES,508886132,1,SOLVEO ENERGIES
+FRABA,34,EVzen,1.0,1,Communauté de communes Vallée des Baux - Alpilles,241300375,1,EVzen
+FRSLF,32,SAP Labs France SAS | FR*SLF,0.969,2,SAP Labs France,419855127,1,SAP Labs
+FRVIS,32,PARERA MOBILITE | FR*VIS,1.0,1,Renault Tech Avignon,,0,ENRGETICA
+FRJRC,30,Jerecharge.com,1.0,1,Jerecharge.com,905083895,1,Jerecharge.com
+FRECP,30,Ecophi mobility,0.7,2,SCI MAUFFREY IMMOBILIER,334836608,2,PROPERPHI
+FRE10,25,Virta,0.4,5,HERVE THERMIQUE,627220049,11,HERVE THERMIQUE IRVE
+FRALD,24,Atlante France,1.0,1,Alpis Drive,939990057,1,Atlante - Istres - Casa
+FR3R3,24,R3,1.0,1,R3,902726488,1,R3
+FRM29,24,Bouygues Energies & Services,1.0,1,RD Brest,,0,Ouest Charge
+FRHOP,22,Electricité Veit | FR*HOP,1.0,1,SDC L'HARMONY S/C GBI CONSEILS ARTHUR LOYD,,0,Hopla Power Charge
+FRPAM,22,Paragon Mobility,0.955,2,Paragon Mobility,851548404,1,"Nogent-le-Phaye / Allonnes,28 Eure-et-Loir,Centre-Val de Loire,France"
+FRZKA,20,ZEBORNE,1.0,1,KIA - Village Auto,384794418,10,KIA - Village Auto
+FR073,20,Acelec Charge,1.0,1,Acelec,301192464,1,Camaïeu France
+FRTNM,20,RAIDEN,1.0,1,HOTEL RESTAURANT PLANTEVIN,342201639,9,HOTEL RESTAURANT PLANTEVIN
+FRRYM,20,Ramery Mobility | FR*RYM,1.0,1,MISSING,,0,Ramery
+FRC2P,20,CAR2PLUG,1.0,1,INTERMARCHÉ VAURÉAL,449170455,5,INTERMARCHÉ VAURÉAL
+FRCHA,18,CHARGEPOLY,1.0,1,CHARGEPOLY,850854993,2,Chargepoly
+FREKL,16,Z-E-N,0.5,2,EKLEO TRANSPORTS,353422983,1,EKLEO TRANSPORTS
+FRHDT,16,TotalEnergies Charging Services,0.5,2,TotalEnergies Charging Services,844192443,2,TotalEnergies Charging Services
+FRG51,16,DRIVECO Partner Network,1.0,1,DRIVECO,,0,DRIVECO
+FREF1,15,Mobilize Power Solutions,1.0,1,Mobilize Power Solutions,881248165,1,Edenauto Espace Toy Toulouse
+FREMS,14,Electro Mobility Solutions,1.0,1,Electro Mobility Solutions,981727563,1,Electro Mobility Solutions
+FRZSU,12,ZEBORNE,1.0,1,SA BEYNEL ET FILS,318226974,4,SA BEYNEL ET FILS
+FR190,12,ENERJUMP,0.333,1,ENERJUMP,810323436,1,Greenflux Assets B.V.
+FRHPB,11,Citeos Mobilité Electrique Paris - Cogelum IDF,1.0,1,4_AM0003_CCHPB,200067650,1,CPO CITEOS CCHPB
+ITDRV,10,DRIVECO,1.0,1,DRIVECO,,0,DRIVECO
+FRE00,10,Electromaps,0.8,2,Indigo Propreté,809172166,10,FGS
+FRCTS,10,,0.0,0,41__Citeos Nancy,,0,CPO CITEOS
+FRMEI,9,Mob-Energy | FR*MEI,1.0,1,Dalkia,,0,Mob-Energy
+NLEVB,9,Beltoise Evolution,1.0,1,BELTOISE EVOLUTION,408461119,1,Beltoise Evolution
+FREPI,9,ECOPI,0.778,2,RossiniEnergy,839265873,2,RossiniEnergy
+FRZET,8,ZETRA Distribution SAS,0.5,2,ZETRA Distribution,895193019,2,ZETRA
+FRDEM,8,Bouygues Energies & Services,1.0,1,LA POSTE IMMO - DR CENTRE EST,,0,Alizé Demo
+ATHTB,7,RAIDEN,0.571,2,ChargePoint,821014610,2,Asia Automotive
+FRH09,7,Bouygues Energies & Services,1.0,1,Communauté de Communes Flandre-Lys,,0,Pass pass électrique
+FRA68,6,FRESHMILE,0.167,3,ROBOTIC COVER CONCEPT,420783946,6,ROBOTIC COVER CONCEPT
+ESDRV,6,DRIVECO,1.0,1,DRIVECO,,0,DRIVECO
+FRLOD,6,LODMI,0.667,3,LODMI,901360602,2,LODMI
+FRSYS,5,See You Sun,0.8,2,See You Sun,824641294,1,Foncière des parcs
+FRISE,5,INOUID,1.0,1,Caliceo Sainte Foy Les Lyon,512797887,4,Caliceo Sainte Foy Public
+FRARE,4,AREA Tech,1.0,1,,,0,AREA Tech
+FRALI,4,,0.0,0,Camping le Puits de l'Auture,,0,Réseau de recharge Charge-in
+FRPIN,4,LUMI'IN,1.0,1,LUMI'IN,807940070,1,LUMI'IN
+FRC2A,4,CAR2PLUG,1.0,1,TULLE ENERGIE LAVAGE,921616280,2,TULLE ENERGIE LAVAGE
+FRWAT,4,WAAT,1.0,1,SAS PRIMARD,842019317,3,RÃ©seau de recharge SAS PRIMARD
+FRPBR,4,Petite Borne,1.0,1,Camping les Myrtilles,493172860,3,Camping les Myrtilles
+FR000,4,ELECTROMAPS,1.0,1,Hotel saint Alban,379629447,4,Hotel saint alban
+FRMPS,4,Mobilize Power Solutions,1.0,1,Mobilize Power Solutions,881248165,1,Hess Renault MULHOUSE
+FRAEV,4,EVBOX,1.0,1,mbc,413171711,3,EVBOX
+FRS62,3,ubitricity,1.0,1,,389643859,1,Ubitricity France Network
+FRRM1,3,TANAY Electricité,1.0,1,IMAC2,421334566,1,Riviera Car Center
+REEFL,3,EZDRIVE,1.0,1,RSM REUNION EXPERTISE,444811970,1,EZDRIVE
+FRAE1,3,LMS,1.0,1,LIMACRI,322520149,1,PARTAGE MA BORNE
+FROYE,3,SOREGIES MOBILITES,1.0,1,OYA ENERGIES,450889225,1,SOREGIES MOBILITES
+FRA12,2,LMS,1.0,1,LIMACRI,322520149,1,PARTAGE MA BORNE
+FRS61,2,TotalEnergies Marketing France,1.0,1,Syndicat D'Énergie 61,256102922,1,TERRITOIRE D'ENERGIE ORNE
+FRZMS,2,ZEborne,1.0,1,SCEA LES FUIES,437983224,1,SCEA LES FUIES
+FREZD,2,Green Technologie,1.0,1,Green Technologie,428801658,2,Bananes Vertes St Claude
+FRCGO,2,RAIDEN,1.0,1,COMMUNE DE VILLARD SUR DORON,217303171,1,COMMUNE DE VILLARD SUR DORON
+FRS2E,2,SIEGE 27,1.0,1,SIEGE 27,252701974,1,SIEGE27
+FRC2N,2,CAR2PLUG,1.0,1,La Pagerie - Tropical Garden Hotel,311510002,1,La Pagerie - Tropical Garden Hotel
+FRPHI,2,ProperPhi,1.0,1,The Corner,837717909,1,PROPERPHI
+FRA16,2,IZIVIA,1.0,1,Wiiiz,240600585,1,Wiiiz
+ITMBZ,1,Mobilize Power Solutions,1.0,1,Mobilize Power Solutions,881248165,1,Bernard Trucks VERDUN
+FR515,1,Pascal Chene,1.0,1,GARAGE CHENE,539474817,1,GARAGE CHENE -TOTAL ENERGIES - CITROEN
+FR1EK,1,freshmile,1.0,1,LE ROUX LOISIRS,453386120,1,reseau A
+FR026,1,,0.0,0,ANEBEY,791318157,1,PLATEAU_YZERON
+CH911,1,Porsche Sales & Marketplace,1.0,1,Porsche Sales & Marketplace,,0,Porsche Destination Charging Maison Troisgros
+FR44P,1,Evbox,1.0,1,SARL Thouzeau LM,303486377,1,Reseau Evbox charge
+FRS68,1,MODULO,1.0,1,TERRITOIRE D'ENERGIE ALSACE,256802745,1,MODULO
+FRA42,1,,0.0,0,LABORATOIRE ESTRADE HUART,315708974,1,LABORATOIRE ESTRADE HUART
+FRAED,1,FRESHMILE,1.0,1,Commune de BOUZONVILLE,215701061,1,FRESMILE
+FRAEH,1,YES55,1.0,1,VMC,807478102,1,VMC
+FREMI,1,Leclerc Millau,1.0,1,MACRIS,341760148,1,Leclerc Millau
+FREZP,1,Zephyre SAS,1.0,1,Comfort Hotel Lille l'Union,508085461,1,Comfort Hotel Lille l'Union
+FRH13,1,Bouygues Energies & Services,1.0,1,Communauté d'Agglomération Béthune Bruay Artois,,0,Pass pass électrique
+FRLAR,1,PAS DITINERANCE,1.0,1,LA RESERVE DE RILHAT,909790511,1,PAS DITINERANCE
+FRP00,1,electromaps,1.0,1,Armstrong France,434543864,1,Armstrong France
+FRPMA,1,electromaps,1.0,1,A.L.R,830836599,1,A.L.R
+FRRIR,1,MONTA,1.0,1,PARKING NEGRESKO,814699492,1,MONTA
+FRS58,1,,0.0,0,SEGA ELECTRICITE,791408040,1,hagger
+FRWA4,1,WAAT SAS | FR*WA4,1.0,1,WAAT sas,,0,WAAT

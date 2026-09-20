@@ -127,7 +127,11 @@ def joindre_etat(df: pd.DataFrame, jour: date) -> tuple[pd.DataFrame, dict]:
     etat = etat_du_jour(jour)
     df = df.join(etat, on="id_pdc_itinerance")
     df["etat_jour"] = df["etat_jour"].fillna("absent du flux")
-    df["frais"] = df["frais"].fillna(False)
+    # Le type compte : apres la jointure la colonne melange booleens et NaN,
+    # donc un objet. Somme sur un objet, pandas ecrit « False » au lieu de 0
+    # pour les groupes entierement faux, et la colonne se relit en texte. Onze
+    # reseaux etaient dans ce cas et faussaient toute lecture du fichier.
+    df["frais"] = df["frais"].fillna(False).astype(bool)
     c = Counter(df["etat_jour"])
     compteurs = {
         "creneaux_captures": len(creneaux_du_jour(jour)),
@@ -154,7 +158,7 @@ def matrices(df: pd.DataFrame, dossier: Path) -> dict:
 
     etat = (df.groupby("departement", dropna=False)
               .agg(pdc=("id_pdc_itinerance", "size"),
-                   frais=("frais", "sum"),
+                   frais=("frais", lambda s: int(s.sum())),
                    hors_service=("etat_jour", lambda s: int((s == "hors_service").sum())),
                    muet=("etat_jour", lambda s: int((s == "muet").sum())),
                    inconnu=("etat_jour", lambda s: int((s == "inconnu").sum())))
@@ -181,7 +185,7 @@ def matrices(df: pd.DataFrame, dossier: Path) -> dict:
     reseaux = (df.groupby("reseau")
                  .agg(pdc=("id_pdc_itinerance", "size"),
                       stations=("id_station_itinerance", "nunique"),
-                      frais=("frais", "sum"),
+                      frais=("frais", lambda s: int(s.sum())),
                       hors_service=("etat_jour", lambda s: int((s == "hors_service").sum())),
                       avec_prix=("prix_retenu", "count"),
                       puissance_mediane_kw=("puissance", "median"),

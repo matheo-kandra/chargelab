@@ -1,6 +1,6 @@
 {
  "date": "2026-09-19",
- "generated_at": "2026-09-20T21:25:34+00:00",
+ "generated_at": "2026-09-20T21:32:38+00:00",
  "sources": {
   "statique": "consolidation PAN beta, ressource 84013, archive locale",
   "dynamique": "consolidation PAN beta, ressource 84098, captures archivees",
@@ -62,9 +62,9 @@
   "M_parc_lignes": 681,
   "M_etat_lignes": 101,
   "departements_sous_seuil_etat": 6,
-  "M_prix_cases": 120,
-  "M_prix_cases_publiables": 33,
-  "M_reseaux_lignes": 173
+  "M_prix_cases": 141,
+  "M_prix_cases_publiables": 39,
+  "M_reseaux_lignes": 191
  },
- "empreinte_donnees": "ea52621440cee58ef09414c3fcb6e70da7a85d691b41e100de6398564eba1c59"
+ "empreinte_donnees": "f297387ae80fcc2c85ad39091544af86bd5eb50d8284ae4ba604991634bb8fb7"
 }

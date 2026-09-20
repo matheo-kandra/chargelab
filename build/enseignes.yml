@@ -1,15 +1,106 @@
-# Regroupements de prefixes eMI3 en reseaux, decides a la main (ADR 07).
+# Nom affiche de chaque prefixe eMI3, decide a la main (ADR 07).
 #
-# Le nom affiche d'un prefixe est par defaut le libelle `nom_operateur`
-# majoritaire de ce prefixe, qui couvre 94,37 % de ses points de charge. Ce
-# fichier ne sert qu'aux cas ou un meme reseau porte plusieurs prefixes, ou
-# quand le libelle majoritaire est manifestement un nom de site.
+# Par defaut, le nom d'un prefixe est son libelle `nom_operateur` majoritaire,
+# debarrasse du marqueur d'itinerance (« Freshmile | FR*FR1 » devient
+# « Freshmile »). Ce fichier ne corrige que les cas ou ce defaut est faux.
 #
-# Chaque entree doit pouvoir etre justifiee par les donnees. Tant que la
-# verification n'a pas ete faite prefixe par prefixe, ce fichier reste vide :
-# un regroupement invente serait pire qu'une absence de regroupement, parce
-# qu'il gonflerait artificiellement un reseau dans la section « Les enseignes ».
+# Pourquoi il ne pouvait pas rester vide
+# --------------------------------------
+# La verification prefixe par prefixe a montre que `nom_operateur` designe
+# souvent l'exploitant technique et non le reseau que voit l'automobiliste.
+# Deux exploitants a eux seuls faussent le classement :
 #
-# Format :
-#   Nom du reseau:
-#     - FRXXX, FRYYY
+#   IZIVIA exploite pour Q-Park, le SIGEIF, IKEA et la metropole de Nice.
+#   Sans correction, ces quatre reseaux disparaissent dans un « IZIVIA » de
+#   5 000 points de charge qui n'existe sous ce nom nulle part.
+#
+#   Bouygues Energies & Services exploite pour cinq collectivites, dont
+#   Pass pass electrique, Alize Liberte 2 et La borne bleue. Meme effet.
+#
+# Regle que je me suis imposee : la valeur retenue doit figurer telle quelle
+# dans les donnees du prefixe, comme `nom_enseigne`, `nom_operateur` ou
+# `nom_amenageur`. Les seules retouches autorisees sont le retrait du marqueur
+# de role « CPO » et de la forme juridique. Chaque ligne porte la part du
+# libelle qui la justifie, mesuree sur l'edition du 19 septembre 2026.
+#
+# Les regroupements de plusieurs prefixes sous un meme nom ne sont faits que
+# quand la marque est la meme dans l'operateur ET dans l'enseigne. Un reseau
+# tiers exploite par une marque n'est pas regroupe avec elle : Belib' reste
+# Belib' meme si TotalEnergies l'exploite.
+
+# --- reseaux exploites par IZIVIA -----------------------------------------
+QPARK:
+  - FRQPK          # enseigne QPARK : 100 % des 1 934 points
+SIGEIF:
+  - FRSIG          # enseigne SIGEIF : 88 % des 1 269 points
+IKEA:
+  - FRIKA          # enseigne IKEA : 100 % des 915 points
+NICE RP:
+  - FRM06          # enseigne NICE RP : 98 % des 870 points
+
+# --- reseaux exploites par Bouygues Energies & Services --------------------
+Pass pass électrique:
+  - FRH01          # enseigne unanime sur 1 802 points
+Alizé Liberté 2:
+  - FRBE3          # enseigne unanime sur 1 360 points
+La borne bleue:
+  - FRSIP          # enseigne et amenageur unanimes sur 1 214 points
+EFFIA France:
+  - FRP01          # enseigne unanime, amenageur EFFIA STATIONNEMENT
+Ouest Charge:
+  # enseigne Ouest Charge de 50 a 100 % selon le prefixe, meme reseau
+  # regional ; sur FRS44 elle partage l'affiche avec SYDELA, le syndicat
+  # qui porte le reseau
+  - FRS44, FRS49, FRS29, FRS22, FRS35   # 815 + 730 + 522 + 478 + 444 points
+
+# --- reseaux exploites par EASYCHARGE --------------------------------------
+eborn:
+  - FREBN          # enseigne eborn : 96 % des 3 788 points
+Easy Charge Services:
+  - FRECH          # enseigne unanime sur 1 510 points
+
+# --- reseaux exploites par Citeos ------------------------------------------
+# « CPO » est un marqueur de role, retire du libelle.
+CITEOS Mobive:
+  - FRMBI          # enseigne CPO CITEOS Mobive : 100 % des 2 535 points
+CITEOS Region-Bfc:
+  - FRBFC          # enseigne CPO CITEOS Region-Bfc : 100 % des 823 points
+
+# --- reseaux exploites par TotalEnergies mais portant un autre nom ---------
+Belib':
+  - FRV75          # enseigne unanime sur 2 224 points, reseau de la Ville de Paris
+SAEMES:
+  - FRSAE          # enseigne SAEMES ou Saemes : 98 % des 2 063 points
+
+# --- regroupements de prefixes d'une meme marque ---------------------------
+TotalEnergies:
+  # marque presente dans l'operateur et dans l'enseigne des trois prefixes
+  - FRHPC, FRTCB, FRHXW   # 2 268 + 1 632 + 1 581 = 5 481 points
+DRIVECO:
+  - FRDRV, FRSSD   # enseigne DRIVECO sur les deux, 1 909 + 2 824 points
+QOVOLTIS:
+  - FRQOV, FRQVI   # operateur et enseigne QOVOLTIS sur les deux prefixes
+
+# --- formes juridiques retirees --------------------------------------------
+ALDI:
+  - FRALN          # operateur « ALDI SARL », enseigne « ALDI »
+
+# --- reseaux exploites par Bouygues Energies & Services, suite --------------
+# La verification a montre que FRS44 n'etait pas un cas isole : neuf autres
+# prefixes portent un reseau territorial sous le meme exploitant technique.
+Ecocharge77:
+  - FRS77          # enseigne unanime sur 664 points
+Seymaborne:
+  - FRY03          # enseigne unanime sur 662 points
+ADP Groupe:
+  - FRADP          # enseigne unanime sur 604 points
+reGARD:
+  - FRS30          # enseigne unanime sur 418 points
+Reveo:
+  - FRS34          # enseigne unanime sur 394 points
+Métropole Rouen Normandie:
+  - FRC01          # enseigne unanime sur 384 points
+
+# --- reseau exploite par IZIVIA, suite -------------------------------------
+Grand Lyon:
+  - FRGLY          # enseigne Grand Lyon : 76 % des 790 points

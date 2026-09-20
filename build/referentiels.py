@@ -29,6 +29,10 @@ FUSIONS = RACINE / "build" / "enseignes.yml"
 
 RE_INSEE = re.compile(r"^([013-9]\d|2[AB1-9])\d{3}$")
 RE_PREFIXE = re.compile(r"^([A-Z]{2}[A-Z0-9]{3})")
+# Beaucoup de producteurs suffixent leur nom d'operateur par leur identifiant
+# d'itinerance : « Freshmile | FR*FR1 », « E.Leclerc | FR*LE2 ». C'est une
+# annotation technique, pas une partie du nom. On la retire, et seulement elle.
+RE_MARQUEUR_ITINERANCE = re.compile(r"\s*\|\s*[A-Z]{2}\*?[A-Z0-9]{3}\s*$")
 
 CLASSES = ("AC <= 7 kW", "AC 7 a 22,9 kW", "AC > 22,9 kW",
            "DC < 50 kW", "DC 50 a 150 kW", "DC >= 150 kW", "non classable")
@@ -168,7 +172,8 @@ def noms_par_prefixe(prefixes, operateurs) -> dict[str, str]:
     for p, op in zip(prefixes, operateurs):
         if not p:
             continue
-        par_prefixe.setdefault(p, Counter())[(op or "").strip()] += 1
+        nom = RE_MARQUEUR_ITINERANCE.sub("", (op or "").strip()).strip()
+        par_prefixe.setdefault(p, Counter())[nom] += 1
     fusions = _fusions()
     sortie = {}
     for p, compte in par_prefixe.items():
