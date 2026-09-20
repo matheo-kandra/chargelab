@@ -1,0 +1,8 @@
+# Versions figees sur celles de l'environnement ou les tests passent.
+# Les collecteurs partagent la meme version de pandas : un ecart entre le
+# poste et le runner ferait de la reproductibilite une illusion.
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+shapely==2.1.2
+coverage==7.16.1

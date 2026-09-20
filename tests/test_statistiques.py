@@ -314,6 +314,61 @@ def tester_report(m) -> None:
              m.report_derniere_valeur(serie, 0) == (dict(serie), 0))
 
 
+def tester_cas_limites(m) -> None:
+    """Les branches defensives comptent aussi.
+
+    La spec exige 100 % de couverture des fonctions de calcul. Une branche
+    jamais exercee est une branche dont personne ne sait si elle marche, et
+    ce sont precisement les chemins de donnees sales qui comptent ici.
+    """
+    # entrees non numeriques : ecartees, pas imputees
+    verifier("valeur None ecartee", proche(m.mediane([1.0, None, 3.0]), 2.0))
+    verifier("chaine ecartee", proche(m.mediane([1.0, "abc", 3.0]), 2.0))
+    verifier("NaN et infini ecartes",
+             proche(m.mediane([1.0, float("nan"), float("inf"), 3.0]), 2.0))
+    verifier("liste entierement sale", m.mediane([None, "x", float("nan")]) is None)
+
+    # quantile hors de [0 ; 1]
+    for mauvais in (-0.1, 1.5):
+        try:
+            m.quantile([1.0, 2.0, 3.0], mauvais)
+            verifier(f"quantile q={mauvais} doit lever", False, "aucune exception")
+        except ValueError:
+            verifier(f"quantile q={mauvais} leve bien", True)
+
+    # ecretage : bornes passees a l'envers, et serie vide
+    droit, _ = m.ecreter([0.1, 0.5, 0.9, 5.0], 0.02, 0.98)
+    envers, _ = m.ecreter([0.1, 0.5, 0.9, 5.0], 0.98, 0.02)
+    verifier("ecretage : bornes a l'envers redressees", droit == envers,
+             f"{droit!r} contre {envers!r}")
+    verifier("ecretage d'une serie vide", m.ecreter([], 0.02, 0.98) == ([], 0))
+
+    # Theil-Sen : toutes les abscisses identiques, aucune paire exploitable
+    verifier("theil-sen sans abscisse distincte",
+             m.theil_sen([4, 4, 4], [1.0, 2.0, 3.0]) == (None, None))
+    verifier("theil-sen ecarte les couples sales",
+             m.theil_sen([0, 1, 2, 3], [1.0, None, 3.0, 4.0])[0] is not None)
+
+    # projection : serie vide, et serie sans abscisse distincte
+    verifier("projection sur serie vide",
+             m.projeter({}, [1, 7]) == {1: None, 7: None})
+    verifier("projection sans pente calculable",
+             m.projeter({5: 1.0}, [1]) == {1: None},
+             f"obtenu {m.projeter({5: 1.0}, [1])!r}")
+
+    # backtest : fenetre jamais complete
+    verifier("backtest sans fenetre complete",
+             m.backtest({0: 1.0, 1: 2.0}, [1], fenetre=30) == {1: None})
+    # fenetre degeneree : un seul point par fenetre, aucune pente calculable
+    dense = {j: float(j) for j in range(10)}
+    verifier("backtest avec une fenetre d'un seul jour",
+             m.backtest(dense, [1], fenetre=1) == {1: None},
+             f"obtenu {m.backtest(dense, [1], fenetre=1)!r}")
+
+    # report : serie vide
+    verifier("report sur serie vide", m.report_derniere_valeur({}, 5) == ({}, 0))
+
+
 def main() -> int:
     try:
         from build import statistiques as m
@@ -330,6 +385,7 @@ def main() -> int:
     tester_theil_sen(m)
     tester_projection_et_backtest(m)
     tester_report(m)
+    tester_cas_limites(m)
 
     if echecs:
         print(f"ECHEC : {len(echecs)} verification(s)", file=sys.stderr)
