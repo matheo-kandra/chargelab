@@ -12,7 +12,11 @@ reconstruit après coup.
 | `collecte_dynamique.py` | capture du flux dynamique, archivage des seuls changements d'état |
 | `collecte_statique.py` | téléchargement quotidien du fichier statique, archivage compact, vérification de la reconstruction |
 | `archive_statique.py` | schéma d'archivage compact et reconstruction exacte (ADR 10) |
-| `publier.sh` | commit et push, avec reprise sur conflit |
+| `publier.sh` | commit et push, avec reprise sur conflit et refus des marqueurs |
+| `verifier.py` | contrôle de santé : import de tous les modules, absence de marqueurs de conflit |
+| `boucle_locale.py` | boucle de collecte à cadence garantie, en local ou dans Actions |
+| `filet_local.py` | filet de sécurité : collecte seulement si GitHub s'est tu |
+| `bilan.py` | couverture réelle, cadence obtenue, créneaux manqués |
 
 ## Cadence
 
@@ -24,8 +28,19 @@ la part du parc qui change d'état passe de 0,21 % par créneau de 5 minutes à
   15 minutes sinon, soit 208 passages par jour.
 - **statique** : une fois par jour à 03:10 UTC.
 
-GitHub décale fréquemment les déclenchements planifiés. La cadence réellement
-obtenue se lit dans le journal, elle n'est jamais supposée.
+**Le planificateur de GitHub ne déclenche pas chaque passage.** Il a été mesuré
+inutilisable pour cela : un seul déclenchement obtenu en quatre heures là où
+cinquante étaient attendus. Il déclenche donc, une fois par heure, une boucle
+qui tient elle-même la cadence jusqu'au créneau horaire suivant. Un
+déclenchement retardé de vingt minutes coûte vingt minutes de collecte, pas la
+journée entière.
+
+La cadence réellement obtenue se lit dans le journal, elle n'est jamais
+supposée : `python collect/bilan.py <debut_iso>`.
+
+En complément, `filet_local.py` peut tourner sur un poste : il ne collecte que
+si le dernier passage réussi date de plus de 25 minutes, quelle qu'en soit la
+source. On a la redondance sans dédoubler les captures.
 
 ## Ce qui est archivé
 
