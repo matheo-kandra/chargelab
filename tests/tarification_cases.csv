@@ -1,0 +1,368 @@
+# inventaire source : docs/tarification-valeurs.csv
+# sha256 de l'inventaire : 36c362ae33b0e6f4815edf43965d69d26c1afbcdb093cdc4a7137b8072f7d078
+# 351 cas sur 438 valeurs distinctes
+rang,nb_pdc,part_pct,valeur_brute,code_attendu,prix_kwh,prix_kwh_ac,prix_kwh_dc,prix_min,prix_heure_charge,prix_session,prix_occupation_h,ht_converti,motif
+1,10340,28.5667,"Les tarifs de recharge peuvent varier en fonction de plusieurs facteurs, y compris le fournisseur de services, l'emplacement de la borne, la puissance de charge, et les éventuelles promotions en cours. Il est recommandé de consulter directement les informations tarifaires auprès du gestionnaire de la borne ou via l'application mobile associée pour obtenir les détails les plus récents et précis.",RENVOI,,,,,,,,non,"texte de renvoi vers l'application, aucun chiffre"
+2,2984,8.244,"entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.30916667€ par kwh de charge, par défaut : 0.30916667€ par kwh de charge",KWH,0.30916667,,,,,,3.75,non,
+3,2594,7.1665,Tarification au kWh plus frais de connexion éventuelles en fonction de l abonnement détenu,RENVOI,,,,,,,,non,annonce une tarification au kWh sans donner de prix
+4,2055,5.6774,Inconnu,RENVOI,,,,,,,,non,mot cle sans information
+5,1649,4.5558,"entre 07:00 et 22:00 : 0.3333€ par kwh de charge, entre 07:00 et 22:00 : 5.0€ par heure d'occupation hors charge, 0.3333€ par kwh de charge, 5.0€ par heure de charge, entre 22:00 et 07:00 : 0.3333€ par kwh de charge, par défaut : 0.3333€ par kwh de charge",MIXTE,0.3333,,,,5,,5,non,
+6,1095,3.0252,https://www.metropolis-recharge.fr/,RENVOI,,,,,,,,non,renvoi vers un site tiers
+7,1037,2.865,Tarification au kWh plus frais de connexion éventuelles en fonction de l'abonnement détenu. Supplément de tarif à la minute pour les recharges en roaming,RENVOI,,,,,,,,non,annonce une tarification au kWh sans donner de prix
+8,744,2.0555,AC 36cts/KWh,KWH,0.36,,,,,,,non,« cts » avec un entier : 36 centimes
+9,728,2.0113,-,RENVOI,,,,,,,,non,tiret seul
+10,727,2.0085,"par défaut : 0.4667€ par kwh de charge, par défaut : 0.4667€ par kwh de charge, 6.6667€ par heure d'occupation hors charge, 6.6667€ par heure de charge, par défaut : 0.4667€ par kwh de charge",MIXTE,0.4667,,,,6.6667,,6.6667,non,
+11,665,1.8372,Grille tarifaire en ligne,RENVOI,,,,,,,,non,renvoi vers une grille externe
+12,547,1.5112,"0,29€ / kWh",KWH,0.29,,,,,,,non,
+13,529,1.4615,https://www.ouestcharge-paysdelaloire-moncompte.fr/fr/tarifs,RENVOI,,,,,,,,non,renvoi vers un site tiers
+14,499,1.3786,"par défaut : 6.0€ par heure d'occupation hors charge, 0.42€ par kwh de charge",KWH,0.42,,,,,,6,non,
+15,484,1.3372,HPC 49cts/Kwh ,KWH,0.49,,,,,,,non,« cts » avec un entier
+16,471,1.3012,https://www.e-vadea.fr/fr/tarifs,RENVOI,,,,,,,,non,renvoi vers un site tiers
+17,361,0.9973,"par défaut : 0.4167€ par kwh de charge, par défaut : 6.0€ par heure d'occupation hors charge, 0.4167€ par kwh de charge, 6.0€ par heure de charge, par défaut : 0.4167€ par kwh de charge",MIXTE,0.4167,,,,6,,6,non,
+18,343,0.9476,"entre 08:00 et 20:00 : 0.39€ par kwh de charge, 3.2€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.39€ par kwh de charge, par défaut : 0.39€ par kwh de charge",KWH,0.39,,,,,,3.2,non,
+19,286,0.7901,59 cts/kWh,KWH,0.59,,,,,,,non,« cts » avec un entier
+20,282,0.7791,"par défaut : 0.4667€ par kwh de charge, par défaut : 6.6667€ par heure d'occupation hors charge, 6.6667€ par heure de charge, 0.4667€ par kwh de charge, par défaut : 0.4667€ par kwh de charge",MIXTE,0.4667,,,,6.6667,,6.6667,non,
+21,269,0.7432,HPC 59cts/Kwh ,KWH,0.59,,,,,,,non,« cts » avec un entier
+22,241,0.6658,"entre 07:00 et 23:00 : 0.45833€ par kwh de charge, entre 07:00 et 23:00 : 4.5€ par heure de charge, 4.5€ par heure d'occupation hors charge, 0.45833€ par kwh de charge, entre 23:00 et 07:00 : 0.45833€ par kwh de charge, par défaut : 0.45833€ par kwh de charge",MIXTE,0.45833,,,,4.5,,4.5,non,
+23,230,0.6354,"entre 08:00 et 19:00 : 0.33334€ par kwh de charge, 15.0€ par heure d'occupation hors charge, entre 19:00 et 08:00 : 0.33334€ par kwh de charge, par défaut : 0.33334€ par kwh de charge",KWH,0.33334,,,,,,15,non,
+24,223,0.6161,https://www.oscea64.fr/fr/tarifs,RENVOI,,,,,,,,non,renvoi vers un site tiers
+25,218,0.6023,https://www.seolis.net/alterbase/nos-tarifs/,RENVOI,,,,,,,,non,renvoi vers un site tiers
+26,192,0.5304,"0,39€ / kWh",KWH,0.39,,,,,,,non,
+27,186,0.5139,Bornes rapides: 2€ + 0.59€ / kWh,MIXTE,0.59,,,,,2,,non,forfait de mise en route plus prix au kWh
+28,179,0.4945,49 cts/kWh,KWH,0.49,,,,,,,non,« cts » avec un entier
+29,178,0.4918,Payant,RENVOI,,,,,,,,non,mot cle sans information
+30,171,0.4724,TRUE,RENVOI,,,,,,,,non,booleen fuite dans le champ texte
+31,170,0.4697,"par défaut : 0.33334€ par kwh de charge, par défaut : 0.33334€ par kwh de charge, 2.5€ par heure d'occupation hors charge, 2.5€ par heure de charge, par défaut : 0.33334€ par kwh de charge",MIXTE,0.33334,,,,2.5,,2.5,non,
+32,166,0.4586,0.4583,INCONNU,,,,,,,,non,nombre nu sans unite
+33,163,0.4503,Tarification au kWh plus frais de connexion éventuelles en fonction de l'abonnement détenu. Supplément de traif à la minute pour les recharges en roaming,RENVOI,,,,,,,,non,annonce une tarification au kWh sans donner de prix
+34,163,0.4503,"0,35€/kWh + 0,03€/min entre 6h et 18h, 15€ la session entre 18h et 6h",MIXTE,0.35,,,0.03,,,,non,"deux plages de douze heures, egalite de duree : on garde la premiere du texte"
+35,163,0.4503,"entre 08:00 et 22:00 : 0.325€ par kwh de charge, entre 08:00 et 22:00 : 6.6667€ par heure de charge, 6.6667€ par heure d'occupation hors charge, 0.325€ par kwh de charge, entre 22:00 et 08:00 : 0.325€ par kwh de charge, par défaut : 0.325€ par kwh de charge",MIXTE,0.325,,,,6.6667,,6.6667,non,
+36,145,0.4006,PAYANT,RENVOI,,,,,,,,non,mot cle sans information
+37,129,0.3564,HPC 49cts/Kwh,KWH,0.49,,,,,,,non,« cts » avec un entier
+38,125,0.3453,"par défaut : 0.4583€ par kwh de charge, par défaut : 0.4583€ par kwh de charge, 6.0€ par heure de charge, 6.0€ par heure d'occupation hors charge, par défaut : 0.4583€ par kwh de charge",MIXTE,0.4583,,,,6,,6,non,
+39,123,0.3398,https://www.go-fuzed.com/cgv,RENVOI,,,,,,,,non,renvoi vers des conditions generales
+40,120,0.3315,0.69€ / kwh,KWH,0.69,,,,,,,non,
+41,117,0.3232,HPC 59cts/Kwh,KWH,0.59,,,,,,,non,« cts » avec un entier
+42,116,0.3205,"entre 08:00 et 22:00 : 0.325€ par kwh de charge, entre 08:00 et 22:00 : 6.6667€ par heure d'occupation hors charge, 0.325€ par kwh de charge, 6.6667€ par heure de charge, entre 22:00 et 08:00 : 0.325€ par kwh de charge, par défaut : 0.325€ par kwh de charge",MIXTE,0.325,,,,6.6667,,6.6667,non,
+43,92,0.2542,"0,45 €/kWh",KWH,0.45,,,,,,,non,
+44,91,0.2514,"entre 09:00 et 19:00 : 0.5€ par kwh de charge, entre 09:00 et 19:00 : 1.0€ par heure de charge, 1.0€ par heure d'occupation hors charge, 0.5€ par kwh de charge, par défaut : 0.5€ par kwh de charge, entre 19:00 et 09:00 : 0.5€ par kwh de charge",MIXTE,0.5,,,,1,,1,non,
+45,90,0.2486,"entre 06:00 et 00:00 : 0.33334€ par kwh de charge, entre 06:00 et 00:00 : 4.0€ par heure de charge, 4.0€ par heure d'occupation hors charge, 0.33334€ par kwh de charge, entre 06:00 et 00:00 : 8.0€ par heure de charge, 8.0€ par heure d'occupation hors charge, 0.33334€ par kwh de charge, entre 00:00 et 06:00 : 0.20834€ par kwh de charge, par défaut : 0.20834€ par kwh de charge",MIXTE,0.20834,,,,4,,4,non,"le « par defaut » porte ici le tarif de nuit, plus bas que celui de jour : la regle est appliquee telle quelle"
+46,88,0.2431,"entre 08:00 et 22:00 : 0.3583€ par kwh de charge, entre 08:00 et 22:00 : 6.6667€ par heure d'occupation hors charge, 0.3583€ par kwh de charge, 6.6667€ par heure de charge, entre 22:00 et 08:00 : 0.3583€ par kwh de charge, par défaut : 0.3583€ par kwh de charge",MIXTE,0.3583,,,,6.6667,,6.6667,non,
+47,86,0.2376,"0,22",INCONNU,,,,,,,,non,nombre nu sans unite
+48,86,0.2376,Au kWh,RENVOI,,,,,,,,non,annonce une unite sans donner de prix
+49,85,0.2348,"entre 08:00 et 22:00 : 10.0€ par heure d'occupation hors charge, 0.33334€ par kwh de charge, entre 22:00 et 08:00 : 0.33334€ par kwh de charge, par défaut : 0.33334€ par kwh de charge",KWH,0.33334,,,,,,10,non,
+50,81,0.2238,"lorsque la voitutre est branché:
+on applique 0.32€/Kwh + 0.1€ /min ( App Tarif) et 0.032€/Kwh) 
+
+lorsque la voiture est chargée mais toujours branché: 
+on applique 0.1€/min (App tarif) ",MIXTE,0.32,,,0.1,,,,non,"deux prix au kWh dans le texte, 0.32 puis 0.032 ; on garde le premier et on le declare"
+51,76,0.21,0 pour utilisateur,RENVOI,,,,,,,,non,"formulation ambigue, ne dit pas si la recharge est gratuite pour tous"
+52,72,0.1989,"entre 08:00 et 19:00 : 0.41667€ par kwh de charge, 20.0€ par heure d'occupation hors charge, entre 19:00 et 08:00 : 0.41667€ par kwh de charge, par défaut : 0.41667€ par kwh de charge",KWH,0.41667,,,,,,20,non,
+53,70,0.1934,"par défaut : 0.49167€ par kwh de charge, par défaut : 0.49167€ par kwh de charge, 6.667€ par heure d'occupation hors charge, 6.667€ par heure de charge, par défaut : 0.0€ par heure d'occupation hors charge, 0.0€ par heure de charge",MIXTE,0.49167,,,,6.667,,6.667,non,"le dernier « par defaut » ne porte pas de prix au kWh, on retient le dernier qui en porte un"
+54,69,0.1906,"par défaut : 0.33334€ par kwh de charge, par défaut : 1.0€ par heure de charge, 1.0€ par heure d'occupation hors charge, 0.33334€ par kwh de charge, par défaut : 0.33334€ par kwh de charge",MIXTE,0.33334,,,,1,,1,non,
+55,63,0.1741,true,RENVOI,,,,,,,,non,booleen fuite dans le champ texte
+56,63,0.1741,"0,39E/kWh et 1E de cout fixe par session de recharge.",MIXTE,0.39,,,,,1,,non,« E » mis pour euro
+57,62,0.1713,"par défaut :  prix de départ 1.25€, 0.33334€ par kwh de charge, 0.25€ par heure de charge, 0.25€ par heure d'occupation hors charge",MIXTE,0.33334,,,,0.25,1.25,0.25,non,« prix de depart » traite comme un forfait de session
+58,61,0.1685,Coût de l’énergie : 0.32€ / KWH Coût de la durée lorsque le véhicule est en charge : 0.1€ / Minute Coût de la durée lorsque le véhicule est chargé : 0.1€ / Minute,MIXTE,0.32,,,0.1,,,,non,
+59,58,0.1602,"Charge normale : 0,025€ / min",MIN,,,,0.025,,,,non,
+60,54,0.1492,25 cts / kWh,KWH,0.25,,,,,,,non,« cts » avec un entier
+61,53,0.1464,"0,66 € TTC par kWh",KWH,0.66,,,,,,,non,TTC explicite
+62,50,0.1381,"entre 07:00 et 22:00 : 0.3333 par kwh de charge, entre 07:00 et 22:00 : 5.0 par heure d'occupation hors charge, 0.3333 par kwh de charge, 5.0 par heure de charge, entre 22:00 et 07:00 : 0.3333 par kwh de charge, par défaut : 0.3333 par kwh de charge",MIXTE,0.3333,,,,5,,5,non,montants sans symbole euro
+63,50,0.1381,"0,75 e/ kwh",KWH,0.75,,,,,,,non,« e » mis pour euro
+64,43,0.1188,Non communiqué,RENVOI,,,,,,,,non,mot cle sans information
+65,42,0.116,"0,40€ / kwh pour les non abonnés.",KWH,0.4,,,,,,,non,"tarif non abonne, c'est le prix public"
+66,42,0.116,"par défaut : 0.33334€ par kwh de charge, par défaut : 2.5€ par heure d'occupation hors charge, 0.33334€ par kwh de charge, 2.5€ par heure de charge, par défaut : 0.33334€ par kwh de charge",MIXTE,0.33334,,,,2.5,,2.5,non,
+67,42,0.116,"entre 08:00 et 20:00 : 2.5€ par heure d'occupation hors charge, 0.3342€ par kwh de charge, entre 20:00 et 08:00 : 0.3342€ par kwh de charge",KWH,0.3342,,,,,,2.5,non,"aucun « par defaut », les deux plages donnent le meme prix"
+68,41,0.1133,"entre 07:00 et 23:00 : 0.2667€ par kwh de charge, 6.0€ par heure d'occupation hors charge, entre 23:00 et 07:00 : 0.2667€ par kwh de charge, par défaut : 0.2667€ par kwh de charge",KWH,0.2667,,,,,,6,non,
+69,39,0.1077,"entre 08:00 et 20:00 : 0.3917€ par kwh de charge, entre 08:00 et 20:00 : 7.5€ par heure d'occupation hors charge, 0.3917€ par kwh de charge, entre 20:00 et 08:00 : 0.3917€ par kwh de charge, par défaut : 0.3917€ par kwh de charge",KWH,0.3917,,,,,,7.5,non,
+70,38,0.105,http://www.rse01.orios-infos.com/tarifs,RENVOI,,,,,,,,non,renvoi vers un site tiers
+71,36,0.0995,http://www.pays-gex.orios-infos.com/,RENVOI,,,,,,,,non,renvoi vers un site tiers
+72,36,0.0995,"lorsque la voitutre est branché:
+0.32€/Kwh + 0.1€ /min
+
+lorsque la voiture est chargée mais toujours branché: 
+0.1€/min",MIXTE,0.32,,,0.1,,,,non,
+73,35,0.0967,"Coût de l’énergie : 0.32€ / KWH Coût de la durée lorsque le véhicule est en charge : 0.1€ / Minute Coût de la durée lorsque le véhicule est chargé : 0.1€ / Minute
+ ",MIXTE,0.32,,,0.1,,,,non,
+74,34,0.0939,gratuit,GRATUIT,0,,,,,,,non,gratuite declaree sans condition
+75,34,0.0939,Coût de l’énergie : 0.32€ / KWH Coût de la durée lorsque le véhicule est en charge : 0.1€ / Minute,MIXTE,0.32,,,0.1,,,,non,
+76,32,0.0884,0.42 / kwh,KWH,0.42,,,,,,,non,"unite presente, symbole euro absent"
+77,31,0.0856,0.45€TTC/kWh,KWH,0.45,,,,,,,non,TTC explicite
+78,30,0.0829,0.54€ / kwh,KWH,0.54,,,,,,,non,
+79,30,0.0829,0.50 € par KWh + 0.025 € par minute la 1ère heure + 0.10 € par minute au-delà de 60 minutes,MIXTE,0.5,,,0.025,,,,non,tarif a la minute de la premiere heure
+80,30,0.0829,"0,55 €/ kwh",KWH,0.55,,,,,,,non,
+81,30,0.0829,"0,55 â‚¬/ kwh",KWH,0.55,,,,,,,non,"mojibake UTF-8 double, decodage deterministe de â‚¬ vers €"
+82,29,0.0801,"par défaut : 0.4667€ par kwh de charge, par défaut : 6.6667€ par heure de charge, 0.4667€ par kwh de charge, 6.6667€ par heure d'occupation hors charge, par défaut : 0.4667€ par kwh de charge",MIXTE,0.4667,,,,6.6667,,6.6667,non,
+83,29,0.0801,"par défaut : 6.6667€ par heure d'occupation hors charge, 0.42€ par kwh de charge",KWH,0.42,,,,,,6.6667,non,
+84,28,0.0774,0.4917,INCONNU,,,,,,,,non,nombre nu sans unite
+85,28,0.0774,"entre 08:00 et 20:00 : 0.333€ par kwh de charge, entre 08:00 et 20:00 : 3.5€ par heure de charge, 0.333€ par kwh de charge, 3.5€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.333€ par kwh de charge",MIXTE,0.333,,,,3.5,,3.5,non,"aucun « par defaut », les deux plages donnent le meme prix"
+86,27,0.0746,0.39,INCONNU,,,,,,,,non,nombre nu sans unite
+87,27,0.0746,"entre 08:00 et 20:00 : 2.5€ par heure d'occupation hors charge, 0.3342€ par kwh de charge, entre 20:00 et 08:00 : 0.3342€ par kwh de charge, entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.30916667€ par kwh de charge, par défaut : 0.30916667€ par kwh de charge",KWH,0.30916667,,,,,,3.75,non,"deux grilles concatenees, le « par defaut » kWh est unique"
+88,24,0.0663,"0,55€/kWh",KWH,0.55,,,,,,,non,
+89,24,0.0663,"entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.30916667€ par kwh de charge, par défaut : 0.30916667€ par kwh de charge, entre 08:00 et 20:00 : 2.5€ par heure d'occupation hors charge, 0.3342€ par kwh de charge, entre 20:00 et 08:00 : 0.3342€ par kwh de charge",KWH,0.30916667,,,,,,3.75,non,"deux grilles concatenees, le « par defaut » kWh est unique"
+90,23,0.0635,"0,399 e/ kwh",KWH,0.399,,,,,,,non,« e » mis pour euro
+91,22,0.0608,"0,50 € + 0,30 €/KWH",MIXTE,0.3,,,,,0.5,,non,forfait plus prix au kWh
+92,22,0.0608,par défaut : 0.333€ par kwh de charge,KWH,0.333,,,,,,,non,
+93,22,0.0608,"par défaut : 10.0€ par heure d'occupation hors charge, 0.5€ par kwh de charge",KWH,0.5,,,,,,10,non,
+94,21,0.058,0.30,INCONNU,,,,,,,,non,nombre nu sans unite
+95,21,0.058,0.45,INCONNU,,,,,,,,non,nombre nu sans unite
+96,21,0.058,"0,54 € TTC / kWh",KWH,0.54,,,,,,,non,TTC explicite
+97,21,0.058,"0,38 €/kWh",KWH,0.38,,,,,,,non,
+98,21,0.058,"par défaut : 0.5667€ par kwh de charge, par défaut : 0.5667€ par kwh de charge, 6.0€ par heure de charge, 6.0€ par heure d'occupation hors charge, par défaut : 0.5667€ par kwh de charge",MIXTE,0.5667,,,,6,,6,non,
+99,20,0.0553,0,INCONNU,,,,,,,,non,"nombre nu sans unite, et zero hors bornes de plausibilite"
+100,20,0.0553,0.64€/kWh,KWH,0.64,,,,,,,non,
+101,20,0.0553,"entre 06:00 et 00:00 : 0.41667€ par kwh de charge, entre 06:00 et 00:00 : 4.0€ par heure de charge, 0.41667€ par kwh de charge, 4.0€ par heure d'occupation hors charge, entre 06:00 et 00:00 : 8.0€ par heure de charge, 0.41667€ par kwh de charge, 8.0€ par heure d'occupation hors charge, entre 00:00 et 06:00 : 0.29167€ par kwh de charge, par défaut : 0.29167€ par kwh de charge",MIXTE,0.29167,,,,4,,4,non,le « par defaut » porte le tarif de nuit
+102,20,0.0553,"0,49E/kWh puis 30 min de parking gratuit une fois la charge terminée. Aprè 30 min, 0,09E/min de parking supplémentaire. 1E de cout fixe par session de recharge.",MIXTE,0.49,,,,,1,,non,"« E » mis pour euro, forfait de session"
+103,19,0.0525,"entre 08:00 et 20:00 : 0.30916667€ par kwh de charge, 3.75€ par heure d'occupation hors charge, entre 20:00 et 08:00 : 0.30916667€ par kwh de charge, par défaut : 0.30916667€ par kwh de charge, par défaut :  prix de départ 0.0€,",KWH,0.30916667,,,,,,3.75,non,le « par defaut » final ne porte qu'un prix de depart a zero
+104,18,0.0497,"0,25€/kWh",KWH,0.25,,,,,,,non,
+105,18,0.0497,"	Frais de lancement de la charge : 0,5 € H Frais de consommation énergie :  0,42 € HT / kWh ",MIXTE,0.504,,,,,0.6,,oui,"0,42 HT au kWh et 0,50 HT de frais de lancement"
+106,18,0.0497,"lorsque la voitutre est branché:
+on applique 0.32€/Kwh + 0.1€ /min ( App Tarif) 
+
+lorsque la voiture est chargée mais toujours branché: 
+on applique 0.1€/min (App tarif) ",MIXTE,0.32,,,0.1,,,,non,
+107,18,0.0497,"par défaut : 0.43333334€ par kwh de charge, par défaut : 6.667€ par heure d'occupation hors charge, 0.43333334€ par kwh de charge, 6.667€ par heure de charge, par défaut : 0.43333334€ par kwh de charge",MIXTE,0.43333334,,,,6.667,,6.667,non,
+108,17,0.047,0.22,INCONNU,,,,,,,,non,nombre nu sans unite
+109,17,0.047,"par défaut : 0.4583 par kwh de charge, par défaut : 6.0 par heure de charge, 6.0 par heure d'occupation hors charge, 0.4583 par kwh de charge, par défaut : 0.4583 par kwh de charge",MIXTE,0.4583,,,,6,,6,non,montants sans symbole euro
+110,16,0.0442,"0,55€KWH HT",KWH,0.66,,,,,,,oui,"0,55 HT"
+111,16,0.0442,0.299€/kWh+0.0230€/min pour les recharge en roaming,MIXTE,0.299,,,0.023,,,,non,
+112,16,0.0442,"par défaut : 0.4167 par kwh de charge, par défaut : 6.0 par heure d'occupation hors charge, 0.4167 par kwh de charge, 6.0 par heure de charge, par défaut : 0.4167 par kwh de charge",MIXTE,0.4167,,,,6,,6,non,montants sans symbole euro
+113,16,0.0442,"par défaut :  prix de départ 1.66667€, 0.41667€ par kwh de charge, 1.25€ par heure de charge, 1.25€ par heure d'occupation hors charge",MIXTE,0.41667,,,,1.25,1.66667,1.25,non,« prix de depart » traite comme un forfait de session
+114,15,0.0414,"0,42€KWHHT",KWH,0.504,,,,,,,oui,"0,42 HT"
+115,15,0.0414,"0,45",INCONNU,,,,,,,,non,nombre nu sans unite
+116,15,0.0414,"0,17/kWh + 0,125/mn",MIXTE,0.17,,,0.125,,,,non,"unites presentes, symbole euro absent"
+117,15,0.0414,"par défaut : 0.5€ par kwh de charge, par défaut : 2.5€ par heure de charge, 0.5€ par kwh de charge, 2.5€ par heure d'occupation hors charge, par défaut : 0.5€ par kwh de charge",MIXTE,0.5,,,,2.5,,2.5,non,
+118,15,0.0414,"par défaut : 6.0€ par heure d'occupation hors charge, 0.5416667€ par kwh de charge",KWH,0.5416667,,,,,,6,non,
+119,15,0.0414,par défaut : 0.325€ par kwh de charge,KWH,0.325,,,,,,,non,
+120,14,0.0387,"0,50",INCONNU,,,,,,,,non,nombre nu sans unite
+121,14,0.0387,Bornes ultra rapides : 2€ + 0.72€ / kWh,MIXTE,0.72,,,,,2,,non,forfait de mise en route plus prix au kWh
+122,14,0.0387,"entre 07:00 et 22:00 : 0.3333 par kwh de charge, entre 07:00 et 22:00 : 5.0 par heure d'occupation hors charge, 5.0 par heure de charge, 0.3333 par kwh de charge, entre 22:00 et 07:00 : 0.3333 par kwh de charge, par défaut : 0.3333 par kwh de charge",MIXTE,0.3333,,,,5,,5,non,montants sans symbole euro
+123,13,0.0359,"0,50€KWHHT",KWH,0.6,,,,,,,oui,"0,50 HT"
+124,13,0.0359,0.25€+0.35/kWh,MIXTE,0.35,,,,,0.25,,non,forfait plus prix au kWh
+125,13,0.0359,"Energie Tous les jours 0,29 €/kWh Stationnement à la borne  Pendant la recharge Gratuit En dehors des sessions de recharge 0,04 €/min Après 1 h période de grâce",KWH,0.29,,,,,,2.4,non,"le tarif a la minute ne court qu'apres la recharge, c'est une occupation"
+126,12,0.0332,2.5€ à la connexion et 2€/Kwh,INCONNU,,,,,,,,non,"2 euros par kWh, hors bornes de plausibilite"
+127,12,0.0332,"0,42€/KWHTTC",KWH,0.42,,,,,,,non,TTC explicite
+128,12,0.0332,Coût de l’énergie : 0.36€ / KWH ,KWH,0.36,,,,,,,non,
+129,12,0.0332,Coût de l’énergie : 0.39€ / KWH ,KWH,0.39,,,,,,,non,
+130,12,0.0332,par défaut : 0.1667€ par kwh de charge,KWH,0.1667,,,,,,,non,
+131,12,0.0332,50 cts / kWh,KWH,0.5,,,,,,,non,« cts » avec un entier
+132,11,0.0304,"0,35",INCONNU,,,,,,,,non,nombre nu sans unite
+133,11,0.0304,0.39€/kWh  pour les non abonnés,KWH,0.39,,,,,,,non,"tarif non abonne, c'est le prix public"
+134,11,0.0304,"entre 07:00 et 23:00 : 0.2667€ par kwh de charge, 6.0€ par heure d'occupation hors charge, entre 23:00 et 07:00 : 0.2667€ par kwh de charge, par défaut : 0.2667€ par kwh de charge, entre 08:00 et 21:00 : 0.33333€ par kwh de charge, entre 08:00 et 21:00 : 0.33333€ par kwh de charge, 3.0€ par heure d'occupation hors charge, 3.0€ par heure de charge, entre 21:00 et 08:00 : 0.33333€ par kwh de charge, par défaut : 0.3333€ par kwh de charge",KWH,0.3333,,,,,,6,non,"deux grilles concatenees, le dernier « par defaut » kWh fait foi"
+135,10,0.0276,"1,25€/KWH HT",KWH,1.5,,,,,,,oui,"1,25 HT, exactement a la borne haute de plausibilite"
+136,10,0.0276,0.35,INCONNU,,,,,,,,non,nombre nu sans unite
+137,10,0.0276,0.30€/kWh+ 30 minutes après la recharge 2.40€/h,KWH,0.3,,,,,,2.4,non,le tarif horaire ne court qu'apres la recharge
+138,10,0.0276,0.47€/kWh  pour les non abonnés,KWH,0.47,,,,,,,non,"tarif non abonne, c'est le prix public"
+139,10,0.0276,"Frais de lancement de la charge : 0,5 € HTFrais de consommation énergie :  0,42 € HT / kWh",MIXTE,0.504,,,,,0.6,,oui,"0,42 HT au kWh et 0,50 HT de frais de lancement"
+140,10,0.0276,0.38 €/kwh,KWH,0.38,,,,,,,non,
+145,9,0.0249,"0,42€KWH HT",KWH,0.504,,,,,,,oui,"0,42 HT"
+146,9,0.0249,https://apps.total-ev-charge.com/charge-points,RENVOI,,,,,,,,non,renvoi vers un site tiers
+147,9,0.0249,null,RENVOI,,,,,,,,non,booleen fuite dans le champ texte
+148,9,0.0249,0.45€/kWh,KWH,0.45,,,,,,,non,
+149,9,0.0249,"0,3 €/kWh+0,1 €/min pour les non abonnés",MIXTE,0.3,,,0.1,,,,non,tarif non abonne
+150,9,0.0249,"0,35  / Kwh",KWH,0.35,,,,,,,non,"symbole euro absent, unite presente"
+151,9,0.0249,"par défaut :  prix de départ 0.0€, ",INCONNU,,,,,,,,non,"aucun prix a l'energie, seulement un prix de depart nul"
+152,9,0.0249,par défaut : 0.3917€ par kwh de charge,KWH,0.3917,,,,,,,non,
+153,8,0.0221,"0,35cts/KWH HT",INCONNU,,,,,,,,non,"« cts » suivi d'un decimal, lecture litterale implausible"
+154,8,0.0221,"0,45€KWH HT",KWH,0.54,,,,,,,oui,"0,45 HT"
+155,8,0.0221,6ct from 6am/10pm | 3ct/kwh from 10pm/6am | New,KWH,0.06,,,,,,,non,"« ct » avec un entier ; plage la plus longue, 6h a 22h"
+156,8,0.0221,1â‚¬/kWh,KWH,1,,,,,,,non,mojibake UTF-8 double
+158,8,0.0221,"La recharge est gratuite pour les Admin CQFD, CQFD véhicules, Véhicules EKLEO",RENVOI,,,,,,,,non,"gratuite reservee a certains usagers, pas un tarif public"
+160,8,0.0221,"par défaut : 1.0€ par heure d'occupation hors charge, 1.0€ par heure de charge",MIN,,,,,1,,1,non,"aucun prix au kWh, seulement un tarif horaire de charge"
+161,8,0.0221,Price per kWh (billed per 1 Wh): 0.5190 EUR,KWH,0.519,,,,,,,non,libelle en anglais
+162,7,0.0193,0.54,INCONNU,,,,,,,,non,nombre nu sans unite
+163,7,0.0193,"0,2",INCONNU,,,,,,,,non,nombre nu sans unite
+164,7,0.0193,55 cts/kWh,KWH,0.55,,,,,,,non,« cts » avec un entier
+167,6,0.0166,0.40 / kwh,KWH,0.4,,,,,,,non,symbole euro absent
+168,6,0.0166,"0,42€/KWH TTC",KWH,0.42,,,,,,,non,TTC explicite
+169,6,0.0166,"2,09 â‚¬HT/h",MIN,,,,,2.508,,,oui,"2,09 HT par heure, mojibake UTF-8 double"
+170,6,0.0166,"0,50€/Kwh",KWH,0.5,,,,,,,non,
+172,6,0.0166,"0,45  / Kwh",KWH,0.45,,,,,,,non,symbole euro absent
+173,6,0.0166,"0,54  TTC / kWh",KWH,0.54,,,,,,,non,TTC explicite
+174,6,0.0166,"0,59 €/kWh",KWH,0.59,,,,,,,non,
+179,6,0.0166,par défaut : 0.375€ par kwh de charge,KWH,0.375,,,,,,,non,
+181,6,0.0166,https://www.oriosbyspie.com/fr,RENVOI,,,,,,,,non,renvoi vers un site tiers
+182,5,0.0138,"0,60€/KWH TTC",KWH,0.6,,,,,,,non,TTC explicite malgre l'absence d'espace
+183,5,0.0138,1€KWHHT,KWH,1.2,,,,,,,oui,1 HT
+184,5,0.0138,"0,37€KWH HT",KWH,0.444,,,,,,,oui,"0,37 HT"
+185,5,0.0138,"0,79 €/kWh",KWH,0.79,,,,,,,non,
+186,5,0.0138,0.2€/AC au kWh,KWH,0.2,,,,,,,non,mention AC sans tarif DC en face
+187,5,0.0138,"0,80€/kWh",KWH,0.8,,,,,,,non,
+188,5,0.0138,"0,36€/kWh",KWH,0.36,,,,,,,non,
+190,5,0.0138,"0,50/kWh + 0,02/mn",MIXTE,0.5,,,0.02,,,,non,symbole euro absent
+191,5,0.0138,"par défaut : 0.42€ par kwh de charge, 6.0€ par heure d'occupation hors charge",KWH,0.42,,,,,,6,non,
+196,4,0.0111,"0,35cts/KWh",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+197,4,0.0111,"0,32€/KWH HT",KWH,0.384,,,,,,,oui,"0,32 HT"
+198,4,0.0111,"0,35€KWH HT",KWH,0.42,,,,,,,oui,"0,35 HT"
+199,4,0.0111,"0,58€ / kwh pour les non abonnés.",KWH,0.58,,,,,,,non,"tarif non abonne, c'est le prix public"
+200,4,0.0111,"0,29 /kWh + 1/session",MIXTE,0.29,,,,,1,,non,symbole euro absent
+201,4,0.0111,0.32€ / kW,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+202,4,0.0111,"0,3",INCONNU,,,,,,,,non,nombre nu sans unite
+203,4,0.0111,0.0417 € à la minute,MIN,,,,0.0417,,,,non,
+204,4,0.0111,"0,40 €/kWh",KWH,0.4,,,,,,,non,
+205,4,0.0111,false,RENVOI,,,,,,,,non,booleen fuite dans le champ texte
+206,4,0.0111,0.50€,INCONNU,,,,,,,,non,montant sans unite
+207,4,0.0111,0.40€ / kwh,KWH,0.4,,,,,,,non,
+208,4,0.0111,0.35€ /kW,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+209,4,0.0111,"0,0417€/kWh entre 6h et 21h, 0,0208€/kWh entre 21h et 6h",INCONNU,,,,,,,,non,"0,0417 par kWh, sous la borne basse de plausibilite"
+210,4,0.0111,"0,5€/kWh entre 6h et 21h, 0,35€/kWh entre 21h et 6h",KWH,0.5,,,,,,,non,"plage la plus longue, 6h a 21h"
+211,4,0.0111,"0,6€/kWh + 0,03€/min entre 6h et 18h, 15€ la session entre 18h et 6h",MIXTE,0.6,,,0.03,,,,non,"deux plages de douze heures, on garde la premiere"
+213,4,0.0111,"0,49 €/kWh",KWH,0.49,,,,,,,non,
+214,4,0.0111,0.38,INCONNU,,,,,,,,non,nombre nu sans unite
+222,4,0.0111,0.42 €/kWh pour les non abonnés,KWH,0.42,,,,,,,non,tarif non abonne
+223,3,0.0083,"60min gratuit, après 0.20€/kWh + 0.01€/min",MIXTE,0.2,,,0.01,,,,non,"premiere heure gratuite, non modelisee"
+224,3,0.0083,"0,25€ à la connexion / 0,35€ / kWh",MIXTE,0.35,,,,,0.25,,non,frais de connexion plus prix au kWh
+225,3,0.0083,"0,60cts/KWh TTC",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+226,3,0.0083,"0,46€/KWH HT",KWH,0.552,,,,,,,oui,"0,46 HT"
+227,3,0.0083,"0,47€KWHTTC",KWH,0.47,,,,,,,non,TTC explicite
+228,3,0.0083,"0,30€ / kwh pour les non abonnés.",KWH,0.3,,,,,,,non,tarif non abonne
+229,3,0.0083,0.3€ : prix au kWh,KWH,0.3,,,,,,,non,
+230,3,0.0083,"0,36 €/kWh",KWH,0.36,,,,,,,non,
+231,3,0.0083,0.45 kwh,KWH,0.45,,,,,,,non,"unite presente, symbole euro absent"
+232,3,0.0083,"0,49",INCONNU,,,,,,,,non,nombre nu sans unite
+233,3,0.0083,voir tarif gireve,RENVOI,,,,,,,,non,renvoi vers un operateur d'itinerance
+234,3,0.0083,0.67€TTC/kWh,KWH,0.67,,,,,,,non,TTC explicite
+235,3,0.0083,0.50 €/kwh,KWH,0.5,,,,,,,non,
+236,3,0.0083,"0,42 € HT / kWh + 0,08€ HT/ min à partir de 90min",MIXTE,0.504,,,0.096,,,,oui,"0,42 HT au kWh et 0,08 HT a la minute"
+237,3,0.0083,"0,06/mn + 0,06/mn après recharge ",MIN,,,,0.06,,,,non,symbole euro absent
+238,3,0.0083,"0,34  / Kwh",KWH,0.34,,,,,,,non,symbole euro absent
+239,3,0.0083,"0,35€/kWh + 0,03€/min entre 6h et 21h, 0,2€/kWh",MIXTE,0.35,,,0.03,,,,non,"plage la plus longue, 6h a 21h"
+240,3,0.0083,"0,55€/kWh entre 6h et 18h, 25€ la session entre 18h et 6h",KWH,0.55,,,,,,,non,"deux plages de douze heures, on garde la premiere"
+241,3,0.0083,"0,3€/kWh + 0,03€/min entre 8h et 20h, 15€ la session entre 18h et 6h",MIXTE,0.3,,,0.03,,,,non,"plages incoherentes dans la source, on garde la premiere"
+242,3,0.0083,"0,30 TTC /kWh",KWH,0.3,,,,,,,non,TTC explicite
+243,3,0.0083,"0,19€/kWh et 0,03€/min",MIXTE,0.19,,,0.03,,,,non,
+250,3,0.0083,0.43€ / kwh,KWH,0.43,,,,,,,non,
+254,2,0.0055,"0,50 € / kwh",KWH,0.5,,,,,,,non,
+255,2,0.0055,0.50? 2.5 CONNECTION,INCONNU,,,,,,,,non,chaine inexploitable
+256,2,0.0055,"0,66€/kwh TTC",KWH,0.66,,,,,,,non,TTC explicite
+257,2,0.0055,"0,50€/KWH TTC",KWH,0.5,,,,,,,non,TTC explicite
+258,2,0.0055,"0,42€/KWHHT",KWH,0.504,,,,,,,oui,"0,42 HT"
+259,2,0.0055,"0,78€/KWHTTC",KWH,0.78,,,,,,,non,TTC explicite
+260,2,0.0055,"0,53€/KWH HT",KWH,0.636,,,,,,,oui,"0,53 HT"
+261,2,0.0055,0.40,INCONNU,,,,,,,,non,nombre nu sans unite
+262,2,0.0055,0.27€/kWh+0.10€/min pour les non abonnées,MIXTE,0.27,,,0.1,,,,non,tarif non abonne
+263,2,0.0055,0.05AC/MIN,MIN,,,,0.05,,,,non,mention AC
+264,2,0.0055,0.3 AC : prix au kWh,KWH,0.3,,,,,,,non,mention AC sans tarif DC en face
+265,2,0.0055,0.36€ AC /KW,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+266,2,0.0055,"0,32 €/kWh",KWH,0.32,,,,,,,non,
+267,2,0.0055,0.40€/kWh,KWH,0.4,,,,,,,non,
+268,2,0.0055,"8h à 22h = activation à 0,99€ + 0,48€/kWh + 0,05€/min pendant 90min, 0;10€/min au delà. De 22h à 8h = 20€",MIXTE,0.48,,,0.05,,0.99,,non,"plage la plus longue, 8h a 22h ; frais d'activation"
+269,2,0.0055,0.21€/kWh HTVA pour l'itinérance,KWH,0.252,,,,,,,oui,"0,21 HT, « HTVA » lu comme hors taxes"
+270,2,0.0055,0.5€/kWh HTVA pour l'itinérance,KWH,0.6,,,,,,,oui,"0,5 HT, « HTVA » lu comme hors taxes"
+271,2,0.0055,0.3€/kWh et 0.5€/Session,MIXTE,0.3,,,,,0.5,,non,
+272,2,0.0055,FIXE,RENVOI,,,,,,,,non,mot cle sans information
+273,2,0.0055,0.67€/kWh,KWH,0.67,,,,,,,non,
+274,2,0.0055,0.45€ / kwh,KWH,0.45,,,,,,,non,
+276,2,0.0055,0.60€/kWh+ 20 minutes après la recharge 3.60€/h,KWH,0.6,,,,,,3.6,non,le tarif horaire ne court qu'apres la recharge
+277,2,0.0055," 0,22€ / kwh",KWH,0.22,,,,,,,non,espace en tete de chaine
+278,2,0.0055,"0,4494",INCONNU,,,,,,,,non,nombre nu sans unite
+279,2,0.0055,"0,35€",INCONNU,,,,,,,,non,montant sans unite
+282,2,0.0055,0.37 €TTC le kWh,KWH,0.37,,,,,,,non,TTC explicite
+283,2,0.0055,"0,39€/kWh",KWH,0.39,,,,,,,non,
+285,2,0.0055,"0,46 €/kWh",KWH,0.46,,,,,,,non,
+286,2,0.0055,"0,3€ / kwh pour les non abonnés.",KWH,0.3,,,,,,,non,tarif non abonne
+288,2,0.0055,0.50 € par KWh + 0.10 € par minute au-delà de 60 minutes,MIXTE,0.5,,,0.1,,,,non,tarif a la minute au-dela de soixante minutes
+289,2,0.0055,"0,3 €/kWh pour les non abonnés",KWH,0.3,,,,,,,non,tarif non abonne
+290,2,0.0055,"0,35/kWh + 0,05/mn + 0,05/kWh après charge",MIXTE,0.35,,,0.05,,,,non,symbole euro absent
+292,2,0.0055,39 cts/kWh,KWH,0.39,,,,,,,non,« cts » avec un entier
+293,2,0.0055,"0,26€/kWh + 0,03€/min entre 6h et 18h, 0,52€/kWh entre 18h et 6h",MIXTE,0.26,,,0.03,,,,non,"deux plages de douze heures, on garde la premiere"
+294,2,0.0055,"0,0417€/kWh entre 6h et 21h, 0,028€/kWh entre 21h et 6h",INCONNU,,,,,,,,non,"0,0417 par kWh, sous la borne basse"
+295,2,0.0055,"0,6€/kWh + 0,03€/min entre 6h et 19h, 15€ la session entre 19h et 6h",MIXTE,0.6,,,0.03,,,,non,"plage la plus longue, 6h a 19h"
+296,2,0.0055,"0,7€/kWh ",KWH,0.7,,,,,,,non,
+299,2,0.0055,"0,348 € TTC / kWh",KWH,0.348,,,,,,,non,TTC explicite
+300,2,0.0055,"0,42  TTC / kWh",KWH,0.42,,,,,,,non,TTC explicite
+301,2,0.0055,"0,60€",INCONNU,,,,,,,,non,montant sans unite
+302,2,0.0055,"0,60 € / Kwh",KWH,0.6,,,,,,,non,
+307,2,0.0055,"par défaut : 0.45€ par kwh de charge, 10.0€ par heure d'occupation hors charge",KWH,0.45,,,,,,10,non,
+309,2,0.0055,"par défaut :  prix de départ 0.0€,",INCONNU,,,,,,,,non,aucun prix a l'energie
+318,2,0.0055,25cts / kWh,KWH,0.25,,,,,,,non,« cts » avec un entier
+319,2,0.0055,0.55 / kwh,KWH,0.55,,,,,,,non,symbole euro absent
+320,2,0.0055,0.35/ kwh,KWH,0.35,,,,,,,non,symbole euro absent
+321,2,0.0055,0.50/ kwh,KWH,0.5,,,,,,,non,symbole euro absent
+322,2,0.0055,"0,55€/Kw",INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+323,2,0.0055,0.41,INCONNU,,,,,,,,non,nombre nu sans unite
+324,1,0.0028,"2,5 € à la connexion / 2€ /kWh",INCONNU,,,,,,,,non,"2 euros par kWh, hors bornes de plausibilite"
+325,1,0.0028,"0,32 € / kWh pour les non abonnées ",KWH,0.32,,,,,,,non,tarif non abonne
+326,1,0.0028,"0,66kwh TTC",KWH,0.66,,,,,,,non,unite collee au nombre
+327,1,0.0028,"0,39cts/KWh",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+328,1,0.0028,"0,45cts/KWH",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+329,1,0.0028,"0,30cts/KWh",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+330,1,0.0028,"0,25cts/KWh",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+331,1,0.0028,"0,40cts/KWh",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+332,1,0.0028,"0,40cts/KWh HT",INCONNU,,,,,,,,non,« cts » suivi d'un decimal
+333,1,0.0028,"1,2€KWHTTC",KWH,1.2,,,,,,,non,TTC explicite
+334,1,0.0028,"1,25€KWH HT",KWH,1.5,,,,,,,oui,"1,25 HT, exactement a la borne haute"
+335,1,0.0028,"0,83€KWHHT",KWH,0.996,,,,,,,oui,"0,83 HT"
+336,1,0.0028,"0,67€KWHHT",KWH,0.804,,,,,,,oui,"0,67 HT"
+337,1,0.0028,"0,47€/KWHTTC",KWH,0.47,,,,,,,non,TTC explicite
+338,1,0.0028,"0,50€KWH HT",KWH,0.6,,,,,,,oui,"0,50 HT"
+339,1,0.0028,10 € tarif de départ. Des frais supplémentaires peuvent s'appliquer ,SESSION,,,,,,10,,non,"forfait de depart, aucun prix a l'energie"
+340,1,0.0028,"0,15€ / kwh pour les non abonnés.",KWH,0.15,,,,,,,non,tarif non abonne
+341,1,0.0028,0.20 €/KWh,KWH,0.2,,,,,,,non,
+342,1,0.0028,"2,09 €HT/h",MIN,,,,,2.508,,,oui,"2,09 HT par heure"
+343,1,0.0028,2 € / heure pour les abonnés,RENVOI,,,,,,,,non,"tarif reserve aux abonnes, pas le prix public"
+344,1,0.0028,"0,2668 / kwh",KWH,0.2668,,,,,,,non,symbole euro absent
+345,1,0.0028,0.20 €/kWh + 0.50 € lancement pour les utilisateurs ZEbornes,RENVOI,,,,,,,,non,"tarif reserve aux usagers d'un reseau, pas le prix public"
+346,1,0.0028,0 POUR UTILISATEUR ZEBORNE,RENVOI,,,,,,,,non,"tarif reserve aux usagers d'un reseau, pas le prix public"
+349,1,0.0028,"0,20 €/kWh pour abonné ZEborne",RENVOI,,,,,,,,non,"tarif reserve aux abonnes, pas le prix public"
+350,1,0.0028,0.5€/au kWh ,KWH,0.5,,,,,,,non,"formulation fautive, unite presente"
+351,1,0.0028,AC 1€/kWh - DC 5€/kWh,KWH,,1,,,,,,non,"tarifs AC et DC distincts ; le tarif DC de 5 euros est hors bornes, ecarte et compte"
+352,1,0.0028,"0,32 €/ kWh",KWH,0.32,,,,,,,non,
+353,1,0.0028,2 AC- DC €/kWh - 6 AC- DC €/h,INCONNU,,,,,,,,non,"2 euros par kWh, hors bornes de plausibilite"
+354,1,0.0028,0.2 AC €/kWh,KWH,0.2,,,,,,,non,mention AC sans tarif DC en face
+355,1,0.0028,3 €/heure,MIN,,,,,3,,,non,
+356,1,0.0028,0.04€ la minute,MIN,,,,0.04,,,,non,
+357,1,0.0028,0.3€ : prix au kWh0000000000,KWH,0.3,,,,,,,non,zeros parasites en fin de chaine
+358,1,0.0028,"Charge rapide : 0,10€ / min",MIN,,,,0.1,,,,non,
+359,1,0.0028,5€,INCONNU,,,,,,,,non,montant sans unite
+360,1,0.0028,15,INCONNU,,,,,,,,non,nombre nu sans unite
+361,1,0.0028,"0,60",INCONNU,,,,,,,,non,nombre nu sans unite
+362,1,0.0028,0.38€/kWh,KWH,0.38,,,,,,,non,
+363,1,0.0028,0.40 e/kwh+0.06 e/min,MIXTE,0.4,,,0.06,,,,non,« e » mis pour euro
+364,1,0.0028,"0,40€/kwh pour les non abonnés",KWH,0.4,,,,,,,non,tarif non abonne
+365,1,0.0028,0.55,INCONNU,,,,,,,,non,nombre nu sans unite
+367,1,0.0028,"0,52",INCONNU,,,,,,,,non,nombre nu sans unite
+368,1,0.0028,0.35€/kWh,KWH,0.35,,,,,,,non,
+369,1,0.0028,0.51€/kwh,KWH,0.51,,,,,,,non,
+370,1,0.0028,0.40 kw/h,INCONNU,,,,,,,,non,unite « kw/h » ambigue
+371,1,0.0028,0.79,INCONNU,,,,,,,,non,nombre nu sans unite
+372,1,0.0028,"0,59",INCONNU,,,,,,,,non,nombre nu sans unite
+373,1,0.0028,"0,80€",INCONNU,,,,,,,,non,montant sans unite
+374,1,0.0028,0.12/MIN,MIN,,,,0.12,,,,non,symbole euro absent
+375,1,0.0028,0.43€/kWh,KWH,0.43,,,,,,,non,
+376,1,0.0028,0.50€ /kW,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+377,1,0.0028,050 kWh,INCONNU,,,,,,,,non,nombre nu sans unite exploitable
+378,1,0.0028,"1,23€",INCONNU,,,,,,,,non,montant sans unite
+380,1,0.0028,"par défaut :  prix de départ 0.0€, , par défaut : 0.3475€ par kwh de charge",KWH,0.3475,,,,,,,non,
+381,1,0.0028,"par défaut : 0.3475€ par kwh de charge, par défaut :  prix de départ 0.0€, ",KWH,0.3475,,,,,,,non,
+382,1,0.0028,"0,40/kWh",KWH,0.4,,,,,,,non,symbole euro absent
+383,1,0.0028,"0,30€/kwh",KWH,0.3,,,,,,,non,
+384,1,0.0028,40 cts par kWh,KWH,0.4,,,,,,,non,"« cts » avec un entier, libelle « par kWh »"
+385,1,0.0028,"0,39",INCONNU,,,,,,,,non,nombre nu sans unite
+387,1,0.0028,Coût de l’énergie : 0.50€ / KWH ,KWH,0.5,,,,,,,non,
+388,1,0.0028,Coût de l’énergie : 0.50€ / KWH,KWH,0.5,,,,,,,non,
+390,1,0.0028,"Lorsque le vehicule est branché, on applique 0.42€/Kwh ",KWH,0.42,,,,,,,non,
+391,1,0.0028,"Lorsque le vehicule est branché, on applique 0.38€/Kwh ",KWH,0.38,,,,,,,non,
+392,1,0.0028,6ct from 6am/10pm | 3ct/kwh from 10pm/6am,KWH,0.06,,,,,,,non,« ct » avec un entier ; plage la plus longue
+393,1,0.0028,"0,4€/kWh + 0,03€/min entre 8h et 20h, 15€ la session entre 20h et 8h",MIXTE,0.4,,,0.03,,,,non,"deux plages de douze heures, on garde la premiere"
+394,1,0.0028,"0,25€/kWh + 2€ la session entre 6h et 18h, 0,25€/kWh entre 18h et 6h",MIXTE,0.25,,,,,2,,non,"deux plages de douze heures, on garde la premiere"
+395,1,0.0028,"0,35€/kWh + 0,03€/min ",MIXTE,0.35,,,0.03,,,,non,
+396,1,0.0028,"0,16€/kWh entre 6h30 et 20h30, 0,11€/kWh entre 20h30 et 6h30",KWH,0.16,,,,,,,non,"plage la plus longue, 6h30 a 20h30"
+397,1,0.0028,"0,13€/kWh entre 7h30 et 21h30, 0,09€/kWh entre 21h30 et 7h30",KWH,0.13,,,,,,,non,"plage la plus longue, 7h30 a 21h30"
+398,1,0.0028,"0,13€/kWh ",KWH,0.13,,,,,,,non,
+399,1,0.0028,"0,45€/kWh + 0,05€/min entre 8h et 17h, 0,35€/kWh entre 17h et 8h",KWH,0.35,,,,,,,non,"la plage la plus longue est celle de nuit, 17h a 8h : la regle est appliquee telle quelle"
+400,1,0.0028,0.50€/kwh,KWH,0.5,,,,,,,non,
+401,1,0.0028,0.33,INCONNU,,,,,,,,non,nombre nu sans unite
+402,1,0.0028,"0,14 € / min",MIN,,,,0.14,,,,non,
+403,1,0.0028,0.30€/kwh + 0.025€/min pour point 22AC - 0.50€/kwh + 0.025€/min pour point de charge 50DC,MIXTE,,0.3,0.5,0.025,,,,non,"tarifs AC et DC distincts, meme tarif a la minute"
+404,1,0.0028,"0,384  TTC / kWh",KWH,0.384,,,,,,,non,TTC explicite
+405,1,0.0028,0.30€/KW + 0.025€/min de stationnement,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+406,1,0.0028,0.98/kW,INCONNU,,,,,,,,non,"prix libelle au kW, pas au kWh"
+407,1,0.0028,"0,19€ /kWh et 0.03€/min",MIXTE,0.19,,,0.03,,,,non,
+408,1,0.0028,"0,35 € / Kwh",KWH,0.35,,,,,,,non,
+418,1,0.0028,"par défaut : 0.42€ par kwh de charge, 6.0€ par heure d'occupation hors charge, par défaut :  prix de départ 0.0€,",KWH,0.42,,,,,,6,non,
+419,1,0.0028,"par défaut :  prix de départ 0.0€, , par défaut : 6.0€ par heure d'occupation hors charge, 0.42€ par kwh de charge",KWH,0.42,,,,,,6,non,
+434,1,0.0028,"par défaut : 0.35€ par kwh de charge, 6.6667€ par heure d'occupation hors charge",KWH,0.35,,,,,,6.6667,non,
+436,1,0.0028,"0,48€",INCONNU,,,,,,,,non,montant sans unite
+437,1,0.0028,0.25€/kW h,KWH,0.25,,,,,,,non,« kW h » normalise en kWh avant d'appliquer la regle du kW
+438,1,0.0028,"0,55€/kWh HT",KWH,0.66,,,,,,,oui,"0,55 HT"

@@ -1,0 +1,19 @@
+Repartition des codes de parsing ATTENDUS (autorises a la lecture, 17/09/2026)
+Parc total 168 602 PDC | tarification renseignee 36196 PDC | cas couverts 35940 (99.29 % des tarifes)
+
+code           PDC  % tarifes   % parc  valeurs
+RENVOI       21122     58.35%   12.53%       33
+KWH           8653     23.91%    5.13%      175
+MIXTE         5485     15.15%    3.25%       68
+INCONNU        558      1.54%    0.33%       61
+MIN             87      0.24%    0.05%       12
+GRATUIT         34      0.09%    0.02%        1
+SESSION          1      0.00%    0.00%        1
+
+Porteurs d'un prix a l'energie (KWH + MIXTE + GRATUIT) : 14172 PDC
+  soit 39.15 % des lignes tarifees et 8.41 % du parc
+Non exploitables (RENVOI + INCONNU) : 21680 PDC, 59.90 % des tarifes
+Prix au temps seul (MIN + SESSION) : 88 PDC
+
+Valeurs declarees HT et portees a TTC : 143 PDC sur 25 valeurs distinctes
+Tarifs AC et DC distingues dans la chaine : 2 PDC sur 2 valeurs
