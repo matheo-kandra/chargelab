@@ -31,7 +31,9 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
-PYTHON = RACINE / ".venv" / "bin" / "python"
+# L'interpreteur qui fait tourner la boucle, et non un chemin code en dur :
+# le venv local n'existe pas sur un runner GitHub.
+PYTHON = sys.executable
 JOURNAL_STATIQUE = RACINE / "data" / "collecte" / "journal" / "statique.csv"
 
 MINUTES_JOUR = list(range(2, 60, 5))          # 02, 07, 12 ... 57, de 06h a 20h UTC
@@ -78,10 +80,10 @@ def passage(publier: bool) -> None:
     if publier:
         executer(["git", "pull", "--rebase", "--autostash", "--quiet", "origin", "main"],
                  "recalage")
-    code = executer([str(PYTHON), "collect/collecte_dynamique.py"], "dynamique")
+    code = executer([PYTHON, "collect/collecte_dynamique.py"], "dynamique")
     chemins = ["data/collecte/dynamique", "data/collecte/journal"]
     if t.hour >= HEURE_STATIQUE and not statique_deja_fait(t.date()):
-        if executer([str(PYTHON), "collect/collecte_statique.py"], "statique") == 0:
+        if executer([PYTHON, "collect/collecte_statique.py"], "statique") == 0:
             chemins.append("data/collecte/statique")
     if publier:
         executer(["bash", "collect/publier.sh", "collecte locale", *chemins], "publication")
@@ -101,7 +103,7 @@ def main() -> int:
                     help="collecter sans pousser sur le depot")
     args = ap.parse_args()
 
-    if executer([str(PYTHON), "collect/verifier.py"], "verification") != 0:
+    if executer([PYTHON, "collect/verifier.py"], "verification") != 0:
         print("superviseur non demarre : la verification de sante a echoue", flush=True)
         return 1
 
