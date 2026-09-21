@@ -295,3 +295,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-21T18:02:00+00:00,ok,github,8955038,13151401100d42a21d218f0f9baef4e4e1703536ec2cebd94452379c91000dc0,121730,110901,10829,1621,photo 2026-09-21 + 108 fichiers de changements,1721,127,4,,6.7,
 2026-09-21T14:55:54+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
 2026-09-21T15:02:35+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+2026-09-21T15:09:17+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
