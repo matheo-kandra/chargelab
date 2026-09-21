@@ -10,13 +10,21 @@ name: Collecte
 # On declenche donc une boucle qui tient elle-meme la cadence de l'ADR 08 :
 # 5 minutes de 06:00 a 20:00 UTC, 15 minutes sinon.
 #
-# Le cron horaire a ete essaye et a rate son premier rendez-vous (21:04 le
-# 20/09). La boucle ne s'arrete donc plus au creneau horaire suivant mais a la
-# prochaine borne de six heures, 00:04, 06:04, 12:04 ou 18:04 UTC, soit la
-# duree maximale d'un job. Le cron reste horaire : il offre six occasions de
-# demarrer la boucle pour chaque fenetre de six heures, et il suffit qu'une
-# seule aboutisse. Le groupe de concurrence empeche deux boucles de tourner
-# ensemble ; une boucle qui demarre apres la borne se termine aussitot.
+# La boucle s'arrete a la prochaine borne de six heures, 00:04, 06:04, 12:04
+# ou 18:04 UTC, soit la duree maximale d'un job.
+#
+# Le cron horaire a ete essaye et mesure du 20 au 21/09 : deux declenchements
+# obtenus sur dix-sept attendus, et 383 minutes de trou sur 1 045 minutes de
+# fenetre. Quand la boucle tourne elle tient la cadence, avec seulement trois
+# ecarts de plus de vingt minutes sur soixante-deux passages ; le probleme est
+# qu'il faut qu'un cron aboutisse au bon moment pour qu'une boucle demarre.
+#
+# On declenche donc toutes les cinq minutes. Le groupe de concurrence
+# n'autorise qu'une boucle a la fois : les declenchements suivants forment une
+# file d'un seul element, sans consommer de minutes tant qu'ils attendent, et
+# le premier en attente demarre des que la boucle en cours atteint sa borne.
+# Il suffit qu'UN declenchement sur les soixante-douze d'une fenetre de six
+# heures aboutisse pour que la releve soit assuree.
 #
 # Le depot etant public, les minutes de calcul sont illimitees.
 #
@@ -24,7 +32,7 @@ name: Collecte
 # passage suivant 03:00 UTC.
 on:
   schedule:
-    - cron: '4 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 concurrency:
