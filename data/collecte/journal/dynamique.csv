@@ -298,3 +298,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-21T15:09:17+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
 2026-09-21T15:15:58+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
 2026-09-21T15:22:39+00:00,echec,local,,,,,,,,,,,,40.0,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+2026-09-21T18:29:59+00:00,ok,local,8954779,18e28184c79da057b493511cc5b6dbd4fbfd20e0c911b4a08ad18483101794b7,121730,110901,10829,1611,photo 2026-09-21 + 109 fichiers de changements,4176,127,4,,1.9,
