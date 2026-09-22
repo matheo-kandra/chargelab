@@ -172,6 +172,40 @@ def etat_par_classe(pdc: pd.DataFrame) -> list[dict]:
     return lignes
 
 
+def serie_nationale(jour: date) -> dict:
+    """Serie quotidienne construite depuis les editions deja produites.
+
+    Un jour ou la collecte a tourne mais dont l'edition n'a pas ete construite
+    est marque manquant : il n'est ni interpole, ni escamote. La spec interdit
+    de relier deux points par-dessus un trou sans le dire.
+    """
+    jours_collectes = set()
+    journal = RACINE / "data" / "collecte" / "journal" / "dynamique.csv"
+    if journal.exists():
+        j = pd.read_csv(journal, dtype=str, keep_default_na=False)
+        t = pd.to_datetime(j["capture_utc"], utc=True, format="mixed")
+        ok = j["resultat"].str.startswith("ok")
+        jours_collectes = {d for d in t[ok].dt.date if d <= jour}
+
+    points = []
+    for dossier in sorted(EDITIONS.iterdir()):
+        try:
+            d = date.fromisoformat(dossier.name)
+        except ValueError:
+            continue
+        if d > jour or not (dossier / "edition.json").exists():
+            continue
+        c = json.loads((dossier / "edition.json").read_text(encoding="utf-8"))["counts"]
+        taux = c.get("taux_hors_service_sur_frais")
+        points.append({"date": str(d), "pdc": c.get("pdc_distincts"),
+                       "frais": c.get("pdc_avec_etat_frais"),
+                       "taux": taux, "creneaux": c.get("creneaux_captures")})
+    avec_edition = {p["date"] for p in points}
+    manquants = sorted(str(d) for d in jours_collectes if str(d) not in avec_edition)
+    return {"points": points, "jours_collectes": len(jours_collectes),
+            "jours_sans_edition": manquants}
+
+
 def construire_donnees(jour: date) -> dict:
     dossier = EDITIONS / str(jour)
     edition = json.loads((dossier / "edition.json").read_text(encoding="utf-8"))
@@ -218,7 +252,7 @@ def construire_donnees(jour: date) -> dict:
         "contours": contours(),
         "libelles_classes": LIBELLE_CLASSES,
         "ordre_classes": ORDRE_CLASSES,
-        "jours_de_releves": 1,
+        "serie": serie_nationale(jour),
     }
 
 
@@ -277,7 +311,7 @@ def assembler(jour: date) -> Path:
         "%%DATE_LONGUE%%": date_longue(jour),
         "%%N_PDC%%": f"{donnees['national']['pdc']:,}".replace(",", "\u202f"),
         "%%N_STATIONS%%": f"{donnees['national']['stations']:,}".replace(",", "\u202f"),
-        "%%N_JOURS%%": str(donnees["jours_de_releves"]),
+        "%%N_JOURS%%": str(donnees["serie"]["jours_collectes"]),
         "%%SEUIL%%": str(SEUIL_EFFECTIF),
         "%%GENERE_LE%%": datetime.now(timezone.utc).strftime("%d/%m/%Y à %H:%M UTC"),
         "%%DONNEES%%": json.dumps(donnees, separators=(",", ":"), ensure_ascii=False),

@@ -150,10 +150,7 @@ function rendreMaree() {
     + '<b class="grand"' + (assez ? '' : ' style="font-size:1.05rem;color:var(--orange)"') + '>' + valeur + '</b></div>'
     + '<div><span>Calculé sur</span><b class="grand">' + nf.format(t.frais) + '</b></div>'
     + '<div><span>Soit du territoire</span><b class="grand">' + pf(couv, 1) + ' %</b></div></div>'
-    + insuffisant('<b>Pas de courbe : ' + D.jours_de_releves + ' jour de relevés.</b> '
-      + 'Une série quotidienne demande plusieurs jours, et la spec interdit d\'interpoler '
-      + 'entre deux points. La courbe apparaîtra à la deuxième édition, la bande p25 et p75 '
-      + 'entre départements dès qu\'il y aura de quoi la calculer.')
+    + courbeMaree()
     + '<p class="resume">' + (assez
       ? 'Ce taux ne porte pas sur le parc mais sur les ' + nf.format(t.frais)
         + ' points dont l\'état déclaré a moins de 24 heures, soit ' + pf(couv, 1)
@@ -163,6 +160,71 @@ function rendreMaree() {
         + 'de 24 heures, en dessous du seuil de ' + D.seuil + '. Aucun taux n\'est publié : '
         + 'il serait calculé sur trop peu de points pour vouloir dire quelque chose.')
     + '</p>');
+}
+
+function courbeMaree() {
+  const pts = D.serie.points, manq = D.serie.jours_sans_edition;
+  if (pts.length < 2)
+    return insuffisant('<b>Pas encore de courbe : ' + pts.length + ' édition construite sur '
+      + D.serie.jours_collectes + ' jours de relevés.</b> Une série demande au moins deux '
+      + 'points, et relier deux points par-dessus un trou sans le dire est interdit ici.');
+  // Un jour ou la collecte a mal tourne produit un taux calcule sur trop peu
+  // de creneaux. Il reste sur la courbe, mais en point creux, et il n'entre
+  // pas dans l'etendue annoncee : sinon un incident de collecte se lirait
+  // comme une variation du reseau.
+  const creneaux = pts.map(p => p.creneaux).sort((a, b) => a - b);
+  const medCren = creneaux[Math.floor(creneaux.length / 2)];
+  const partiel = p => p.creneaux < 0.5 * medCren;
+  const complets = pts.filter(p => p.taux !== null && !partiel(p));
+  const taux = pts.filter(p => p.taux !== null).map(p => 100 * p.taux);
+  const tauxComplets = complets.map(p => 100 * p.taux);
+  const bas = Math.min(...taux), haut = Math.max(...taux);
+  const etendue = Math.max(0.2, haut - bas);
+  const l = 640, h = 150, m = 28;
+  const x = i => m + i * (l - 2 * m) / Math.max(1, pts.length - 1);
+  const y = v => h - m - (v - bas + etendue * 0.15) / (etendue * 1.3) * (h - 2 * m);
+  let chemin = '', points = '';
+  pts.forEach((p, i) => {
+    if (p.taux === null) return;
+    const vx = x(i), vy = y(100 * p.taux);
+    chemin += (chemin ? 'L' : 'M') + vx.toFixed(1) + ' ' + vy.toFixed(1);
+    const creux = partiel(p);
+    points += '<circle cx="' + vx.toFixed(1) + '" cy="' + vy.toFixed(1)
+      + '" r="' + (creux ? 4.5 : 3.5) + '" fill="' + (creux ? '#fbfaf7' : '#1a5e63')
+      + '" stroke="#1a5e63" stroke-width="' + (creux ? 1.5 : 0) + '"'
+      + (creux ? ' stroke-dasharray="2 2"' : '') + '><title>' + p.date + ' : '
+      + pf(100 * p.taux, 2) + ' % sur ' + nf.format(p.frais) + ' points, '
+      + p.creneaux + ' créneaux' + (creux ? ', relevé partiel' : '')
+      + '</title></circle>';
+  });
+  const dates = pts.map((p, i) => '<text x="' + x(i).toFixed(1) + '" y="' + (h - 6)
+    + '" text-anchor="middle" font-size="10" fill="#4a5560">'
+    + p.date.slice(8) + '/' + p.date.slice(5, 7) + '</text>').join('');
+  const svg = '<svg viewBox="0 0 ' + l + ' ' + h + '" width="100%" height="' + h
+    + '" role="img" aria-label="Taux de points hors service, jour par jour">'
+    + '<path d="' + chemin + '" fill="none" stroke="#1a5e63" stroke-width="2"/>'
+    + points + dates + '</svg>';
+  const alerte = manq.length
+    ? insuffisant('<b>' + manq.length + ' jour' + (manq.length > 1 ? 's' : '')
+      + ' de relevés sans édition construite : ' + manq.join(', ') + '.</b> '
+      + 'Ces jours ne sont pas sur la courbe et ne sont pas interpolés. Ils le seront '
+      + 'quand leur édition sera construite.')
+    : '';
+  const creuxListe = pts.filter(partiel);
+  const etendueTxt = tauxComplets.length >= 2
+    ? 'Écart entre le plus bas et le plus haut, jours complets seulement : '
+      + pf(Math.max(...tauxComplets) - Math.min(...tauxComplets), 2) + ' point.'
+    : 'Trop peu de jours complets pour annoncer une étendue.';
+  const creuxTxt = creuxListe.length
+    ? ' <b>' + creuxListe.length + ' point' + (creuxListe.length > 1 ? 's creux' : ' creux')
+      + '</b> : ' + creuxListe.map(p => p.date + ' (' + p.creneaux + ' créneaux contre '
+        + medCren + ' en médiane)').join(', ')
+      + '. Le taux y est calculé sur trop peu de relevés pour être comparable, il est '
+      + 'affiché mais exclu de l\'étendue.'
+    : '';
+  return svg + '<p class="resume">' + pts.length + ' éditions, du ' + pts[0].date + ' au '
+    + pts[pts.length - 1].date + '. ' + etendueTxt + creuxTxt
+    + ' La bande p25 et p75 entre départements demande encore plusieurs jours.</p>' + alerte;
 }
 
 function rendreMur() {
@@ -288,7 +350,7 @@ function rendreApres() {
     '<b>Aucune projection n\'est affichée.</b> La pente de Theil-Sen demande 30 jours de '
     + 'relevés, la bande d\'incertitude en demande 60, parce qu\'elle est mesurée en rejouant '
     + 'la méthode depuis chaque origine passée et non estimée sur un résidu. Avec '
-    + D.jours_de_releves + ' jour de relevés, une projection serait une droite tracée à travers '
+    + D.serie.jours_collectes + ' jour de relevés, une projection serait une droite tracée à travers '
     + 'un seul point. Les fonctions sont écrites et testées contre scipy, elles attendent '
     + 'les données.');
 }
@@ -301,11 +363,23 @@ function rendreRecords() {
 }
 
 function rendreEditions() {
+  const pts = D.serie.points.slice().reverse();
+  const corps = pts.map((p, i) => {
+    const prec = pts[i + 1];
+    const delta = prec && p.pdc !== null && prec.pdc !== null ? p.pdc - prec.pdc : null;
+    return '<tr><td>' + p.date + '</td><td>' + nf.format(p.pdc) + '</td><td>'
+      + (delta === null ? '<span class="vide">première édition</span>'
+         : (delta >= 0 ? '+' : '') + nf.format(delta) + ' depuis le ' + prec.date)
+      + '</td><td>' + (p.taux === null ? '<span class="vide">…</span>'
+         : pf(100 * p.taux, 2) + ' %') + '</td><td>' + nf.format(p.creneaux) + '</td></tr>';
+  }).join('');
   $('#editions').innerHTML =
-    '<table><thead><tr><th>Date</th><th>Points de charge</th><th>Variation 7 jours</th>'
-    + '<th>Hors service</th></tr></thead><tbody><tr><td>' + D.edition.date + '</td><td>'
-    + nf.format(D.national.pdc) + '</td><td class="vide">première édition</td><td>'
-    + pf(100 * D.national.taux_hors_service, 2) + ' %</td></tr></tbody></table>';
+    '<table><thead><tr><th>Date</th><th>Points de charge</th><th>Variation</th>'
+    + '<th>Hors service</th><th>Créneaux capturés</th></tr></thead><tbody>'
+    + corps + '</tbody></table>'
+    + (D.serie.jours_sans_edition.length
+      ? '<p class="resume">' + D.serie.jours_sans_edition.length + ' jour(s) collecté(s) '
+        + 'sans édition construite : ' + D.serie.jours_sans_edition.join(', ') + '.</p>' : '');
 }
 
 function rendreMethode() {
@@ -317,7 +391,7 @@ function rendreMethode() {
     + '<dt>Points de charge</dt><dd>' + nf.format(n.pdc) + '</dd>'
     + '<dt>Stations</dt><dd>' + nf.format(n.stations) + '</dd>'
     + '<dt>Réseaux distincts</dt><dd>' + nf.format(n.reseaux) + '</dd>'
-    + '<dt>Jours de relevés</dt><dd>' + D.jours_de_releves + '</dd>'
+    + '<dt>Jours de relevés</dt><dd>' + D.serie.jours_collectes + '</dd>'
     + '<dt>Créneaux capturés ce jour</dt><dd>' + nf.format(c.creneaux_captures) + '</dd>'
     + '</dl>'
     + '<h3>Territoire</h3><p>Le département vient des coordonnées, par test du point dans le '

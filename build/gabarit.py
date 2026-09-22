@@ -102,7 +102,7 @@ footer{margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--trait);
   <span>Édition du <b>%%DATE_LONGUE%%</b></span>
   <span><b>%%N_STATIONS%%</b> stations</span>
   <span><b>%%N_PDC%%</b> points de charge</span>
-  <span><b>%%N_JOURS%%</b> jour de relevés</span>
+  <span><b>%%N_JOURS%%</b> jours de relevés</span>
   <span>parution quotidienne</span>
 </div>
 

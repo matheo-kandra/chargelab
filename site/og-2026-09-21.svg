@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#fbfaf7"/>
+<rect width="1200" height="8" fill="#1a5e63"/>
+<text x="72" y="140" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#14181c">La recharge, la ou vous etes.</text>
+<text x="72" y="196" font-family="system-ui,sans-serif" font-size="26" fill="#4a5560">Edition du lundi 21 septembre 2026</text>
+<line x1="72" y1="240" x2="1128" y2="240" stroke="#d9d5cd" stroke-width="2"/>
+<text x="72" y="332" font-family="system-ui,sans-serif" font-size="66" font-weight="700" fill="#14181c">168 674</text>
+<text x="72" y="370" font-family="system-ui,sans-serif" font-size="23" fill="#4a5560">points de charge</text>
+<text x="460" y="332" font-family="system-ui,sans-serif" font-size="66" font-weight="700" fill="#14181c">49 097</text>
+<text x="460" y="370" font-family="system-ui,sans-serif" font-size="23" fill="#4a5560">stations</text>
+<text x="820" y="332" font-family="system-ui,sans-serif" font-size="66" font-weight="700" fill="#a4303f">1.76 %</text>
+<text x="820" y="370" font-family="system-ui,sans-serif" font-size="23" fill="#4a5560">hors service, sur 42 024 qui se declarent</text>
+<text x="72" y="474" font-family="Georgia,serif" font-size="30" fill="#14181c">8.6 % des points publient un tarif au kWh lisible.</text>
+<text x="72" y="520" font-family="Georgia,serif" font-size="30" fill="#14181c">75 % ne disent rien du tout.</text>
+<text x="72" y="582" font-family="system-ui,sans-serif" font-size="19" fill="#8a9099">Source : Point d'Acces National transport.data.gouv.fr, Licence Ouverte Etalab</text>
+</svg>
