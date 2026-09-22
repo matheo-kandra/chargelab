@@ -335,3 +335,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-09-22T00:52:00+00:00,ok,github,8955317,1a07894bb31e22ab0357b195272cbeaf7fc2ec15454c8b7c1f5f3859e63f7385,121735,110906,10829,1615,photo 2026-09-22 + 3 fichiers de changements,468,0,0,,4.6,
 2026-09-22T01:07:00+00:00,ok,github,8955120,cc232df8963b148afaacdd5a845a6125caaeeee73d2e998ca187c1dee67feb10,121730,110901,10829,1615,photo 2026-09-22 + 4 fichiers de changements,677,0,5,,4.8,
 2026-09-22T01:22:00+00:00,ok,github,8954601,bafc60669cb5b9edbdca0fdada7ba539b37c5ecdaad4e7f5cbc3eeff05a8a8ef,121730,110901,10829,1618,photo 2026-09-22 + 5 fichiers de changements,606,0,5,,4.9,
+2026-09-22T01:37:00+00:00,ok,github,8954188,1ab48ad2e4e7415d625ee4eb801faca2a0ff5243cf881f57a4648d57ec8eaaa3,121730,110901,10829,1616,photo 2026-09-22 + 6 fichiers de changements,443,0,5,,4.9,
