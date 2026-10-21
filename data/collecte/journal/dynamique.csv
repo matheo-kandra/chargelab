@@ -4466,3 +4466,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-10-21T13:47:00+00:00,echec,github,,,,,,,,,,,,43.9,HTTPError: HTTP Error 500: Internal Server Error
 2026-10-21T13:52:00+00:00,echec,github,,,,,,,,,,,,45.3,HTTPError: HTTP Error 500: Internal Server Error
 2026-10-21T13:57:00+00:00,echec,github,,,,,,,,,,,,43.9,HTTPError: HTTP Error 500: Internal Server Error
+2026-10-21T14:02:00+00:00,echec,github,,,,,,,,,,,,43.6,HTTPError: HTTP Error 500: Internal Server Error
