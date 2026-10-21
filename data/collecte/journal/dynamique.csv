@@ -4465,3 +4465,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-10-21T13:42:00+00:00,ok,github,9233717,89045d81c1fc046a4bcbe658b51303b2ba943bd1c0556b4a886f632099b59af3,125568,115103,10465,616,photo 2026-10-21 + 99 fichiers de changements,1911,62,5,,10.6,
 2026-10-21T13:47:00+00:00,echec,github,,,,,,,,,,,,43.9,HTTPError: HTTP Error 500: Internal Server Error
 2026-10-21T13:52:00+00:00,echec,github,,,,,,,,,,,,45.3,HTTPError: HTTP Error 500: Internal Server Error
+2026-10-21T13:57:00+00:00,echec,github,,,,,,,,,,,,43.9,HTTPError: HTTP Error 500: Internal Server Error
