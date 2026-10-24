@@ -4914,3 +4914,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-10-24T13:15:06+00:00,echec,github,,,,,,,,,,,,85.5,URLError: <urlopen error [Errno 111] Connection refused>
 2026-10-24T13:17:00+00:00,echec,github,,,,,,,,,,,,43.6,URLError: <urlopen error [Errno 111] Connection refused>
 2026-10-24T13:22:00+00:00,ok,github,9246554,553ed77f2998e5c66d42dc282979a0d12e404addc138d2248ec616707433bde7,125715,115261,10454,545,photo 2026-10-24 + 64 fichiers de changements,14221,28,15,,41.7,
+2026-10-24T13:27:00+00:00,ok,github,9246409,2a6506eaac3c68b1b6a1f807b3f45a43ec31ba1e6bbeb6ca5ee3ba0a037d9bf0,125715,115261,10454,535,photo 2026-10-24 + 65 fichiers de changements,3145,28,15,,27.4,
