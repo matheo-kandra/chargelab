@@ -6928,3 +6928,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-11-11T03:37:00+00:00,echec,github,,,,,,,,,,,,44.1,URLError: <urlopen error [Errno 111] Connection refused>
 2026-11-11T03:52:00+00:00,echec,github,,,,,,,,,,,,43.9,URLError: <urlopen error [Errno 111] Connection refused>
 2026-11-11T04:07:00+00:00,echec,github,,,,,,,,,,,,43.5,URLError: <urlopen error [Errno 111] Connection refused>
+2026-11-11T04:22:00+00:00,echec,github,,,,,,,,,,,,43.3,URLError: <urlopen error [Errno 111] Connection refused>
