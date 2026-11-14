@@ -7189,3 +7189,4 @@ capture_utc,resultat,source,octets,sha256,lignes_flux,pdc_distincts,doublons_res
 2026-11-14T05:37:00+00:00,ok,github,9468048,ac79ccb6991fa54aa3bcc50b34e6c3f15b0f82a537ae678aa2711357adff014a,129167,117442,11725,791,photo 2026-11-14 + 10 fichiers de changements,623,56,0,,5.0,
 2026-11-14T05:52:00+00:00,ok,github,9468185,5c6356dd220b897bb1f6642cbc095b3e18f8b3d31b0188dca99a51640f4a1a29,129168,117443,11725,791,photo 2026-11-14 + 11 fichiers de changements,866,57,0,,158.6,
 2026-11-14T06:02:00+00:00,echec,github,,,,,,,,,,,,454.5,HTTPError: HTTP Error 503: Service Unavailable
+2026-11-14T10:51:19+00:00,ok,github,9478560,20fddc328affb9ae4f5dec9039f25d22989d6e2ee6de4af82b50d59770c3601d,129177,117453,11724,845,photo 2026-11-14 + 12 fichiers de changements,17575,79,12,,4.8,
